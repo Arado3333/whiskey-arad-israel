@@ -22,11 +22,9 @@ body{
 }
 
 .navbar{
-    width: 100%;
-    z-index: 100;
     position: fixed;
     overflow: hidden;
-
+width: 80%;
 }
 .navlinks{
 
