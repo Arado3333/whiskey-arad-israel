@@ -1,0 +1,267 @@
+body {
+   background-color: rgb(0, 0, 0);
+   font-family: "Protest Strike", sans-serif;
+   margin: 0; /* להסיר את הריווח המובנה של body */
+   padding: 0; /* להסיר את הריווח הפנימי של body */
+}
+
+.container {
+   display: grid;
+   grid-template-columns: 33.33% 33.33% 33.33%; /* שלושה עמודות שוות באחוזים */
+   grid-template-rows: repeat(12, minmax(100px, 1fr)); /* שנים עשר שורות בגובה שווה */
+   gap: 10px; /* ריווח בין התאים */
+   max-width: 100vw; /* רוחב מקסימלי של ה-container */
+   max-height: 1000vh;
+   min-height: 900vh; /* גובה מינימלי של ה-container */
+   grid-template-areas: 
+       'box1 box1 box1'
+       'box2 box3 box3'
+       'box4 box5 box5'
+       'box6 box6 box6'
+       'box7 box7 box7'
+       'box8 box8 box8'
+       'box9 box9 box9'
+       'box10 box11 box12';
+}
+.container > div {
+   position: relative;
+   border: 10vh solid transparent;
+   overflow: hidden;
+ }
+ 
+ .box::after {
+   content: '';
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   width: 200%;
+   height: 200%;
+   background-color: rgba(222, 29, 11, 0.5);
+   transform: translate(-50%, -50%) rotate(-45deg);
+   transition: width 0.3s, height 0.3s, opacity 0s;
+   z-index: 1;
+   opacity: 13%;
+
+ }
+ 
+ .box:hover::after {
+   width: 0;
+   height: 0;
+   opacity: 0;
+ }
+
+
+
+
+
+
+
+.container > div {
+   border: 0.1vh solid rgb(0, 0, 0); /* גבולות לתאים */
+   overflow: hidden; /* מנע גלילה בתאים */
+}
+.box1 {
+   grid-area: box1;
+   background-color: rgb(0, 0, 0);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100%;
+   max-height: 100vh;
+   position: relative; /* כדי להשתמש ב-position: absolute; בסרטון */
+   overflow: hidden; /* להסתיר חלק מהסרטון שחור */
+}
+
+.video {
+   position: absolute;
+   top: 50%; /* מציב את הסרטון באמצע התיבה לגובה */
+   left: 50%; /* מציב את הסרטון באמצע התיבה לרוחב */
+   transform: translate(-50%, -50%); /* מציב את הסרטון באמצע התיבה מבחינת גובה ורוחב */
+   min-width: 100%; /* גובה מינימלי של הסרטון כדי למלא את התיבה */
+   min-height: 100%; /* רוחב מינימלי של הסרטון כדי למלא את התיבה */
+   object-fit: cover; /* מסדר את התמונה כך שהיא תמלא את התיבה ולא תאבד יחסי תמונה */
+}
+
+
+.navbar {
+   position: absolute;
+   overflow: hidden;
+   z-index: 100;
+   top: 0;
+}
+
+.navlinks li {
+   float: right;
+}
+
+.navlinks {
+   list-style-type: none;
+   margin: 0;
+   padding: 0;
+}
+
+.navlinks li a {
+   color: white;
+   display: block;
+   text-align: center;
+   padding: 24px 20px;
+   border: 2px;
+   text-decoration: none;
+}
+.navlinks li a:hover {
+   color: white;
+   background: #6D2932;
+   border-radius: 80%;
+}
+
+.navlinks img {
+   opacity: 30%;
+   width: 40px;
+   border-radius: 100px;
+
+}
+
+.button {
+   position: absolute;
+   top: 80%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   background-color: #6D2932;
+   color: white;
+   padding: 10px 20px;
+   border: none;
+   cursor: pointer;
+   font-size: 16px;
+   font-family: "Protest Riot", sans-serif;
+   border-radius: 4%;
+   width: 20%;
+
+}
+.button:hover {
+  
+   opacity: 1;
+   background-color: #8d3f4b;
+
+}
+.button {
+   /* קוד קיים */
+   opacity: 0.7;
+}
+
+.box2 {
+   grid-area: box2;
+   background-color: rgb(0, 0, 0);
+   z-index: 100;
+}
+.imgbox2
+{
+height: 90%;
+margin: 10%;
+opacity: 80%;
+border-radius: 100px;
+
+
+}
+.box3 {
+   grid-area: box3;
+   background-color: rgb(0, 0, 0);
+   z-index: 100;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+}
+.box3p {
+   font-family: "Protest Strike", sans-serif;
+   font-size: 2rem; /* גודל גופן 2 רמות */
+   text-align: center; /* מרכז טקסט */
+   color: #7d4720;
+   font-weight: bold; /* מודגש */
+   text-transform: uppercase; /* מרווחים */
+   letter-spacing: 2px; /* המרחק בין אותיות */
+   margin-top: 250px; /* מרחק מהגב של התיבה למעלה */
+   padding-right: 20px; /* הריווח מימין */
+   width: 80%; /* רוחב הטקסט */
+   height: 90%;
+}
+
+
+.box4 {
+   grid-area: box4;
+   background-color: rgba(0, 0, 0, 0.713);
+}
+.box4P
+{
+   color: #fff;
+   text-align: center;
+   color: #7d4720;
+   font-size: 1rem;
+   font-weight: bold;
+   text-transform: uppercase;
+   letter-spacing: 2px;
+   font-size:medium;
+   width: 80%;
+   margin-top: 14%;
+   margin-left: 10%;
+}
+
+.box5 {
+   grid-area: box5;
+   background-color: rgb(0, 0, 0);
+}
+.imgbox5
+{
+   height: 70%;
+   width: 80%;
+margin: 10%;
+opacity: 80%;
+border-radius: 20%;
+margin-top: 10%;
+}
+.box6 {
+   grid-area: box6;
+   background-color: rgb(0, 0, 0);
+}
+.imgbox6
+{
+   height: 100%;
+   width: 100%;
+}
+.box7 {
+   grid-area: box7;
+   background-color: rgb(190, 124, 131);
+}
+.imgbox7
+{
+   height: 100%;
+   width: 100%;
+}
+.box8 {
+   grid-area: box8;
+   background-color: rgb(178, 108, 23);
+}
+
+.box9 {
+   grid-area: box9;
+   background-color: rgb(56, 53, 53);
+}
+
+.box10 {
+   grid-area: box10;
+   background-color: rgb(195, 12, 12);
+}
+
+.box11 {
+   grid-area: box11;
+   background-color: white;
+}
+
+.box12 {
+   grid-area: box12;
+   background-color: white;
+}
+.project
+{
+    color: rgb(255, 255, 255);
+/* margin-top:10vh; */
+}
