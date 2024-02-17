@@ -10,7 +10,6 @@ body {
    grid-template-columns: 33.33% 33.33% 33.33%; /* שלושה עמודות שוות באחוזים */
    grid-template-rows: repeat(12, minmax(100px, 1fr)); /* שנים עשר שורות בגובה שווה */
    /* gap: 10px; ריווח בין התאים */
-   max-width: 100vw; /* רוחב מקסימלי של ה-container */
    max-height: 1000vh;
    min-height: 900vh; /* גובה מינימלי של ה-container */
    grid-template-areas: 
@@ -18,7 +17,6 @@ body {
        'box2 box3 box3'
        'box4 box5 box5'
       
-       'box7 box7 box7'
        'box6 box6 box6'
        'box10 box11 box12';
 }
@@ -40,7 +38,6 @@ body {
    transition: width 0.3s, height 0.3s, opacity 0s;
    z-index: 1;
    opacity: 40%;
-
  }
  
  .box:hover::after {
