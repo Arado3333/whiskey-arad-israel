@@ -15,10 +15,11 @@ body {
 }
 
 .navbar {
-   width: 100%;
-  background-color: #2b1c1c;
-   color: white;
-   padding: 10px 0;
+   position: absolute;
+   overflow: hidden;
+   z-index: 100;
+   top: 0;
+   position: fixed;
 }
 
 .navlinks {
