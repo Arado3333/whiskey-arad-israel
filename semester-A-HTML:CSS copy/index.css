@@ -1,30 +1,31 @@
+
+
 body {
    background-color: rgb(0, 0, 0);
    font-family: "Protest Strike", sans-serif;
    margin: 0; /* להסיר את הריווח המובנה של body */
    padding: 0; /* להסיר את הריווח הפנימי של body */
+   
 }
 
 .container {
    display: grid;
-   grid-template-columns: 33.33% 33.33% 33.33%; /* שלושה עמודות שוות באחוזים */
-   grid-template-rows: repeat(12, minmax(100px, 1fr)); /* שנים עשר שורות בגובה שווה */
-   /* gap: 10px; ריווח בין התאים */
-   max-width: 100vw; /* רוחב מקסימלי של ה-container */
+   grid-template-rows: repeat(12, minmax(100px, 1fr )); /* שנים עשר שורות בגובה שווה */
+   margin: 0; /* להסיר את הריווח המובנה של body */
+   padding: 0; /* להסיר את הריווח הפנימי של body */
    max-height: 1000vh;
    min-height: 900vh; /* גובה מינימלי של ה-container */
    grid-template-areas: 
        'box1 box1 box1'
        'box2 box3 box3'
        'box4 box5 box5'
-      
-       'box7 box7 box7'
        'box6 box6 box6'
        'box10 box11 box12';
 }
+
+
 .container > div {
    position: relative;
- 
    overflow: hidden;
  }
  
@@ -40,7 +41,6 @@ body {
    transition: width 0.3s, height 0.3s, opacity 0s;
    z-index: 1;
    opacity: 40%;
-
  }
  
  .box:hover::after {
@@ -74,15 +74,25 @@ body {
    min-width: 100%; /* גובה מינימלי של הסרטון כדי למלא את התיבה */
    min-height: 100%; /* רוחב מינימלי של הסרטון כדי למלא את התיבה */
    object-fit: cover; /* מסדר את התמונה כך שהיא תמלא את התיבה ולא תאבד יחסי תמונה */
-   opacity: 20%;
+   opacity: 30%;
 }
 
-
+.logo
+{
+   position: absolute;
+   top: 0px;
+   left: 3px;
+   position: fixed;
+   z-index: 110;
+   height: 10%;
+   opacity: 90%;
+}
 .navbar {
    position: absolute;
    overflow: hidden;
    z-index: 100;
    top: 0;
+   position: fixed;
 }
 
 .navlinks li {
@@ -105,8 +115,10 @@ body {
 }
 .navlinks li a:hover {
    color: white;
-   background: #6D2932;
-   border-radius: 80%;
+   background: #3a2309;
+   border-radius: 0%;
+margin-top: 5px;
+height: 0.3vh;
 }
 
 .navlinks img {
@@ -153,7 +165,7 @@ body {
 .button:hover {
   
    opacity: 10%;
-   background-color: #777272;
+   background-color: #8f4b08;
 color: white;
 }
 .button1:hover {
@@ -173,14 +185,15 @@ color: white;
    z-index: 100;
 
 }
-.imgbox2
-{
-height: 90%;
-margin: 10%;
-opacity: 50%;
-border-radius: 100px;
-
+.imgbox2 {
+   height: 90%;
+   margin: 10%;
+   opacity: 50%;
+   border-radius: 100px;
+   object-fit: cover; /* תמלא את התיבה ללא השפעה על יחסי תמונה */
+   object-position: center; /* ממוקם במרכז האופקי והאנכי של התיבה */
 }
+
 .box3 {
    grid-area: box3;
    .overlay {
@@ -304,8 +317,10 @@ border-radius: 100px;
       margin-top: -3px;
   }
   
-  @media screen and (max-width:600px){
-      .container1{
+  @media screen and (max-width:600px)
+  {
+      .container1
+      {
           width: 100%;
           padding: 1rem;
       }
@@ -320,17 +335,34 @@ border-radius: 100px;
   display: block;
   font-size: 92px;
   color: #ffffff;
-  text-shadow: 0 8px 9px #c4b59d, 0px -2px 1px #fff;
+  text-shadow: 0 8px 9px #493816, 0px -2px 1px #38260c;
   font-weight: bold;
   letter-spacing: -4px;
   text-align: center;
-  background: linear-gradient(to bottom,  #000000 0%,#ffffff 80%);
+  background: linear-gradient(to bottom ,  #000000 0%,#462a0c   230vh);
   position: absolute;
-  padding: 100px 200px;
+  padding: 90px 200px;
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
   border-radius: 20px;
+}
+.button6 {
+   position: absolute;
+   top: 80%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   background-color: #462a0c;
+   color: white;
+   border: none;
+   cursor: pointer;
+   font-size: 16px;
+   font-family: "Protest Riot", sans-serif;
+   border-radius:40%;
+   width: 20%;
+   height: 4vh;
+   border-bottom-style:groove;
+   z-index: 100;
 }
 
 body,html {
@@ -388,18 +420,23 @@ body,html {
 
 .box10 {
    grid-area: box10;
-   background-color: rgb(195, 12, 12);
+   background-color: rgb(0, 0, 0);
 }
 
 .box11 {
    grid-area: box11;
-   background-color: white;
+   background-color: rgb(0, 0, 0);
 }
 
 .box12 {
    grid-area: box12;
-   background-color: white;
+   background-color: rgb(0, 0, 0);
 }
+.p5h
+{
+   color: #38302a;
+}
+
 .project
 {
     color: rgb(255, 255, 255);
