@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Protest+Riot&family=Protest+Strike&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+
+    font-family: "Protest Strike", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    background-image: url("./images/login\ page4.webp");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    width: 100%;
+
+}
+
+.navbar {
+    width: 100%;
+   /* background-color: #1c536e; */
+   /* background-color: #226e94cf; */
+   background-color: #a86824;
+    color: white;
+    padding: 15px 0;
+}
+
+.navlinks {
+    text-align: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 3px;
+}
+
+.navlinks li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.navlinks li a {
+    transition: 0.3s;
+    border-radius: 6px;
+    padding: 10px;
+    /* color: rgb(192, 225, 247); */
+    color: #fce1d3;
+    text-decoration: none;
+}
+
+.navlinks li a:hover {
+    background-color: #a86824;
+    transition: 0.5s;
+    border-radius: 6px;
+    color: white;
+    text-decoration: none;
+}
+
+.heading {
+
+    /* border: solid black; */
+    color: rgb(192, 225, 247);
+    font-size: 2rem;
+}
+
+.marked-up{
+    text-align: center;
+    background-color: #235a75;
+    border-radius: 5px;
+    display: inline;
+    line-height: 2.5;
+}
+
+.form {
+    font-family: "Protest Riot", sans-serif;
+    opacity: 94%;
+    display: inline-block;
+    text-align: center;
+    background-color: #235a75;
+    padding: 15%;
+    border-radius: 5px;
+}
+
+.form label {
+    color: rgb(192, 225, 247);
+    display: block;
+    /* margin-bottom: 5px; */
+    /* background-color: white; */
+    padding: 5%;
+    border-radius: 5px;
+    width: 15vw;
+    text-align: left;
+}
+
+.form input {
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.8em;
+    width: 90%;
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #000000;
+    border-radius: 3px;
+}
+
+.button {
+    color: white;
+    background-color: #a86824;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 3vh;
+    transition: 0.3s;
+}
+
+.button:hover{
+    transition: 0.5s;
+    background-color: #f5a248;
+}
+
+
+
+.signup-link {
+    margin-top: 20px;
+    font-size: 0.8rem;
+}
+
+.signup-link a {
+    color: #333;
+    text-decoration: underline;
+}
+.project
+{
+    color: rgb(255, 255, 255);
+/* margin-top:10vh; */
+}
+
+#show-password{
+    position: relative;
+    /* display: block; */
+    left: 6em;
+    bottom: 1.5em;
+}
+
+/* Tablet mode */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .container {
+      width: 100%;
+    }
+  }
+  
+/*Smartphone mode*/
+@media (max-width: 767px) {
+    .container {
+      width: 100%;
+    }
+    .form {
+        
+    }
+  }
