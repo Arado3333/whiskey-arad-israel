@@ -106,6 +106,7 @@ body {
 }
 
 .navlinks li a {
+   font-family: 'Protest Strike', sans-serif;
    color: white;
    display: block;
    text-align: center;
@@ -133,7 +134,8 @@ height: 0.3vh;
    top: 80%;
    left: 50%;
    transform: translate(-50%, -50%);
-   background-color: #231206;
+   /* background-color: #231206; */
+   background-color: rgb(57, 36, 16);
    color: white;
    border: none;
    cursor: pointer;
@@ -151,7 +153,8 @@ height: 0.3vh;
    top: 80%;
    left: 50%;
    transform: translate(-50%, -50%);
-   background-color: #24170a;
+   /* background-color: #24170a; */
+   background-color: #5d3c1b;
    color: white;
    border: none;
    cursor: pointer;
@@ -164,9 +167,9 @@ height: 0.3vh;
 }
 .button:hover {
   
-   opacity: 10%;
+   opacity: 70%;
    background-color: #8f4b08;
-color: white;
+   color: white;
 }
 .button1:hover {
   
@@ -226,7 +229,7 @@ color: white;
          }
          .shadow {
             color: #ffffff;
-            transition: ease-in 5s, ease-out 5s;
+            transition: ease-in 3s, ease-out 3s;
          }
          &:hover {
             .letter {

@@ -70,22 +70,33 @@ body {
     font-size: 2rem;
 }
 
+.heading-mark {
+    color: #a86824;
+    text-shadow: 
+      -1px -1px 0 white,  
+      1px -1px 0 white,
+      -1px 1px 0 white,
+      1px 1px 0 white; /* Border effect */
+}
+
 .marked-up{
     text-align: center;
-    background-color: #0f0606;
-    border-radius:  100%;
+    /* background-color: #182e63; */
+    /* background-color: #12172e; */
+    border-radius:  5%;
     display: inline;
     line-height: 2.5;
 }
+
 
 .form {
     font-family: "Protest Riot", sans-serif;
     display: inline-block;
     text-align: center;
-    background-color: #080a14;
+    background-color: #12172e;
     padding: 11%;
     border-radius: 5px;
-    opacity: 98%;
+    opacity: 97%;
 }
 
 .form label {
@@ -107,6 +118,16 @@ body {
     margin-bottom: 10px;
     border: 1px solid #a86824;
     border-radius: 3px;
+}
+
+.form > span{
+    color:white;
+
+}
+
+.sign-in-ref{
+    text-decoration: underline;
+    color: rgb(183, 200, 240)
 }
 
 .button {
