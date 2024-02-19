@@ -1,0 +1,178 @@
+body {
+   margin: 0;
+   padding: 0;
+   font-family: Arial, sans-serif;
+   background-color: #ffffff;
+}
+
+.container {
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   max-width: 150vh;
+   margin: 0 auto;
+   padding: 20px;
+   grid-template-areas:
+   "navbar navbar navbar"
+      "box0 box0 box0"
+      "header header header"
+      "box1 box2 box3"
+      "box4 box5 box6"
+      "box7 box8 box9"
+      "box10 box11 box12"
+      "box13 box14 box15";
+   grid-gap: 20px;
+}
+
+.box0 {
+   grid-area: box0;
+   margin-bottom: 10px;
+}
+
+.video {
+   width: 100%;
+}
+
+.navbar {
+   grid-area: navbar;
+   background-color: #d76d09;
+   color: white;
+   text-align: center;
+   padding: 10px;
+}
+
+.navlinks {
+   list-style-type: none;
+   margin: 0;
+   padding: 0;
+}
+
+.navlinks li {
+   display: inline-block;
+   margin-right: 20px;
+}
+
+.navlinks li a {
+   color: white;
+   text-decoration: none;
+}
+
+.header {
+   grid-area: header;
+   background-color: #333;
+   color: white;
+   text-align: center;
+   padding: 10px;
+}
+
+.box {
+   border: 1px solid #ccc;
+   border-radius: 5px;
+   padding: 20px;
+   text-align: center;
+   background-color: #ffffff;
+}
+
+.product-image {
+   height: 10vh;
+   background-image: url('whiskey.jpg');
+   background-size: cover;
+   background-position: center;
+   margin-bottom: 10px;
+}
+
+.product-info button {
+   background-color: #333;
+   color: white;
+   border: none;
+   padding: 5px 10px;
+   border-radius: 3px;
+   cursor: pointer;
+}
+
+.product-info button:hover {
+   background-color: #f8f2f2;
+}
+
+.product:nth-child(3n+1) {
+   background-color: #d9d9d9;
+}
+
+.product:nth-child(3n+2) {
+   background-color: #bfbfbf;
+}
+
+.product:nth-child(3n+3) {
+   background-color: #a6a6a6;
+}
+.box1
+{
+   background-color: #ffffff;
+}
+.imgbox1
+{
+   pointer-events: all;
+ max-height: 30vh;
+}
+.product-info button {
+   background-color: #ffffff;
+   color: white;
+   border: none;
+   padding: 19px 10px;
+   border-radius: 3px;
+   cursor: pointer;
+   margin-top: 10px; /* Add some space between the buttons */
+}
+
+.product-info button img {
+   width: 20px; /* Set the size of the icon */
+   height: 20px;
+   vertical-align: middle; /* Align the icon vertically */
+   margin-right: 0px; /* Add some space between the icon and text */
+}
+
+
+.product-info button {
+   background-color: #fff;
+   color: #c9b0b0;
+   border: 1px solid #000000;
+   padding: 5px 10px;
+   border-radius: 3px;
+   cursor: pointer;
+   margin-right: 10px;
+}
+
+.button-text {
+   font-size: 16px;
+   font-weight: bold;
+}
+
+.product-info button:hover {
+   background-color: #c60e0e;
+   color: white;
+}
+.button-favorites
+{
+width: 110px;
+}
+.buybutton
+{
+   background-color: #ffffff;
+   color: #000000;
+   padding: 5px 29px;
+   border-radius: 3px;
+   cursor: pointer;
+   margin-right: 5px;
+   
+}
+.favorites{
+   background-color: #ffffff;
+   color: #000000;
+   padding: 5px 29px;
+
+   border-radius: 3px;
+   cursor: pointer;
+   margin-right: 5px;
+}
+
+
+
