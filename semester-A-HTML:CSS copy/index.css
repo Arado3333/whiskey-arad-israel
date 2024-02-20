@@ -89,9 +89,10 @@ body {
    opacity: 90%;
 }
 .navbar {
-   position: absolute;
+   /* width: 100%; */
+   /* background-color: #12172e; */
    overflow: hidden;
-   z-index: 100;
+   z-index: 200;
    top: 0;
    position: fixed;
 }

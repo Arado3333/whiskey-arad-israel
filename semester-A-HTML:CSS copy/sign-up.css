@@ -120,6 +120,11 @@ body {
     border-radius: 3px;
 }
 
+.form input:has(input[required]) > label::after{
+    content: ' *';
+    color: red;
+}
+
 .form > span{
     color:white;
 
