@@ -116,20 +116,11 @@ body {
    margin-bottom: 10px;
 }
 
-.product-info button {
-   background-color: #333;
-   color: white;
-   border: none;
-   padding: 5px 10px;
-   border-radius: 3px;
-   cursor: pointer;
-}
-
-
 .box1
 {
    /* background-color: #ffffff; */
 }
+
 .imgbox1
 {
    pointer-events: all;
@@ -154,7 +145,7 @@ body {
 
 
 .product-info button{
-   background-color: #fff;
+   background-color: #2cad71;
    color: #000000;
    border: 1px solid #000000;
    padding: 5px 10px;
@@ -163,7 +154,7 @@ body {
 }
 
 .product-info button:hover{
-   background-color: #b6f586;
+   background-color: #f0c350;
 }
 
 .button-text {
