@@ -1,0 +1,74 @@
+@media (min-width: 1024px) and (max-width: 1439px) {
+/*----------------- Shop Page -----------*/
+   #shop-navbar {
+        grid-row: 1;
+        grid-column: span 4;
+        height: 10vh;
+        background-color: #f1c698;
+     }
+    
+     .navlinks {
+        height: 10vh;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+        justify-content: center;
+        align-content: center;
+        font-size: 1.5em;
+     }
+    
+     #shop-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 0.2fr 0.8fr 660px 660px 660px 660px;
+        gap: 20px;
+     }
+    
+     .box0 {
+        grid-column: span 4;
+        margin-bottom: 2px;
+     }
+
+     #buy-buttons {
+        margin-top: 2%;
+     }
+
+     .buybutton {
+        font-size: 1em;
+     }
+
+     .box {
+        /* height: vh; */
+     }
+
+     .product-info {
+      font-size: 1em;
+      line-height: 1.5;
+   }
+
+/*------------- Sign in Page -----------*/
+   #form-item {
+      padding: 8%;
+      max-width: 20rem;
+    }
+   
+    #email {
+      width: 15rem;
+    }
+   
+    #password {
+      width: 15rem;
+    }
+
+    #sign-in-heading {
+      font-size: 2.3rem;
+    }
+
+    #sign-in-button {
+      width: 120%;
+    }
+
+    #signin-navlinks > li a{
+      font-size: 1.8rem;
+    }
+}

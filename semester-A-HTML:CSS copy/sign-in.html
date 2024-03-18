@@ -5,13 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign In - Golani Distillery</title>
-    <link rel="stylesheet" href="./sign-in.css">
+    <link rel="stylesheet" href="styles/sign-in.css">
 </head>
 <body>
     <div class="container">
         <nav class="navbar">
-            <ul class="navlinks">
-              
+            <ul id="signin-navlinks" class="navlinks">
                 <li><a href="./index.html">Home</a></li>
                 <li><a href="./sign-in.html">Sign-in</a></li>
                 <li><a href="./sign-up.html">Sign-up</a></li>
@@ -20,19 +19,23 @@
                 <li><a href="./shop.html">Shop</a></li>
             </ul>
         </nav>
-        <div class="box1">
-            <h1 class="heading marked-up">Sign <span class="heading-mark">In</span></h1>
-            <form action="./index.html" class="form">
-                <label for="email">Email:</label><br>
+        
+        <div class="box1" id="sign-in-form">
+            <h1 id="sign-in-heading" class="heading marked-up">Sign <span class="heading-mark">In</span></h1>
+
+            <form action="./index.html" class="form" id="form-item">
+                <label class="email-field" for="email">Email:</label><br>
                 <input type="email" id="email" name="email" required><br>
-                <label for="password">Password:</label><br>
+                <label class="password-field" for="password">Password:</label><br>
                 <input type="password" id="password" name="password" required><br>
-                <input type="submit" value="Sign In" class="button">
+                <input type="submit" value="Sign In" class="button" id="sign-in-button">
             </form>
-            <footer class="project">
-                <p>&copy; ***ISRAEL  - AND  - ARAD -  PROJECT***</p>
-            </footer>
+
+            
         </div>
+        <footer class="project">
+            <p>&copy; ***ISRAEL  - AND  - ARAD -  PROJECT***</p>
+        </footer>
     </div>
 </body>
 </html>

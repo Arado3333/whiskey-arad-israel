@@ -1,82 +1,19 @@
-  
-  @media screen and (max-width: 600px)and (min-width: 601px) and {
-   body {
-       padding: 0;
-       margin: 0;
-   }
-   .container1 p {
-      text-align: justify;
-      font-size: 1em !important;
-      display: block;
-
-   }
-
-   .container1 p:first-child::first-letter {
-      color: #4a2b18;
-      font-weight: bold;
-      font-size: 1em !important;
-      float: none !important;
-      line-height: normal !important;
-      padding-right: 0 !important;
-      margin-top: 0 !important;
-   } 
-   
-   .p5
-    {
-      font-size: 0.1;
-   }
-   .p5h
-   {
-    font-size: 0.01em;
-
-   }
-   .box5 {
-      grid-area: box5;
-      background-color: rgb(0, 0, 0);
-      height: 10%;
-      width: 100%;
-   }
-   
-   .p5h {
-      color: white;
-      text-align: center;
-      width: 100%;
-   margin-left: 0;
-   
-     
-   }
-   .box4 {
-      grid-area: box4;
-      background-color: rgba(0, 0, 0, 0.713);
-      height: 1vh;
-      width: 100%;
-   }
-   .img4 {
-      width: 10%;
-      height: 10%;
-   }
-   .box6 {
-      grid-area: box6;
-      background-color: rgb(0, 0, 0);
-      height: 100%;
-      width: 100%;
-   
-   }
-   
-  }
+@import url("./reset.css");
+@import url("./mobile.css");
+@import url("./tablet.css");
+@import url("./laptop.css");
+@import url("./laptop_L.css");
 
 
-  
-  
-  body {
+
+
+body {
    background-color: rgb(0, 0, 0);
    font-family: "Protest Strike", sans-serif;
-   margin: 0;
-   padding: 0;
 }
 
-.container {
-   display: grid;
+#index-container {
+   /* display: grid;
    grid-template-areas: 
        'box1 box1 box1'
        'box2 box3 box3'
@@ -84,84 +21,58 @@
        'box6 box6 box6'
        'box10 box11 box12';
    margin: 0;
-   padding: 0;
+   padding: 0; */
    
 
 }
 
 
-
-
-
-
-
 .box1 {
-   grid-area: box1;
+   /* grid-area: box1; */
    background-color: rgb(0, 0, 0);
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   height: 100%;
-   overflow: hidden;
+   /* overflow: hidden; */
 }
 
-.video {
-   width: 100vw;
-   height: 60vh;
+.index-video {
+   /* height: 60vh;
    object-fit: cover;
    opacity: 40%;
-   z-index: 50;
+   z-index: 50; */
 }
 
 .logo {
-   top: 4vh;
-   left: 3px;
+   /* top: 1vh;
+   left: 0px;
    position: fixed;
-   z-index: 110;
-   opacity: 90%;
-   height: 6vh;
-}
-
-.navbar {
-   overflow: hidden;
    z-index: 200;
-   top: 0;
-   position: fixed;
-   height: 8vh;
-   width: 70%;
+   opacity: 90%;
+   height: 5vh; */
 }
 
-.navlinks li {
-   float: right;
+#index-navbar {
+   z-index: 200;
 }
 
-.navlinks {
-   list-style-type: none;
-   margin: 0;
-   padding: 0;
-}
+/* .navlinks { */
+   /* font-size: 0.60rem;
+   display: flex;
+   flex-direction: row;
+   justify-content: flex-start;
+   list-style-type: none; */
+/* } */
 
-.navlinks li a {
-   font-family: 'Protest Strike', sans-serif;
+#index-navbar > .navlinks li a {
+   /* font-family: 'Protest Strike', sans-serif; */
    color: white;
-   display: block;
-   text-align: center;
-   padding: 2vh 2vw;
    text-decoration: none;
 }
 
-.navlinks li a:hover {
+/* #index-navbar > .navlinks li a:hover {
    color: white;
    background: #3a2309;
    border-radius: 0%;
    margin-top: 5px;
-   height: 0.3vh;
-}
-
-.navlinks img {
-   border-radius: 10vh;
-   height: 1vh;
-}
+} */
 
 
 
@@ -177,36 +88,37 @@
    background-color: #cd7b1d;
 }
 
-.box2 {
-   grid-area: box2;
+/* .index-box2 { */
+   /* grid-area: box2;
    background-color: rgb(0, 0, 0);
    height: 100%;
-   width: 100%;
-}
-
+   width: 100%; */
+/* } */
+/* 
 .img2 {
    width: 100%;
    height: 100%;
    border-radius: 20%;
    opacity: 60%;
-}
+} */
 
 .img4 {
    width: 100%;
-   height: 100%;
-   border-radius: 20%;
+   height: 95vh;
+   object-fit: cover;
+   /* border-radius: 20%; */
+   overflow: hidden;
    opacity: 60%;
 }
-.box3 {
+/* .box3 {
    grid-area: box3;
    display: flex;
    justify-content: center;
    align-items: center;
    background-color: rgb(0, 0, 0);
    height: 100%;
-
    color: white;
-}
+} */
 
 .text {
    font-family: "Yanone Kaffeesatz";
@@ -243,39 +155,26 @@
    transform: translateY(200%);
 }
 
-.box4 {
+/* .index-box4 {
    grid-area: box4;
    background-color: rgba(0, 0, 0, 0.713);
    height: 100%;
    width: 100%;
-}
+} */
 
-.box4P {
-   color: #ffffff;
-   text-align: center;
-   font-size: 1rem;
-   font-weight: bold;
-   text-transform: uppercase;
-   letter-spacing: 2px;
-   font-size: medium;
-   width: 100%;
-}
-
-.box5 {
+/* .index-box5 {
    grid-area: box5;
    background-color: rgb(0, 0, 0);
    height: 100%;
    width: 100%;
-}
+} */
 
-.p5h {
+/* .p5h {
    color: white;
    text-align: center;
    width: 100%;
 margin-left: 0;
-
-  
-}
+} */
 
 .p5 {
    /* color: rgb(255, 255, 255); */
@@ -284,7 +183,7 @@ margin-left: 0;
    /* width: 50%; */
 /* margin-top: 0; */
 /* font-size: 1vw; גודל הטקסט ב box11 יהיה 3% מרוחב המסך */
-
+/* 
 color: #ffffff;
 text-align: center;
 font-size: 1rem;
@@ -292,24 +191,10 @@ font-weight: bold;
 text-transform: uppercase;
 letter-spacing: 2px;
 font-size: medium;
-width: 100%;
+width: 100%; */
 
 }
 
- body {
-   margin: 0;
-   padding: 0;
-} 
-
-body h1 {
-   font-weight: 600;
-}
-
-body hr {
-   width: 50px;
-   border: none;
-   border-bottom: 1px solid rgba(119, 119, 119, 0.25);
-} 
 
 .container1 {
    margin: 1rem auto;
@@ -336,15 +221,18 @@ body hr {
 } 
 
 
-.box6 {
+/* .box6 {
    grid-area: box6;
    background-color: rgb(0, 0, 0);
    height: 100%;
    width: 100%;
 
-}
+} */
 
 .milky {
+   display: flex;
+   justify-content: center;
+   align-items: center;
    font-family: "Arial Rounded MT Bold";
    text-transform: uppercase;
    font-size: 3em;
@@ -356,52 +244,28 @@ body hr {
    background: linear-gradient(to bottom ,  #000000 0%,#ffffff   );
    height: 30vh;
    width: 100%;
-   display: block;
-   padding-top: 20%;
-}
-
-.button6 {
-   
-   background-color: #462a0c;
-   color: white;
-   border: none;
-   cursor: pointer;
-   font-size: 16px;
-   font-family: "Protest Riot", sans-serif;
-   border-radius:40%;
-   border-bottom-style:groove;
-   z-index: 100;
 }
 
 
 
-.box10 {
+/* .box10 {
    grid-area: box10;
    background-color: rgb(0, 0, 0);
-   font-size: 1vw; /* גודל הטקסט ב box10 יהיה 3% מרוחב המסך */
+   font-size: 1vw; 
    height: 100%;
+} */
 
-
-
-}
-
-.box11 {
+/* .box11 {
    grid-area: box11;
    background-color: rgb(0, 0, 0);
-   font-size: 1vw; /* גודל הטקסט ב box11 יהיה 3% מרוחב המסך */
+   font-size: 1vw; 
    height: 100%;
+} */
 
-
-
-
-}
-
-.box12 {
+/* .box12 {
    grid-area: box12;
    background-color: rgb(0, 0, 0);
-   font-size: 1vw; /* גודל הטקסט ב box12 יהיה 3% מרוחב המסך */
+   font-size: 1vw; 
    height: 100%;
+} */
 
-
-
-}

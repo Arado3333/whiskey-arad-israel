@@ -1,0 +1,190 @@
+@import url("reset.css");
+@import url("mobile.css");
+@import url("tablet.css");
+@import url("laptop.css");
+@import url("laptop_L.css");
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Protest+Riot&family=Protest+Strike&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+   body {
+      font-family: 'Protest Strike', sans-serif;
+      background: linear-gradient(to top, #4f3d29, #301e17);
+   }
+   
+   
+   #shop-container {
+     /* display: grid;  */
+       /* grid-template-columns: 1fr 1fr 1fr 1fr; */
+       /* width: 80%;  */
+       /* margin: 0 auto;  */
+      /* grid-template-areas:
+      "navbar navbar navbar"
+         "box0 box0 box0"
+         "header header header" 
+         "box1 box2 box3"
+         "box4 box5 box6"
+         "box7 box8 box9"
+         "box10 box11 box12"; */
+      /* grid-gap: 20px;  */
+   }
+   
+   
+   /* .box0 {
+      grid-area: box0;
+      margin-bottom: 10px;
+   } */
+   
+   .video {
+      /* height: 70vh; */
+      width: 100%;
+      opacity: 70%;
+      object-fit: cover; /*ממלא את רוחב הדף*/
+   }
+   
+   .video-heading{
+      color: white;
+      text-align: center;
+      font-size: 2.5em;
+      margin-top: 8%;
+   }
+   
+   .vheading-marked-up{
+      color: #f5a248;
+   }
+   /* 
+   .navbar {
+      position: sticky;
+      top: 0;
+      grid-area: navbar;
+      background-color: transparent;
+      text-align: center;
+      padding: 2%;
+      z-index: 1000;
+      transition: 0.5s;
+   } */
+   
+   #shop-navbar:hover{
+      transition: 0.5s;
+      background-color: #f1c698;
+   }
+   
+   .navlinks {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+   }
+   
+   .navlinks li a {
+      padding: 25px 23px;
+      color: #a86824;
+      font-size: 1em;
+      text-decoration: none;
+      transition: 0.5s;
+   }
+   
+   .navlinks li a:hover{
+      color:#301e17;
+      transition: 0.5s;
+      background-color: #a86824;
+   }
+   
+   .box {
+      border: 1px solid #000;
+      border-radius: 5px;
+      padding: 10px;
+      text-align: center;
+      background-color: #8b6b48;
+      box-shadow: 0px 3px 5px black;;
+   }
+   
+   .product-image {
+      height: 3vh;
+      background-image: url('whiskey.jpg');
+      background-size: cover;
+      background-position: center;
+      margin-bottom: 10px;
+   }
+   
+   /* .box1
+   {
+      grid-area: box1;
+   } */
+   
+   .imgbox1
+   {
+      grid-area: box1;
+      pointer-events: all;
+      height: 20vh;
+   }
+   
+   .product-info button {
+      background-color: #ffffff;
+      color: white;
+      border: none;
+      padding: 19px 10px;
+      border-radius: 3px;
+      cursor: pointer;
+      margin-top: 10px; /*Add some space between the buttons*/
+   }
+   
+    .product-info button img {
+      width: 100%; /*Set the size of the icon */
+      height: 3vh;
+      vertical-align: middle; /* Align the icon vertically */
+      margin-right: 0px; /*Add some space between the icon and text*/
+   }
+   
+   
+   .product-info button{
+      background-color: #2cad71;
+      color: #000000;
+      border: 1px solid #000000;
+      padding: 5px 10px;
+      border-radius: 3px;
+      cursor: pointer;
+   }
+   
+   .product-info button:hover{
+      background-color: #f0c350;
+   }
+   
+   .product-info {
+      font-size: 1.2em;
+      line-height: 1.5;
+   }
+   
+   
+   .buybutton
+   {
+      /* width: 45%; */
+      background-color: #ffffff;
+      color: black;
+      /* padding: 5px 29px; */
+      border-radius: 5px;
+      cursor: pointer;
+      /* margin-right: 5px; */
+      
+   }
+   
+   
+   
+   /* .favorites{
+      width: 45%;
+      background-color: #ffffff;
+      color: #000000;
+      padding: 5px 29px;
+   
+      border-radius: 3px;
+      cursor: pointer;
+      margin-right: 5px;
+   } */
+   
+   /* .favorites:hover{
+      background-color: red;
+      color: black;
+   } */
+   
+
+
+
