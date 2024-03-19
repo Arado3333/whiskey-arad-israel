@@ -53,17 +53,16 @@
    border: none;
    cursor: pointer;
    font-size: 16px;
-   font-family: "Protest Riot", sans-serif;
-   border-bottom-style: groove;
    z-index: 100;
    margin: 0 auto;
    display: block;
-   width: 26%;
+   width: 20%;
    padding: 10px;
-   border-radius: 25px;
+   border-radius: 2px;
    transition-duration: 0.4s;
-   margin-top: -5%;
+   margin-top: 1%;
    opacity: 100%;
+  left: 4%;
   
 }
 .logo {
@@ -263,7 +262,8 @@ width: 100%;
    display: block;
    width: 30%;
    padding: 10px;
-   border-radius: 25px;
+   border-radius: 2px;
+
    transition-duration: 0.4s;
    margin-top: 16%;
 }
@@ -332,7 +332,8 @@ body hr {
    display: block;
    width: 20%;
    padding: 10px;
-   border-radius: 25px;
+   border-radius: 2px;
+
    transition-duration: 0.4s;
 }
 
@@ -439,3 +440,444 @@ margin-left: 10%;
    border: 2px solid #fbf7f7;
 }
 
+@media  (max-width: 650px) 
+{
+   @import url("./mobile-index.css");
+
+  
+  body {
+   background-color: rgb(0, 0, 0);
+   font-family: "Protest Strike", sans-serif;
+   margin: 0;
+   padding: 0;
+}
+
+.container {
+   display: grid;
+   grid-template-areas: 
+       'box1 box1 box1'
+       'box2 box3 box3'
+       'box4 box5 box5'
+       'box6 box6 box6'
+       'box10 box10 box10'
+       'box11 box11 box11'
+       'box12 box12 box12';
+   margin: 0;
+   padding: 0;
+   grid-template-columns: auto;
+   
+  
+}
+
+
+
+
+
+
+
+.box1 {
+   grid-area: box1;
+   background-color: rgb(0, 0, 0);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100%;
+   overflow: hidden;
+}
+
+.video {
+   width: 100vw;
+   height: 60vh;
+   object-fit: cover;
+   opacity: 100%;
+}
+.buttonvideo
+{
+   background-color: #fbf7f7;
+   color: rgb(0, 0, 0);
+   border: none;
+   cursor: pointer;
+   font-size: 16px;
+   font-family: "Protest Riot", sans-serif;
+   border-bottom-style: groove;
+   z-index: 100;
+   margin: 0 auto;
+   display: block;
+   width: 40%;
+   padding: 10px;
+   border-radius: 25px;
+   transition-duration: 0.4s;
+   left: -5vw;  
+}
+.logo {
+   top: 4vh;
+   left: 3px;
+   position: fixed;
+   z-index: 110;
+   opacity: 90%;
+   height: 6vh;
+}
+
+.navbar {
+   overflow: hidden;
+   z-index: 200;
+   top: 0;
+   position: fixed;
+   height: 8vh;
+   width: 70%;
+   padding-right: 22%;
+}
+
+.navlinks li {
+   float: right;
+}
+
+.navlinks {
+   list-style-type: none;
+   margin: 0;
+   padding: 0;
+}
+
+.navlinks li a {
+   font-family: 'Protest Strike', sans-serif;
+   color: white;
+   display: block;
+   text-align: center;
+   padding: 2vh 2vw;
+   text-decoration: none;
+   margin-top: 1vh;
+}
+
+.navlinks li a:hover {
+   color: rgb(5, 5, 5);
+   background: #fdfcfb;
+   border-radius: 0%;
+   margin-top:1vh ;
+   height: 1.5vh;
+
+}
+
+.navlinks img {
+   border-radius: 10vh;
+   height: 2vh;
+}
+
+
+
+
+.button:hover {
+   opacity: 70%;
+   background-color: #8f4b08;
+   color: white;
+}
+
+.button1:hover {
+   opacity: 1;
+   background-color: #cd7b1d;
+}
+
+.box2 {
+   grid-area: box2;
+   background-color: rgb(0, 0, 0);
+   height: 100%;
+   width: 100%;
+   margin-left: 10%;
+}
+
+.img2 {
+   width: 90%;
+   height: 100%;
+   opacity: 40%;
+border-radius: 10%;
+
+}
+
+.img4 {
+   width: 90%;
+   height: 100%;
+   opacity: 40%;
+border-radius: 10%;
+}
+.box3 {
+   grid-area: box3;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color: rgb(0, 0, 0);
+   height: 100%;
+
+   color: white;
+}
+
+.text {
+   font-family: "Yanone Kaffeesatz";
+   font-size: 1rem;
+}
+
+.overlay {
+   z-index: 100;
+}
+
+.wrapper {
+   display: inline-block;
+   margin: 0 5px;
+}
+
+.letter {
+   transition: ease-out 1s;
+   transform: translateY(40%);
+}
+
+.shadow {
+   color: #141414;
+   transition: ease-in 3s, ease-out 3s;
+}
+
+.text:hover .letter {
+   transform: translateY(-200%);
+}
+
+.text:hover .shadow {
+   opacity: 0;
+   transform: translateY(200%);
+}
+
+.box4 {
+   grid-area: box4;
+   background-color: rgba(0, 0, 0, 0.713);
+   height: 100%;
+   width: 100%;
+   margin-left: 10%;
+   margin-top: 7vh;
+}
+
+.box4P {
+   color: #ffffff;
+   font-size: 1rem;
+   
+}
+
+.box5 {
+   grid-area: box5;
+   background-color: rgb(0, 0, 0);
+   height: 100%;
+   width: 80%;
+   margin-left: 13%;
+   display: block;
+
+}
+
+.p5h {
+   color: white;
+text-align:center;
+font-size: 0.2rem;
+  
+}
+
+.p5 {
+color: #ffffff;
+text-align: center;
+font-size: 0.2rem;
+
+
+
+}
+
+.button5
+{
+   background-color: #fbf7f7;
+   color: rgb(0, 0, 0);
+   border: none;
+   cursor: pointer;
+   font-size: 16px;
+   font-family: "Protest Riot", sans-serif;
+   border-bottom-style: groove;
+   z-index: 100;
+   margin: 0 auto;
+   display: block;
+   padding: 10px;
+   border-radius: 25px;
+   transition-duration: 0.4s;
+   margin-top: 16%;
+}
+
+
+
+body hr {
+   width: 5vw;
+   border: none;
+   border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+} 
+
+.container1 {
+font-size: 2rem;
+ 
+   text-align: justify;
+   transition: all 0.3s;
+}
+
+.container1 p {
+   text-align: justify;
+}
+
+.container1 p:first-child::first-letter {
+   color: #ffffff;
+   font-weight: bold;
+   font-size: 0.8rem;
+   float: left;
+   line-height: 2%;
+   margin-top: -3.8;
+} 
+
+
+.box6 {
+   grid-area: box6;
+   background-color: rgb(0, 0, 0);
+   height: 80%;
+   width: 100%;
+}
+
+.img6
+{
+   width: 100%;
+   height: 100%;
+   opacity: 100%;
+   object-fit: fill;
+   border-radius: 20%;
+}
+
+.button6 {
+   
+   background-color: #fbf7f7;
+   color: rgb(0, 0, 0);
+   border: none;
+   cursor: pointer;
+   font-size: 16px;
+   font-family: "Protest Riot", sans-serif;
+   display: block;
+   width: 50%;
+   padding: 10px;
+   border-radius: 25px;
+   transition-duration: 0.4s;
+}
+
+
+
+.box10 {
+   grid-area: box10;
+   background-color: rgb(0, 0, 0);
+   font-size: 1rem; /* גודל הטקסט ב box10 יהיה 3% מרוחב המסך */
+   height: 100%;
+   width: 80%;
+   margin-left: 10%;
+
+
+}
+
+.box11 {
+   grid-area: box11;
+   background-color: rgb(0, 0, 0);
+   font-size: 1rem; /* גודל הטקסט ב box11 יהיה 3% מרוחב המסך */
+   height: 100%;
+   width: 80%;
+   margin-left: 10%;
+
+
+
+}
+
+.box12 {
+   grid-area: box12;
+   background-color: rgb(0, 0, 0);
+   font-size: 1rem; /* גודל הטקסט ב box12 יהיה 3% מרוחב המסך */
+   height: 100%;
+width: 80%;
+margin-left: 10%;
+
+}
+
+
+.button6 {
+    background-color: #fbf7f7;
+   color: rgb(0, 0, 0);
+   border: none;
+   cursor: pointer;
+   font-size: 1rem;
+   font-family: "Protest Riot", sans-serif;
+   border-bottom-style: groove;
+   z-index: 100;
+   margin-left: 40.4%;
+   height: 4vh;
+   margin-left: 35%;
+width: 40vw;
+   transition: background-color 0.3s, color 0.3s, border 0.3s;
+}
+
+.button6:hover {
+   background-color: #e5e2e2;
+   color: #fbf7f7;
+   border: 1% solid #fbf7f7;
+}
+
+.button5 {
+   background-color: #fbf7f7;
+   color: rgb(0, 0, 0);
+   border: none;
+   cursor: pointer;
+   font-size: 1rem;
+   font-family: "Protest Riot", sans-serif;
+   border-bottom-style: groove;
+   z-index: 100;
+   margin-left: 40.4%;
+   height: 4vh;
+   margin-left: 15%;
+width: 40vw;
+   transition: background-color 0.3s, color 0.3s, border 0.3s;
+}
+
+.button5:hover {
+   background-color: #e5e2e2;
+   color: #fbf7f7;
+   border: 1% solid #fbf7f7;
+}
+
+.buttonvideo {
+   background-color: #fbf7f7;
+   color: rgb(0, 0, 0);
+   border: none;
+   cursor: pointer;
+   font-size: 1rem;
+   font-family: "Protest Riot", sans-serif;
+   border-bottom-style: groove;
+   z-index: 100;
+   margin-left: 40.4%;
+   height: 4vh;
+   margin-left: 37%;
+
+   transition: background-color 0.3s, color 0.3s, border 0.3s;
+   position: relative;
+   margin-top: -20vh;
+}
+
+.buttonvideo:hover {
+   background-color: #e5e2e2;
+   color: #fbf7f7;
+   border: 2px solid #fbf7f7;
+}
+
+
+.img2, .img4, .img6 {
+   max-width: 100%;
+   height: auto;
+}
+
+.p5
+{
+font-size: xx-small;
+}
+.p5h
+{
+   font-size: 1em;
+}
+
+}

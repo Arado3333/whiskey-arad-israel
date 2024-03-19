@@ -1,6 +1,8 @@
 @media  (max-width: 700px) 
 {
+   @import url("./mobile-index.css");
 
+  
   body {
    background-color: rgb(0, 0, 0);
    font-family: "Protest Strike", sans-serif;
@@ -21,7 +23,7 @@
    margin: 0;
    padding: 0;
    grid-template-columns: auto;
-   row-gap: 100vh;
+   row-gap: 10vh;
 }
 
 
@@ -116,7 +118,7 @@
 
 .navlinks img {
    border-radius: 10vh;
-   height: 1vh;
+   height: 2vh;
 }
 
 
@@ -168,9 +170,7 @@ border-radius: 10%;
 
 .text {
    font-family: "Yanone Kaffeesatz";
-   font-size: 3.5vh;
-   text-align: center;
-   padding: 0 2vh;
+   font-size: 1rem;
 }
 
 .overlay {
@@ -211,13 +211,8 @@ border-radius: 10%;
 
 .box4P {
    color: #ffffff;
-   text-align: center;
    font-size: 1rem;
-   font-weight: bold;
-   text-transform: uppercase;
-   letter-spacing: 2px;
-   font-size: medium;
-   width: 100%;
+   
 }
 
 .box5 {
@@ -228,24 +223,14 @@ border-radius: 10%;
    margin-left: 13%;
 }
 
-.p5h {
-   color: white;
-   text-align: center;
-   width: 100%;
-margin-left: 0;
 
-  
-}
 
 .p5 {
 color: #ffffff;
 text-align: center;
-font-size: 1rem;
-font-weight: bold;
-text-transform: uppercase;
-letter-spacing: 2px;
-font-size: medium;
-width: 100%;
+font-size: 0.2rem;
+
+
 
 }
 
@@ -268,34 +253,29 @@ width: 100%;
    margin-top: 16%;
 }
 
-body h1 {
-   font-weight: 600;
-}
+
 
 body hr {
-   width: 50px;
+   width: 5vw;
    border: none;
    border-bottom: 1px solid rgba(0, 0, 0, 0.25);
 } 
 
 .container1 {
-   margin: 1rem auto;
-   padding: 1rem;
+font-size: 0.8rem;
+ 
    text-align: justify;
    transition: all 0.3s;
 }
 
 .container1 p {
-   line-height: 1.5;
-   letter-spacing: 0.3px;
-   word-spacing: 2px;
    text-align: justify;
 }
 
 .container1 p:first-child::first-letter {
    color: #ffffff;
    font-weight: bold;
-   font-size: 3vw;
+   font-size: 1rem;
    float: left;
    line-height: 2%;
    margin-top: -3.8;
@@ -341,7 +321,7 @@ body hr {
 .box10 {
    grid-area: box10;
    background-color: rgb(0, 0, 0);
-   font-size: 1vw; /* גודל הטקסט ב box10 יהיה 3% מרוחב המסך */
+   font-size: 1rem; /* גודל הטקסט ב box10 יהיה 3% מרוחב המסך */
    height: 100%;
    width: 80%;
    margin-left: 10%;
@@ -352,7 +332,7 @@ body hr {
 .box11 {
    grid-area: box11;
    background-color: rgb(0, 0, 0);
-   font-size: 1vw; /* גודל הטקסט ב box11 יהיה 3% מרוחב המסך */
+   font-size: 1rem; /* גודל הטקסט ב box11 יהיה 3% מרוחב המסך */
    height: 100%;
    width: 80%;
    margin-left: 10%;
@@ -364,7 +344,7 @@ body hr {
 .box12 {
    grid-area: box12;
    background-color: rgb(0, 0, 0);
-   font-size: 1vw; /* גודל הטקסט ב box12 יהיה 3% מרוחב המסך */
+   font-size: 1rem; /* גודל הטקסט ב box12 יהיה 3% מרוחב המסך */
    height: 100%;
 width: 80%;
 margin-left: 10%;
@@ -377,7 +357,7 @@ margin-left: 10%;
    color: rgb(0, 0, 0);
    border: none;
    cursor: pointer;
-   font-size: 16px;
+   font-size: 1rem;
    font-family: "Protest Riot", sans-serif;
    border-bottom-style: groove;
    z-index: 100;
@@ -389,7 +369,7 @@ margin-left: 10%;
 .button6:hover {
    background-color: #e5e2e2;
    color: #fbf7f7;
-   border: 2px solid #fbf7f7;
+   border: 1% solid #fbf7f7;
 }
 
 .button5 {
@@ -397,7 +377,7 @@ margin-left: 10%;
    color: rgb(0, 0, 0);
    border: none;
    cursor: pointer;
-   font-size: 16px;
+   font-size: 1rem;
    font-family: "Protest Riot", sans-serif;
    border-bottom-style: groove;
    z-index: 100;
@@ -412,7 +392,7 @@ margin-left: 10%;
 .button5:hover {
    background-color: #e5e2e2;
    color: #fbf7f7;
-   border: 2px solid #fbf7f7;
+   border: 1% solid #fbf7f7;
 }
 
 .buttonvideo {
@@ -420,7 +400,7 @@ margin-left: 10%;
    color: rgb(0, 0, 0);
    border: none;
    cursor: pointer;
-   font-size: 16px;
+   font-size: 1rem;
    font-family: "Protest Riot", sans-serif;
    border-bottom-style: groove;
    z-index: 100;
@@ -440,4 +420,19 @@ margin-left: 10%;
 }
 
 
+.img2, .img4, .img6 {
+   max-width: 100%;
+   height: auto;
+}
+
+.container1 {
+   margin: 1rem auto;
+   text-align: justify;
+   transition: all 0.3s;
+   word-wrap: break-word;
+}
+.p5h
+{
+   font-size: 10em;
+}
 }
