@@ -4,75 +4,199 @@
 @import url("./laptop.css");
 @import url("./laptop_L.css");
 
-
-
-
-body {
-   background-color: rgb(0, 0, 0);
-   font-family: "Protest Strike", sans-serif;
+  
+@media screen and (max-width: 600px) {
+   body {
+       font-size: 14px; /* גודל הפונטים למסכים ברוחב עד 600px */
+       padding: 0;
+       margin: 0;
+   }
+   .container1 p {
+      line-height: 1.5;
+      letter-spacing: 0.3px;
+      word-spacing: 2px;
+      text-align: justify;
+      font-size: 0.7em;
+   }
+   .p5 {
+   
+   line-height: 1.5;
+      letter-spacing: 0.3px;
+      word-spacing: 2px;
+      text-align: justify;
+      font-size: 1em;
+   }
+   .box5 {
+      grid-area: box5;
+      background-color: rgb(0, 0, 0);
+      height: 10%;
+      width: 100%;
+   }
+   
+   .p5h {
+      color: white;
+      text-align: center;
+      width: 100%;
+   margin-left: 0;
+   
+     
+   }
+   .box4 {
+      grid-area: box4;
+      background-color: rgba(0, 0, 0, 0.713);
+      height: 1vh;
+      width: 100%;
+   }
+   .img4 {
+      width: 10%;
+      height: 10%;
+   }
+   
+}
+@media screen and (max-width: 700px) {
+   .container {
+      padding: 0;
+      margin: 0;
+       width: 100%;
+       grid-template-columns: repeat(3, minmax(0, 100%)); /* שלוש עמודות ברוחב מינימלי של 0 ומקסימלי של 100% */
+   }
+}
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+   body {
+      padding: 0;
+      margin: 0;
+       font-size: 16px; /* גודל הפונטים למסכים ברוחב בין 601px ל-1024px */
+   }
+   
 }
 
-#index-container {
-   /* display: grid;
+@media screen and (min-width: 1025px) {
+   body {
+       font-size: 18px; /* גודל הפונטים למסכים ברוחב מעל 1025px */
+       padding: 0;
+       margin: 0;
+   }
+}
+
+  
+  
+  body {
+   background-color: rgb(0, 0, 0);
+   font-family: "Protest Strike", sans-serif;
+   margin: 0;
+   padding: 0;
+}
+
+.container {
+   display: grid;
    grid-template-areas: 
        'box1 box1 box1'
        'box2 box3 box3'
        'box4 box5 box5'
        'box6 box6 box6'
-       'box10 box11 box12';
+       'box10 box10 box10'
+       'box11 box11 box11'
+       'box12 box12 box12';
    margin: 0;
-   padding: 0; */
-   
-
+   padding: 0;
+   grid-template-columns: auto;
+   row-gap: 10vh;
 }
+
+
+
+
+
 
 
 .box1 {
-   /* grid-area: box1; */
+   grid-area: box1;
    background-color: rgb(0, 0, 0);
-   /* overflow: hidden; */
-}
-
-.index-video {
-   /* height: 60vh;
-   object-fit: cover;
-   opacity: 40%;
-   z-index: 50; */
-}
-
-.logo {
-   /* top: 1vh;
-   left: 0px;
-   position: fixed;
-   z-index: 200;
-   opacity: 90%;
-   height: 5vh; */
-}
-
-#index-navbar {
-   z-index: 200;
-}
-
-/* .navlinks { */
-   /* font-size: 0.60rem;
    display: flex;
-   flex-direction: row;
-   justify-content: flex-start;
-   list-style-type: none; */
-/* } */
-
-#index-navbar > .navlinks li a {
-   /* font-family: 'Protest Strike', sans-serif; */
-   color: white;
-   text-decoration: none;
+   justify-content: center;
+   align-items: center;
+   height: 100%;
+   overflow: hidden;
 }
 
-/* #index-navbar > .navlinks li a:hover {
+.video {
+   width: 100vw;
+   height: 60vh;
+   object-fit: cover;
+   opacity: 100%;
+}
+.buttonvideo
+{
+   background-color: #fbf7f7;
+   color: rgb(0, 0, 0);
+   border: none;
+   cursor: pointer;
+   font-size: 16px;
+   font-family: "Protest Riot", sans-serif;
+   border-bottom-style: groove;
+   z-index: 100;
+   margin: 0 auto;
+   display: block;
+   width: 26%;
+   padding: 10px;
+   border-radius: 25px;
+   transition-duration: 0.4s;
+   margin-top: -5%;
+   opacity: 100%;
+  
+}
+.logo {
+   top: 4vh;
+   left: 3px;
+   position: fixed;
+   z-index: 110;
+   opacity: 90%;
+   height: 6vh;
+}
+
+.navbar {
+   overflow: hidden;
+   z-index: 200;
+   top: 0;
+   position: fixed;
+   height: 8vh;
+   width: 70%;
+   padding-right: 22%;
+}
+
+.navlinks li {
+   float: right;
+}
+
+.navlinks {
+   list-style-type: none;
+   margin: 0;
+   padding: 0;
+}
+
+.navlinks li a {
+   font-family: 'Protest Strike', sans-serif;
    color: white;
-   background: #3a2309;
+   display: block;
+   text-align: center;
+   padding: 2vh 2vw;
+   text-decoration: none;
+   margin-top: 1vh;
+}
+
+.navlinks li a:hover {
+   color: rgb(5, 5, 5);
+   background: #fdfcfb;
    border-radius: 0%;
-   margin-top: 5px;
-} */
+   margin-top:1vh ;
+   height: 1.5vh;
+
+}
+
+.navlinks img {
+   border-radius: 10vh;
+   height: 1vh;
+}
 
 
 
@@ -88,37 +212,38 @@ body {
    background-color: #cd7b1d;
 }
 
-/* .index-box2 { */
-   /* grid-area: box2;
+.box2 {
+   grid-area: box2;
    background-color: rgb(0, 0, 0);
    height: 100%;
-   width: 100%; */
-/* } */
-/* 
-.img2 {
    width: 100%;
+   margin-left: 10%;
+}
+
+.img2 {
+   width: 90%;
    height: 100%;
-   border-radius: 20%;
-   opacity: 60%;
-} */
+   opacity: 40%;
+border-radius: 10%;
+
+}
 
 .img4 {
-   width: 100%;
-   height: 95vh;
-   object-fit: cover;
-   /* border-radius: 20%; */
-   overflow: hidden;
-   opacity: 60%;
+   width: 90%;
+   height: 100%;
+   opacity: 40%;
+border-radius: 10%;
 }
-/* .box3 {
+.box3 {
    grid-area: box3;
    display: flex;
    justify-content: center;
    align-items: center;
    background-color: rgb(0, 0, 0);
    height: 100%;
+
    color: white;
-} */
+}
 
 .text {
    font-family: "Yanone Kaffeesatz";
@@ -155,35 +280,43 @@ body {
    transform: translateY(200%);
 }
 
-/* .index-box4 {
+.box4 {
    grid-area: box4;
    background-color: rgba(0, 0, 0, 0.713);
    height: 100%;
    width: 100%;
-} */
+   margin-left: 10%;
+}
 
-/* .index-box5 {
+.box4P {
+   color: #ffffff;
+   text-align: center;
+   font-size: 1rem;
+   font-weight: bold;
+   text-transform: uppercase;
+   letter-spacing: 2px;
+   font-size: medium;
+   width: 100%;
+}
+
+.box5 {
    grid-area: box5;
    background-color: rgb(0, 0, 0);
    height: 100%;
-   width: 100%;
-} */
+   width: 80%;
+   margin-left: 13%;
+}
 
-/* .p5h {
+.p5h {
    color: white;
    text-align: center;
    width: 100%;
 margin-left: 0;
-} */
+
+  
+}
 
 .p5 {
-   /* color: rgb(255, 255, 255); */
-   /* text-align: center; */
-   /* height: 10%; */
-   /* width: 50%; */
-/* margin-top: 0; */
-/* font-size: 1vw; גודל הטקסט ב box11 יהיה 3% מרוחב המסך */
-/* 
 color: #ffffff;
 text-align: center;
 font-size: 1rem;
@@ -191,14 +324,42 @@ font-weight: bold;
 text-transform: uppercase;
 letter-spacing: 2px;
 font-size: medium;
-width: 100%; */
+width: 100%;
 
 }
 
+.button5
+{
+   background-color: #fbf7f7;
+   color: rgb(0, 0, 0);
+   border: none;
+   cursor: pointer;
+   font-size: 16px;
+   font-family: "Protest Riot", sans-serif;
+   border-bottom-style: groove;
+   z-index: 100;
+   margin: 0 auto;
+   display: block;
+   width: 30%;
+   padding: 10px;
+   border-radius: 25px;
+   transition-duration: 0.4s;
+   margin-top: 16%;
+}
+
+body h1 {
+   font-weight: 600;
+}
+
+body hr {
+   width: 50px;
+   border: none;
+   border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+} 
 
 .container1 {
    margin: 1rem auto;
-   padding: 2rem;
+   padding: 1rem;
    text-align: justify;
    transition: all 0.3s;
 }
@@ -211,61 +372,149 @@ width: 100%; */
 }
 
 .container1 p:first-child::first-letter {
-   color: #4a2b18;
+   color: #ffffff;
    font-weight: bold;
-   font-size: 70px;
+   font-size: 3vw;
    float: left;
-   line-height: 60px;
-   padding-right: 8px;
-   margin-top: -3px;
+   line-height: 2%;
+   margin-top: -3.8;
 } 
 
 
-/* .box6 {
+.box6 {
    grid-area: box6;
    background-color: rgb(0, 0, 0);
+   height: 80%;
+   width: 100%;
+}
+
+.img6
+{
+   width: 100%;
    height: 100%;
-   width: 100%;
+   opacity: 100%;
+   object-fit: fill;
+   border-radius: 20%;
+}
 
-} */
-
-.milky {
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   font-family: "Arial Rounded MT Bold";
-   text-transform: uppercase;
-   font-size: 3em;
-   color: #ffffff;
-   text-shadow: 0 8vh 9vw #ffffff, 0px -2px 1px #b47a16;
-   font-weight: bold;
-   letter-spacing: -4px;
-   text-align: center;
-   background: linear-gradient(to bottom ,  #000000 0%,#ffffff   );
-   height: 30vh;
-   width: 100%;
+.button6 {
+   
+   background-color: #fbf7f7;
+   color: rgb(0, 0, 0);
+   border: none;
+   cursor: pointer;
+   font-size: 16px;
+   font-family: "Protest Riot", sans-serif;
+   border-bottom-style: groove;
+   z-index: 100;
+   margin: 0 auto;
+   display: block;
+   width: 20%;
+   padding: 10px;
+   border-radius: 25px;
+   transition-duration: 0.4s;
 }
 
 
 
-/* .box10 {
+.box10 {
    grid-area: box10;
    background-color: rgb(0, 0, 0);
-   font-size: 1vw; 
+   font-size: 1vw; /* גודל הטקסט ב box10 יהיה 3% מרוחב המסך */
    height: 100%;
-} */
+   width: 80%;
+   margin-left: 10%;
 
-/* .box11 {
+
+}
+
+.box11 {
    grid-area: box11;
    background-color: rgb(0, 0, 0);
-   font-size: 1vw; 
+   font-size: 1vw; /* גודל הטקסט ב box11 יהיה 3% מרוחב המסך */
    height: 100%;
-} */
+   width: 80%;
+   margin-left: 10%;
 
-/* .box12 {
+
+
+}
+
+.box12 {
    grid-area: box12;
    background-color: rgb(0, 0, 0);
-   font-size: 1vw; 
+   font-size: 1vw; /* גודל הטקסט ב box12 יהיה 3% מרוחב המסך */
    height: 100%;
-} */
+width: 80%;
+margin-left: 10%;
+
+}
+
+
+.button6 {
+   background-color: #fbf7f7;
+   color: rgb(0, 0, 0);
+   border: none;
+   cursor: pointer;
+   font-size: 16px;
+   font-family: "Protest Riot", sans-serif;
+   border-bottom-style: groove;
+   z-index: 100;
+   margin-left: 40.6%;
+   height: 4vh;
+   transition: background-color 0.3s, color 0.3s, border 0.3s;
+}
+
+.button6:hover {
+   background-color: #e5e2e2;
+   color: #fbf7f7;
+   border: 2px solid #fbf7f7;
+}
+
+.button5 {
+   background-color: #fbf7f7;
+   color: rgb(0, 0, 0);
+   border: none;
+   cursor: pointer;
+   font-size: 16px;
+   font-family: "Protest Riot", sans-serif;
+   border-bottom-style: groove;
+   z-index: 100;
+   margin-left: 40.4%;
+   height: 4vh;
+   
+   margin-left: 35%;
+
+   transition: background-color 0.3s, color 0.3s, border 0.3s;
+}
+
+.button5:hover {
+   background-color: #e5e2e2;
+   color: #fbf7f7;
+   border: 2px solid #fbf7f7;
+}
+
+.buttonvideo {
+   background-color: #fbf7f7;
+   color: rgb(0, 0, 0);
+   border: none;
+   cursor: pointer;
+   font-size: 16px;
+   font-family: "Protest Riot", sans-serif;
+   border-bottom-style: groove;
+   z-index: 100;
+   margin-left: 40.4%;
+   height: 4vh;
+   margin-left: 37%;
+
+   transition: background-color 0.3s, color 0.3s, border 0.3s;
+   position: relative;
+   margin-top: -20vh;
+}
+
+.buttonvideo:hover {
+   background-color: #e5e2e2;
+   color: #fbf7f7;
+   border: 2px solid #fbf7f7;
+}
 
