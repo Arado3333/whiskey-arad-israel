@@ -22,7 +22,7 @@
     #shop-navbar {
       min-height: 5vh;
       grid-column: span 4;
-      background-color: #f1c698;
+      background-color: transparent;
       display: flex;
       align-items: center;
       flex-wrap: wrap;
@@ -38,11 +38,11 @@
     .vheading-marked-up{
        color: #f5a248;
     }
-    
+/*     
     #shop-navbar:hover{
        transition: 0.5s;
        background-color: #f1c698;
-    }
+    } */
     
     #shop-navbar > .navlinks {
       display: flex;
@@ -106,8 +106,8 @@
     }
     
     .product-info button {
-       background-color: #ffffff;
-       color: white;
+      background-color: #fbecca;
+      color: #494239;
        border: none;
        padding: 19px 10px;
        border-radius: 3px;
@@ -120,16 +120,6 @@
        height: 3vh;
        vertical-align: middle; /* Align the icon vertically */
        margin-right: 0px; /*Add some space between the icon and text*/
-    }
-    
-    
-    .product-info button{
-       background-color: #2cad71;
-       color: #000000;
-       border: 1px solid #000000;
-       padding: 5px 10px;
-       border-radius: 3px;
-       cursor: pointer;
     }
     
     .product-info button:hover{
