@@ -108,7 +108,7 @@
 .img2 {
    width: 90%;
    height: 100%;
-   opacity: 40%;
+   opacity: 70%;
 border-radius: 10%;
 
 }
@@ -116,7 +116,7 @@ border-radius: 10%;
 .img4 {
    width: 90%;
    height: 100%;
-   opacity: 60%;
+   opacity: 70%;
 border-radius: 10%;
 }
 .box3 {
@@ -335,7 +335,10 @@ margin-left: 10%;
     border-color: black;
 }
 
-
+.button5
+{
+   margin-top: 15%;
+}
 
 @media  (max-width: 650px) 
 {
@@ -569,14 +572,7 @@ font-size: 2rem;
    text-align: justify;
 }
 
-.container1 p:first-child::first-letter {
-   color: #ffffff;
-   font-weight: bold;
-   font-size: 0.8rem;
-   float: left;
-   line-height: 2%;
-   margin-top: -3.8;
-} 
+
 
 
 .box6 {
@@ -637,7 +633,7 @@ margin-left: 10%;
 
 .p5
 {
-font-size: xx-small;
+font-size: 0.2rem;
 }
 .p5h
 {
