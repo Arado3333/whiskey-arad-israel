@@ -116,7 +116,7 @@ border-radius: 10%;
 .img4 {
    width: 90%;
    height: 100%;
-   opacity: 40%;
+   opacity: 60%;
 border-radius: 10%;
 }
 .box3 {
@@ -203,7 +203,6 @@ margin-left: 0;
 
 .p5 {
 color: #ffffff;
-text-align: center;
 font-size: 1rem;
 font-weight: bold;
 text-transform: uppercase;
@@ -318,31 +317,32 @@ margin-left: 10%;
    opacity: 100%;
    object-fit: fill;
    border-radius: 20%;
-   margin-left: 35%;
+   margin-left: 70%;
 }
 
 
 .button5,
 .button6,
-.buttonvideo 
-{
-   background-color: #fbf7f7;
-   color: rgb(0, 0, 0);
-   border: none;
-   cursor: pointer;
-   font-size: 1.7rem;
-   height: 5vh;
-   margin-left: 35%;
-   width: 30%;
+.buttonvideo {
+    background-color: transparent;
+    color: rgb(255, 255, 255);
+    border: 0.4px solid rgb(255, 255, 255);
+    cursor: pointer;
+    font-size: 1.7rem;
+    height: 5vh;
+    margin-left: 35%;
+    width: 30%;
+    border-radius: 10%;
 }
 
-.button:hover,
 .button5:hover,
 .button6:hover,
 .buttonvideo:hover {
-   background-color: #e5e2e2;
-   color: #fbf7f7;
+    color: #000000;
+    background-color: rgb(255, 255, 255);
+    border-color: black;
 }
+
 
 
 @media  (max-width: 650px) 
@@ -655,26 +655,35 @@ font-size: xx-small;
 .button6,
 .buttonvideo 
 {
-   background-color: #fbf7f7;
-   color: rgb(0, 0, 0);
-   border: none;
+   color: rgb(255, 255, 255);
+    border: 0.4px solid rgb(255, 255, 255);
+    background-color: transparent;
    cursor: pointer;
    font-size: 0.7rem;
    height: 5vh;
    margin-left: 26%;
    width: 50%;
+   border-radius: 10%;
+
 }
 
 .button:hover,
 .button5:hover,
 .button6:hover,
 .buttonvideo:hover {
-   background-color: #e5e2e2;
-   color: #fbf7f7;
+   color: #000000;
+    background-color: rgb(255, 255, 255);
+    border-color: black;
 }
 
 }
 
 
-
+.project
+{
+   color: #fdfcfb;
+   font-size: 0.7rem;
+   width: 100%;
+   text-align: center;
+}
 
