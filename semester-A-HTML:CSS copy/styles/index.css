@@ -11,24 +11,20 @@
 .container {
    display: grid;
    grid-template-areas: 
-       'box1 box1 box1'
-       'box2 box3 box3'
-       'box4 box5 box5'
-       'box6 box6 box6'
-       'box10 box10 box10'
-       'box11 box11 box11'
-       'box12 box12 box12';
+   'box1 box1 box1'
+   'box2 box3 box3'
+   'box4 box5 box5'
+   'box6 box6 box6'
+   'box10 box10 box10'
+   'box11 box11 box11'
+   'box12 box12 box12'
+   'box13 box14 box15';
+
    margin: 0;
    padding: 0;
    grid-template-columns: auto;
    row-gap: 10vh;
 }
-
-
-
-
-
-
 
 .box1 {
    grid-area: box1;
@@ -46,25 +42,7 @@
    object-fit: cover;
    opacity: 100%;
 }
-.buttonvideo
-{
-   background-color: #fbf7f7;
-   color: rgb(0, 0, 0);
-   border: none;
-   cursor: pointer;
-   font-size: 16px;
-   z-index: 100;
-   margin: 0 auto;
-   display: block;
-   width: 20%;
-   padding: 10px;
-   border-radius: 2px;
-   transition-duration: 0.4s;
-   margin-top: 1%;
-   opacity: 100%;
-  left: 4%;
-  
-}
+
 .logo {
    top: 4vh;
    left: 3px;
@@ -118,19 +96,6 @@
    height: 1vh;
 }
 
-
-
-
-.button:hover {
-   opacity: 70%;
-   background-color: #8f4b08;
-   color: white;
-}
-
-.button1:hover {
-   opacity: 1;
-   background-color: #cd7b1d;
-}
 
 .box2 {
    grid-area: box2;
@@ -248,25 +213,7 @@ width: 100%;
 
 }
 
-.button5
-{
-   background-color: #fbf7f7;
-   color: rgb(0, 0, 0);
-   border: none;
-   cursor: pointer;
-   font-size: 16px;
-   font-family: "Protest Riot", sans-serif;
-   border-bottom-style: groove;
-   z-index: 100;
-   margin: 0 auto;
-   display: block;
-   width: 30%;
-   padding: 10px;
-   border-radius: 2px;
 
-   transition-duration: 0.4s;
-   margin-top: 16%;
-}
 
 body h1 {
    font-weight: 600;
@@ -318,24 +265,7 @@ body hr {
    border-radius: 20%;
 }
 
-.button6 {
-   
-   background-color: #fbf7f7;
-   color: rgb(0, 0, 0);
-   border: none;
-   cursor: pointer;
-   font-size: 16px;
-   font-family: "Protest Riot", sans-serif;
-   border-bottom-style: groove;
-   z-index: 100;
-   margin: 0 auto;
-   display: block;
-   width: 20%;
-   padding: 10px;
-   border-radius: 2px;
 
-   transition-duration: 0.4s;
-}
 
 
 
@@ -361,7 +291,11 @@ body hr {
 
 
 }
-
+.divider {
+   width: 100%;
+   border-bottom: 1px solid #ffffff; /* צבע קו לבן */
+   margin: 20px 0; /* מרווח למעלה ולמטה מהקו */
+ }
 .box12 {
    grid-area: box12;
    background-color: rgb(0, 0, 0);
@@ -372,73 +306,44 @@ margin-left: 10%;
 
 }
 
-
-.button6 {
-   background-color: #fbf7f7;
-   color: rgb(0, 0, 0);
-   border: none;
-   cursor: pointer;
-   font-size: 16px;
-   font-family: "Protest Riot", sans-serif;
-   border-bottom-style: groove;
-   z-index: 100;
-   margin-left: 40.6%;
-   height: 4vh;
-   transition: background-color 0.3s, color 0.3s, border 0.3s;
+.box13 .box14 .box15
+{
+   height: 100%;
+   width: 100%;
 }
-
-.button6:hover {
-   background-color: #e5e2e2;
-   color: #fbf7f7;
-   border: 2px solid #fbf7f7;
-}
-
-.button5 {
-   background-color: #fbf7f7;
-   color: rgb(0, 0, 0);
-   border: none;
-   cursor: pointer;
-   font-size: 16px;
-   font-family: "Protest Riot", sans-serif;
-   border-bottom-style: groove;
-   z-index: 100;
-   margin-left: 40.4%;
-   height: 4vh;
-   
+.img13
+{
+   width: 30%;
+   height: 30%;
+   opacity: 100%;
+   object-fit: fill;
+   border-radius: 20%;
    margin-left: 35%;
-
-   transition: background-color 0.3s, color 0.3s, border 0.3s;
 }
 
-.button5:hover {
-   background-color: #e5e2e2;
-   color: #fbf7f7;
-   border: 2px solid #fbf7f7;
-}
 
-.buttonvideo {
+.button5,
+.button6,
+.buttonvideo 
+{
    background-color: #fbf7f7;
    color: rgb(0, 0, 0);
    border: none;
    cursor: pointer;
-   font-size: 16px;
-   font-family: "Protest Riot", sans-serif;
-   border-bottom-style: groove;
-   z-index: 100;
-   margin-left: 40.4%;
-   height: 4vh;
-   margin-left: 37%;
-
-   transition: background-color 0.3s, color 0.3s, border 0.3s;
-   position: relative;
-   margin-top: -20vh;
+   font-size: 1.7rem;
+   height: 5vh;
+   margin-left: 35%;
+   width: 30%;
 }
 
+.button:hover,
+.button5:hover,
+.button6:hover,
 .buttonvideo:hover {
    background-color: #e5e2e2;
    color: #fbf7f7;
-   border: 2px solid #fbf7f7;
 }
+
 
 @media  (max-width: 650px) 
 {
@@ -447,7 +352,6 @@ margin-left: 10%;
   
   body {
    background-color: rgb(0, 0, 0);
-   font-family: "Protest Strike", sans-serif;
    margin: 0;
    padding: 0;
 }
@@ -461,12 +365,12 @@ margin-left: 10%;
        'box6 box6 box6'
        'box10 box10 box10'
        'box11 box11 box11'
-       'box12 box12 box12';
+       'box12 box12 box12'
+       'box13 box14 box15';
    margin: 0;
    padding: 0;
    grid-template-columns: auto;
-   
-  
+   row-gap: 10vh;
 }
 
 
@@ -491,24 +395,7 @@ margin-left: 10%;
    object-fit: cover;
    opacity: 100%;
 }
-.buttonvideo
-{
-   background-color: #fbf7f7;
-   color: rgb(0, 0, 0);
-   border: none;
-   cursor: pointer;
-   font-size: 16px;
-   font-family: "Protest Riot", sans-serif;
-   border-bottom-style: groove;
-   z-index: 100;
-   margin: 0 auto;
-   display: block;
-   width: 40%;
-   padding: 10px;
-   border-radius: 25px;
-   transition-duration: 0.4s;
-   left: -5vw;  
-}
+
 .logo {
    top: 4vh;
    left: 3px;
@@ -524,8 +411,9 @@ margin-left: 10%;
    top: 0;
    position: fixed;
    height: 8vh;
-   width: 70%;
+   width: 100%;
    padding-right: 22%;
+   font-size: xx-small;
 }
 
 .navlinks li {
@@ -560,20 +448,6 @@ margin-left: 10%;
 .navlinks img {
    border-radius: 10vh;
    height: 2vh;
-}
-
-
-
-
-.button:hover {
-   opacity: 70%;
-   background-color: #8f4b08;
-   color: white;
-}
-
-.button1:hover {
-   opacity: 1;
-   background-color: #cd7b1d;
 }
 
 .box2 {
@@ -683,23 +557,6 @@ font-size: 0.2rem;
 
 }
 
-.button5
-{
-   background-color: #fbf7f7;
-   color: rgb(0, 0, 0);
-   border: none;
-   cursor: pointer;
-   font-size: 16px;
-   font-family: "Protest Riot", sans-serif;
-   border-bottom-style: groove;
-   z-index: 100;
-   margin: 0 auto;
-   display: block;
-   padding: 10px;
-   border-radius: 25px;
-   transition-duration: 0.4s;
-   margin-top: 16%;
-}
 
 
 
@@ -746,21 +603,6 @@ font-size: 2rem;
    border-radius: 20%;
 }
 
-.button6 {
-   
-   background-color: #fbf7f7;
-   color: rgb(0, 0, 0);
-   border: none;
-   cursor: pointer;
-   font-size: 16px;
-   font-family: "Protest Riot", sans-serif;
-   display: block;
-   width: 50%;
-   padding: 10px;
-   border-radius: 25px;
-   transition-duration: 0.4s;
-}
-
 
 
 .box10 {
@@ -796,76 +638,6 @@ margin-left: 10%;
 
 }
 
-
-.button6 {
-    background-color: #fbf7f7;
-   color: rgb(0, 0, 0);
-   border: none;
-   cursor: pointer;
-   font-size: 1rem;
-   font-family: "Protest Riot", sans-serif;
-   border-bottom-style: groove;
-   z-index: 100;
-   margin-left: 40.4%;
-   height: 4vh;
-   margin-left: 35%;
-width: 40vw;
-   transition: background-color 0.3s, color 0.3s, border 0.3s;
-}
-
-.button6:hover {
-   background-color: #e5e2e2;
-   color: #fbf7f7;
-   border: 1% solid #fbf7f7;
-}
-
-.button5 {
-   background-color: #fbf7f7;
-   color: rgb(0, 0, 0);
-   border: none;
-   cursor: pointer;
-   font-size: 1rem;
-   font-family: "Protest Riot", sans-serif;
-   border-bottom-style: groove;
-   z-index: 100;
-   margin-left: 40.4%;
-   height: 4vh;
-   margin-left: 15%;
-width: 40vw;
-   transition: background-color 0.3s, color 0.3s, border 0.3s;
-}
-
-.button5:hover {
-   background-color: #e5e2e2;
-   color: #fbf7f7;
-   border: 1% solid #fbf7f7;
-}
-
-.buttonvideo {
-   background-color: #fbf7f7;
-   color: rgb(0, 0, 0);
-   border: none;
-   cursor: pointer;
-   font-size: 1rem;
-   font-family: "Protest Riot", sans-serif;
-   border-bottom-style: groove;
-   z-index: 100;
-   margin-left: 40.4%;
-   height: 4vh;
-   margin-left: 37%;
-
-   transition: background-color 0.3s, color 0.3s, border 0.3s;
-   position: relative;
-   margin-top: -20vh;
-}
-
-.buttonvideo:hover {
-   background-color: #e5e2e2;
-   color: #fbf7f7;
-   border: 2px solid #fbf7f7;
-}
-
-
 .img2, .img4, .img6 {
    max-width: 100%;
    height: auto;
@@ -879,5 +651,30 @@ font-size: xx-small;
 {
    font-size: 1em;
 }
+.button5,
+.button6,
+.buttonvideo 
+{
+   background-color: #fbf7f7;
+   color: rgb(0, 0, 0);
+   border: none;
+   cursor: pointer;
+   font-size: 0.7rem;
+   height: 5vh;
+   margin-left: 26%;
+   width: 50%;
+}
+
+.button:hover,
+.button5:hover,
+.button6:hover,
+.buttonvideo:hover {
+   background-color: #e5e2e2;
+   color: #fbf7f7;
+}
 
 }
+
+
+
+
