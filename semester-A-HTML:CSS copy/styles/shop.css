@@ -6,10 +6,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Protest+Riot&family=Protest+Strike&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap');
 
 
    body {
-      font-family: 'Yannoe Kaffeesatz', sans-serif;
+      font-family: 'Heebo', sans-serif;
       background: black;
    }
    
@@ -29,15 +30,9 @@
       /* gap: 20px;  */
    /* } */
    
-   
-   /* .box0 {
-      grid-area: box0;
-      margin-bottom: 10px;
-   } */
-   
+ 
    .video {
-      /* height: 70vh; */
-      
+      height: 100%;
       width: 100%;
       opacity: 70%;
       object-fit: cover; /*ממלא את רוחב הדף*/
@@ -48,7 +43,7 @@
       color: rgb(247, 232, 202);
       text-align: center;
       font-size: 2em;
-      margin-top: 8%;
+      margin-top: 100px;
    }
    
    .vheading-marked-up{
@@ -56,7 +51,7 @@
    }
    
    #shop-navbar {
-      font-family: 'Protest Strike', sans-serif;
+      font-weight: 400;
       background-color: transparent;
       text-align: center;
       padding: 2%;
@@ -75,17 +70,18 @@
       font-size: 1em;
       text-decoration: none;
       transition: 0.5s;
-      background: linear-gradient(to right, rgb(0, 0, 0), black);
+      background: linear-gradient(to right, white, white);
       background-size: 0% 3px;
       background-repeat: no-repeat;
       background-position: center bottom;
    }
    
    .navlinks li a:hover{
+      font-weight: 900;
       background-size: 100% 3px;
-      color:#181514;
+      /* color:#181514; */
       transition: ease 0.5s;
-      background-color: #f8eee3;
+      /* background-color: #f8eee3; */
    }
    
    .box {
@@ -182,6 +178,7 @@
          display: grid;  
          grid-template-columns: repeat(5, 1fr);
          padding: 0px 15%;
+         
    }
 
    #shop-navbar > .navlinks a {

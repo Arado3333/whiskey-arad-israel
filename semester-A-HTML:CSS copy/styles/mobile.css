@@ -56,9 +56,9 @@
   }
   
   .navlinks li a:hover{
-     color:#301e17;
+     /* color:#301e17; */
      transition: 0.5s;
-     background-color: #a86824;
+     /* background-color: #a86824; */
   }
   
   .box {

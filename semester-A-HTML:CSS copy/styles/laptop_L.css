@@ -10,13 +10,13 @@
     }
    
     .box0 {
-      max-height: 65vh;
+      height: 80vh;
       grid-column: span 4;
     }
    
     .video {
       max-width: 100%;
-      max-height: 65%;
+      max-height: 80%;
     }
     
     #shop-navbar {
@@ -68,9 +68,9 @@
     }
     
     .navlinks li a:hover{
-       color:#301e17;
+       /* color:#301e17; */
        transition: 0.5s;
-       background-color: #a86824;
+       /* background-color: #a86824; */
     }
     
     .box {
