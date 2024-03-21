@@ -11,7 +11,7 @@
 
    body {
       font-family: 'Heebo', sans-serif;
-      background: black;
+      background: white;
    }
    
    /* #shop-container {
@@ -32,27 +32,28 @@
    
  
    .video {
-      height: 100%;
+      height: 90%;
       width: 100%;
-      opacity: 70%;
+      opacity: 100%;
       object-fit: cover; /*ממלא את רוחב הדף*/
    }
    
    .video-heading {
       font-weight: 700;
-      color: rgb(247, 232, 202);
+      color: black;
       text-align: center;
       font-size: 2em;
-      margin-top: 100px;
+      margin-top: 12%;
    }
    
    .vheading-marked-up{
-      color: rgb(247, 232, 202);
+      color: rgb(0, 0, 0);
    }
    
    #shop-navbar {
       font-weight: 400;
-      background-color: transparent;
+      grid-row: 1 / 3;
+      background-color: black;
       text-align: center;
       padding: 2%;
       z-index: 1000;
@@ -86,12 +87,12 @@
    
    .box {
       border: 1px solid #000;
-      border-radius: 20px;
+      border-radius: 5px;
       padding: 10px;
       text-align: center;
       /* background-color: #5f4241; */
-      background: linear-gradient(to bottom, rgb(0, 0, 0), #5f4241);
-      box-shadow: 0px -3px 7px 2px rgb(124, 76, 67);
+      background: transparent;
+      box-shadow: 0px -3px 7px 2px rgb(141, 131, 130);
    }
    
    .product-image {
@@ -111,7 +112,7 @@
    {
       grid-area: box1;
       pointer-events: all;
-      max-height: 20vh;
+      height: 50vh;
    }
    
    .product-info button {
@@ -124,7 +125,7 @@
    
     .product-info button img {
       width: 100%; /*Set the size of the icon */
-      height: 5vh;
+      height: 10vh;
       vertical-align: middle; /* Align the icon vertically */
       margin-right: 0px; /*Add some space between the icon and text*/
    }
@@ -132,31 +133,39 @@
    
    .product-info button{
       font-weight: 600;
-      background-color: #fbecca;
+      background-color: transparent;
       color: #494239;
       border: 2px solid #000000;
-      padding: 5px 10px;
+      padding: 5px;
       border-radius: 3px;
       cursor: pointer;
    }
    
    .product-info button:hover{
       transition: ease 0.2s;
-      background-color: #b5e886;
+      color: white;
+      background-color: #000000;
    }
    
    .product-info {
-      color: #f9f4e2;
+      color: #000;
       font-weight: 500;
-      font-size: max(1em);
+      font-size: 1.2em;
       line-height: 1.3;
+   }
+
+   #buy-buttons {
+      display: flex;
+      gap: 10px;
    }
    
    
    .buybutton
    {
-      /* width: 45%; */
+      order: 3;
+      width: 10rem;
       background-color: #ffffff;
+      font-size: medium;
       /* padding: 5px 29px; */
       border-radius: 5px;
       cursor: pointer;
@@ -164,9 +173,31 @@
       
    }
    
+   #add-cart {
+      order: 2;
+      width: 30%;
+   }
+
+   #add-cart > img {
+      height: auto;
+   }
+
+   #add-cart > img:hover {filter: invert(100%);}
+
+   #favorite-item {
+      order: 3;
+      width: 30%;
+   }
+
+   #favorite-item > img {
+      height: auto;
+   }
+
+   #favorite-item > img:hover {filter: invert(100%);}
    
    @media (min-width: 2560px) {
       #shop-navbar {
+         grid-row: 1 / 3;
          grid-column: span 5;
       }
 
@@ -176,8 +207,9 @@
 
       #shop-container {
          display: grid;  
-         grid-template-columns: repeat(5, 1fr);
-         padding: 0px 15%;
+         grid-template-columns: repeat(4, 1fr);
+         padding: 0px 5%;
+         gap: 30px;
          
    }
 

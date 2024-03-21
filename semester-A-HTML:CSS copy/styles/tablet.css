@@ -4,11 +4,12 @@
 
     display: grid; 
     grid-template-columns: repeat(auto-fit, minmax(min(20rem, 100%), 1fr));
-    gap: 15px;
-    padding: 0 15px;
+    gap: 30px;
+    padding: 0 20px;
   }
 
   .box0 {
+    height: 75%;
     grid-column: span 2;
   }
   
@@ -24,7 +25,7 @@
 
   
   .video-heading{
-    font-size: minmax(1em, 3em);
+    font-size: 1em;
   }
   
   .vheading-marked-up{
@@ -66,12 +67,13 @@
   }
   
   .box {
+
     display: flex;
     flex-direction: column;
     align-items: center;
      border: 1px solid #000;
      border-radius: 5px;
-     padding: 10px;
+     /* padding: 10px; */
      text-align: center;
      background-color: #8b6b48;
      box-shadow: 0px 3px 5px black;;

@@ -19,6 +19,7 @@
  }
  
  #shop-navbar {
+  
    min-height: 5vh;
    grid-column: span 3;
    background-color: transparent;
