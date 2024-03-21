@@ -1,10 +1,11 @@
 @import url("./mobile-index.css");
 @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap');
-  
+/*-------------- Arad -------------*/
  *p {
    font-family: 'Heebo', sans-serif;
    font-weight: 400;
 }
+/*-------------- Arad -------------*/
 
   body {
    background-color: rgb(0, 0, 0);
@@ -125,6 +126,7 @@ margin-top: 5%;
 border-radius: 5%;
 margin-left: 5%;
 }
+
 .box3 {
    grid-area: box3;
    display: flex;
@@ -195,7 +197,7 @@ margin-left: -100%;
    font-weight: 600;
    letter-spacing: 2px;   
 }
-
+/*-------------- Arad -------------*/
 .heading-paragraph {
    order: 1;
    text-align: right;
@@ -216,7 +218,7 @@ margin-left: -100%;
    width: 35%;
    line-height: 1.5;
 }
-
+ /*-------------- Arad -------------*/
 .p5 {
    color: #ffffff;
    font-size: 1.5rem;
@@ -291,7 +293,7 @@ p{
 
 
 
-
+/*-------------- Arad -------------*/
 .box10 {
    display: flex;
    flex-wrap: wrap;
@@ -312,8 +314,9 @@ p{
    justify-content: center;
    font-size: 1rem; /* גודל הטקסט ב box10 יהיה 3% מרוחב המסך */
 
-
 }
+/*-------------- Arad -------------*/
+
 .divider {
    order: 2;
    width: 100%;
@@ -321,6 +324,8 @@ p{
    margin: 2px 0; /* מרווח למעלה ולמטה מהקו */
    
  }
+
+ /*-------------- Arad -------------*/
 .box12 {
    grid-area: box12;
    width: 100%;
@@ -332,6 +337,7 @@ p{
    font-size: 1rem; /* גודל הטקסט ב box10 יהיה 3% מרוחב המסך */
 
 }
+/*-------------- Arad -------------*/
 
 .box13 .box14 .box15
 {
@@ -339,6 +345,7 @@ p{
    width: 100%; */
 }
 
+/*-------------- Arad -------------*/
 .img13
 {
    align-self: center;
@@ -349,6 +356,9 @@ p{
    /* margin-left: 70%; */
    /* margin-top: -28%; */
 }
+
+/*-------------- Arad -------------*/
+
 .img14
 {
    width: 30%;
@@ -358,6 +368,7 @@ p{
    border-radius: 20%;
    margin-top: -28%;
 }
+
 .img15
 {
    width: 30%;
@@ -432,11 +443,11 @@ p{
 }
 
 
-
+/*-------------- Arad -------------*/
 .img13 {
    object-fit: cover;
 }
-
+/*-------------- Arad -------------*/
 
 
 .box1 {
@@ -613,7 +624,8 @@ border-radius: 10%;
       grid-template-columns: auto;
       row-gap: 10vh;
    }
-   
+
+   /*-------------- Arad -------------*/
    .box1 {
       grid-area: box1;
       background-color: rgb(0, 0, 0);
@@ -624,7 +636,8 @@ border-radius: 10%;
       width: 100%;
       overflow: hidden;
    }
-   
+   /*-------------- Arad -------------*/
+
    .video {
       width: 100%;
       height: 30vh;
@@ -712,6 +725,8 @@ border-radius: 10%;
    border-radius: 5%;
    margin-top: 5%;
    }
+
+   /*-------------- Arad -------------*/
    .box3 {
       grid-area: box3;
       display: flex;
@@ -722,6 +737,7 @@ border-radius: 10%;
    margin-left: -100%;
       color: white;
    }
+   /*-------------- Arad -------------*/
    
    .text {
       font-family: "Yanone Kaffeesatz";
@@ -757,6 +773,8 @@ border-radius: 10%;
       z-index: 10;
    }
 
+/*-------------- Arad -------------*/
+
 .heading-paragraph {
    align-content: flex-start;
    order: 1;
@@ -779,6 +797,8 @@ border-radius: 10%;
    width: 55%;
    line-height: 1.5;
 }
+
+/*-------------- Arad -------------*/
 
 body hr {
    width: 5vw;
@@ -817,7 +837,7 @@ font-size: 2rem;
 }
 
 
-
+/*-------------- Arad -------------*/
 .box10 {
    grid-area: box10;
    background-color: rgb(0, 0, 0);
@@ -832,6 +852,7 @@ font-size: 2rem;
 
 
 }
+/*-------------- Arad -------------*/
 
 .box11 {
    grid-area: box11;
@@ -879,6 +900,7 @@ font-size: 2rem;
    border-radius: 10%;
 
 }
+
 .button6,
 .buttonvideo 
 {
@@ -891,6 +913,7 @@ font-size: 2rem;
    margin-left: 35%;
    border-radius: 10%;
 }
+
 .button:hover,
 .button5:hover,
 .button6:hover,
@@ -910,17 +933,6 @@ font-size: 2rem;
    width: 100%;
    text-align: center;
 }
-
-
-
-
-
-
-
-
-
-
-
 
 .navlinks li a {
    position: relative;
