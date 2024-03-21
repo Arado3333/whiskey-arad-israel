@@ -191,21 +191,9 @@ margin-left: -100%;
 
 .p5h {
    color: #ffffff;
-<<<<<<< HEAD
-   font-size: 0.6rem;
-   font-weight: bold;
-   letter-spacing: 2px;
-   font-size: medium;
-   width: 100%;
-   text-align: right;
-   margin-top: 15%;
-   
-   
-=======
    font-size: 2em;
    font-weight: 600;
    letter-spacing: 2px;   
->>>>>>> 8fe15a1aae1ee81adf76df5436421e548a8deddd
 }
 
 .heading-paragraph {
@@ -231,20 +219,11 @@ margin-left: -100%;
 
 .p5 {
    color: #ffffff;
-<<<<<<< HEAD
-   font-size: 0.1rem;
-   letter-spacing: 2px;
-   width: 60%;
-   max-height: 100%;
-   text-align: right;
-   margin-top: 0; /* יש לשנות את הערך ל- 0 כדי להוריד את הרווח */
-=======
    font-size: 1.5rem;
    font-weight: 400;
    letter-spacing: 2px;
    font-size: 1rem;
    margin: 0;
->>>>>>> 8fe15a1aae1ee81adf76df5436421e548a8deddd
 }
 
 .p10h {
@@ -273,23 +252,14 @@ margin-left: -100%;
 }
 
 
-p
-{
+p{
    margin-right: 40%;
 }
 
-
-
-
 .container1 {
-<<<<<<< HEAD
-   margin: 0.5rem auto;
-   text-align: justify;
-=======
    /* margin: 1rem auto;
    padding: 1rem; */
    /* text-align: justify; */
->>>>>>> 8fe15a1aae1ee81adf76df5436421e548a8deddd
    transition: all 0.3s;
 }
 
@@ -438,8 +408,6 @@ p
 {
    @import url("./mobile-index.css");
   
-<<<<<<< HEAD
-=======
   body {
    background-color: rgb(0, 0, 0);
    margin: 0;
@@ -620,13 +588,13 @@ border-radius: 10%;
 .box4P {
    color: #ffffff;
    font-size: 1rem;
->>>>>>> 8fe15a1aae1ee81adf76df5436421e548a8deddd
+}
    
-     body {
-      background-color: rgb(0, 0, 0);
-      font-family: "Yanone Kaffeesatz";
-      margin: 0;
-      padding: 0;
+   body {
+   background-color: rgb(0, 0, 0);
+   font-family: "Yanone Kaffeesatz";
+   margin: 0;
+   padding: 0;
    }
    
    .container {
@@ -787,237 +755,8 @@ border-radius: 10%;
    .text:hover .letter {
       transform: translateY(-100%);
       z-index: 10;
+   }
 
-<<<<<<< HEAD
-   }
-   
-   .text:hover .shadow {
-      opacity: 0;
-      transform: translateY(100%);
-      z-index: 10;
-
-   }
-   
-   .box4 {
-      grid-area: box4;
-      background-color: rgba(0, 0, 0, 0.713);
-      height: 100%;
-      width: 100%;
-      margin-left: -20%;
-      z-index: 10;
-
-   }
-   
-   
-   
-   .box5 {
-      grid-area: box5;
-      background-color: rgb(0, 0, 0);
-      height: 100%;
-      width: 60%;
-      margin-left: 23%;
-   }
-   
-   .p5h {
-      color: #ffffff;
-      font-size: 0.4rem;
-      letter-spacing: 2px;
-      width: 100%;
-      text-align: right;
-      width: 80%;
-      
-      
-   }
-   
-   
-   .p5 {
-      color: #ffffff;
-      font-size: 0.5rem;
-      letter-spacing: 2px;
-      width:   130%;
-      text-align: right;
-      margin-left: -30%;
-   }
-   .p10h {
-      color: #ffffff;
-      font-size: 2rem;
-      font-weight: bold;
-      letter-spacing: 2px;
-      font-size: medium;
-      width: 60%;
-      text-align: right;
-      
-      
-   }
-   
-   
-   .p10 {
-      color: #ffffff;
-      font-size: 1.5rem;
-      font-weight: bold;
-      letter-spacing: 2px;
-      font-size: medium;
-      width: 100%;
-      text-align: right;
-      margin-top: 0; /* יש לשנות את הערך ל- 0 כדי להוריד את הרווח */
-      
-   }
-   
-   
-   p
-   {
-      margin-right: 40%;
-   }
-   
-   
-   
-   
-   .container1 {
-      margin: 1rem auto;
-      padding: 1rem;
-      text-align: justify;
-      transition: all 0.3s;
-   }
-   
-   .container1 p {
-      line-height: 1.5;
-      letter-spacing: 0.3px;
-      word-spacing: 2px;
-      text-align: justify;
-   }
-   
-   
-   
-   .box6 {
-      grid-area: box6;
-      background-color: rgb(0, 0, 0);
-      height: 80%;
-      width: 100%;
-   }
-   
-   .img6
-   {
-      width: 100%;
-      height: 100%;
-      opacity: 100%;
-      object-fit: fill;
-      border-radius: 40%;
-   }
-   
-   
-   
-   
-   
-   .box10 {
-      grid-area: box10;
-      background-color: rgb(0, 0, 0);
-      font-size: 1vw; /* גודל הטקסט ב box10 יהיה 3% מרוחב המסך */
-      height: 100%;
-      width: 100%;
-   
-   
-   }
-   
-   .box11 {
-      grid-area: box11;
-      background-color: rgb(0, 0, 0);
-      font-size: 1vw; /* גודל הטקסט ב box11 יהיה 3% מרוחב המסך */
-      height: 100%;
-      width: 100%;
-   
-   
-   }
-   .divider {
-      width: 100%;
-      border-bottom: 1px solid #ffffff; /* צבע קו לבן */
-      margin: 20px 0; /* מרווח למעלה ולמטה מהקו */
-    }
-   .box12 {
-      grid-area: box12;
-      background-color: rgb(0, 0, 0);
-      font-size: 1vw; /* גודל הטקסט ב box12 יהיה 3% מרוחב המסך */
-      height: 100%;
-   width: 100%;
-   
-   }
-   
-   .box13 .box14 .box15
-   {
-      height: 100%;
-      width: 100%;
-   }
-   .img13
-   {
-      width: 30%;
-      height: 30%;
-      opacity: 100%;
-      object-fit: fill;
-      border-radius: 20%;
-      margin-left: 70%;
-      margin-top: -28%;
-   }
-   .img14
-   {
-      width: 30%;
-      height: 30%;
-      opacity: 100%;
-      object-fit: fill;
-      border-radius: 20%;
-      margin-top: -28%;
-   }
-   .img15
-   {
-      width: 30%;
-      height: 30%;
-      opacity: 100%;
-      object-fit: fill;
-      border-radius: 20%;
-      margin-left: 70%;
-      margin-top: -28%;
-   }
-   
-   .button5
-   {
-      width: 42%;
-      font-size: 0.6rem;
-      height: 4vh;
-
-      
-   }
-   .button6,
-   .buttonvideo {
-       background-color: transparent;
-       color: rgb(255, 255, 255);
-       border: 1px solid rgb(255, 255, 255);
-       cursor: pointer;
-       font-size: 0.6rem;
-       height: 4vh;
-       margin-left: 40%;
-       width: 20%;
-       border-radius: 50px;
-      text-align: center;
-   }
-   .buttonvideo 
-   {
-      position: absolute;
-      margin-left: 45%;
-      margin-top:-20%;
-      z-index: 200;
-
-   }
-   .button5:hover,
-   .button6:hover,
-   .buttonvideo:hover {
-       color: #000000;
-       background-color: rgb(255, 255, 255);
-       border-color: black;
-   }
- 
-   *p {
-      font-family: 'Heebo', sans-serif;
-      font-size: xx-small;
-   }
-=======
 .heading-paragraph {
    align-content: flex-start;
    order: 1;
@@ -1161,7 +900,6 @@ font-size: 2rem;
     border-color: black;
 }
 
->>>>>>> 8fe15a1aae1ee81adf76df5436421e548a8deddd
 }
 
 
