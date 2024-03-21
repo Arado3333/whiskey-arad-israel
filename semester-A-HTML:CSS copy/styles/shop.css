@@ -37,6 +37,7 @@
    
    .video {
       /* height: 70vh; */
+      
       width: 100%;
       opacity: 70%;
       object-fit: cover; /*ממלא את רוחב הדף*/
@@ -74,11 +75,16 @@
       font-size: 1em;
       text-decoration: none;
       transition: 0.5s;
+      background: linear-gradient(to right, rgb(0, 0, 0), black);
+      background-size: 0% 3px;
+      background-repeat: no-repeat;
+      background-position: center bottom;
    }
    
    .navlinks li a:hover{
+      background-size: 100% 3px;
       color:#181514;
-      transition: 0.5s;
+      transition: ease 0.5s;
       background-color: #f8eee3;
    }
    
