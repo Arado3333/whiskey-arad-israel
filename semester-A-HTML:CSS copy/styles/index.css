@@ -656,7 +656,18 @@ font-size: 0.49rem;
    border-radius: 10%;
 
 }
-
+.button6,
+.buttonvideo 
+{
+   color: rgb(255, 255, 255);
+    border: 0.4px solid rgb(255, 255, 255);
+    background-color: transparent;
+   cursor: pointer;
+   font-size: 0.7rem;
+   height: 5vh;
+   margin-left: 35%;
+   border-radius: 10%;
+}
 .button:hover,
 .button5:hover,
 .button6:hover,
