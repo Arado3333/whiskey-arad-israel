@@ -253,7 +253,7 @@ body hr {
    height: 100%;
    opacity: 100%;
    object-fit: fill;
-   border-radius: 20%;
+   border-radius: 40%;
 }
 
 
@@ -326,7 +326,11 @@ margin-left: 10%;
     width: 30%;
     border-radius: 10%;
 }
-
+.button5
+{
+   width: 55%;
+   margin-left: 25%;
+}
 .button5:hover,
 .button6:hover,
 .buttonvideo:hover {
@@ -633,13 +637,25 @@ margin-left: 10%;
 
 .p5
 {
-font-size: 0.2rem;
+font-size: 0.49rem;
 }
 .p5h
 {
    font-size: 1em;
 }
-.button5,
+.button5
+
+{
+   color: rgb(255, 255, 255);
+    border: 0.4px solid rgb(255, 255, 255);
+    background-color: transparent;
+   cursor: pointer;
+   font-size: 0.7rem;
+   height: 5vh;
+   margin-left: 26%;
+   border-radius: 10%;
+
+}
 .button6,
 .buttonvideo 
 {
@@ -649,12 +665,9 @@ font-size: 0.2rem;
    cursor: pointer;
    font-size: 0.7rem;
    height: 5vh;
-   margin-left: 26%;
-   width: 50%;
+   margin-left: 35%;
    border-radius: 10%;
-
 }
-
 .button:hover,
 .button5:hover,
 .button6:hover,
