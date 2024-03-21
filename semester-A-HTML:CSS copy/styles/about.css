@@ -1,152 +1,678 @@
-body {
+@import url("./mobile-index.css");
+
+  
+  body {
+   background-color: rgb(255, 255, 255);
+   font-family: "Protest Strike", sans-serif;
    margin: 0;
    padding: 0;
-   font-family: Arial, sans-serif;
-   background-color: #000000;
-}
-
-header {
-   background-color: #000000;
-   color: white;
-   text-align: center;
-   padding: 2%;
-   height: 1vh;
-}
-
-nav {
-   background-color: #000000;
-   padding: 2%;
-}
-
-nav ul {
-   list-style-type: none;
-   padding: 0;
-   text-align: center;
-}
-
-nav ul li {
-   display: inline;
-   margin-right: 2%;
-}
-
-nav ul li a {
-   color: white;
-   text-decoration: none;
 }
 
 .container {
    display: grid;
-   place-items: center;
-   height: calc(75vh - 80px);
-   gap: 5%;
+   grid-template-areas: 
+   'box1 box1 box1'
+   'box2 box5 box5'
+   'box4 box3 box3'
+   'box6 box6 box6';
+
+   margin: 0;
+   padding: 0;
+   grid-template-columns: auto;
+   row-gap: 20vh;
 }
 
-.box {
-   background-color: #ffffff;
-   padding: 2%;
-   border-radius: 5px;
-   box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
-   color: rgb(0, 0, 0);
+.box1 {
+   grid-area: box1;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100%;
+   overflow: hidden;
 }
 
-footer {
-   background-color: #000000;
-   color: white;
-   text-align: center;
-   padding: 10px;
+.video {
+   width: 100vw;
+   height: 75vh;
+   opacity: 100%;
+   object-fit: fill;
+   box-shadow: #000000;
+}
+
+.logo {
+   top: 4vh;
+   left: 3px;
    position: fixed;
-   bottom: 0;
+   z-index: 110;
+   opacity: 90%;
+   height: 6vh;
+}
+
+.navbar {
+   overflow: hidden;
+   z-index: 200;
+   top: 0;
+   position: fixed;
+   height: 8vh;
+   width: 100%;
+   padding-right: 55%;
+background-color:#053c5c;
+}
+
+.navlinks li {
+   float: right;
+}
+
+.navlinks {
+   list-style-type: none;
+   margin: 0;
+   padding: 0;
+}
+
+.navlinks li a {
+   font-family: 'Protest Strike', sans-serif;
+   color: white;
+   display: block;
+   text-align: center;
+   padding: 2vh 2vw;
+   text-decoration: none;
+   margin-top: 1vh;
+}
+
+.navlinks li a:hover {
+   color: rgb(5, 5, 5);
+   background: #fdfcfb;
+   border-radius: 0%;
+   margin-top:1vh ;
+   height: 1.5vh;
+
+}
+
+.navlinks img {
+   border-radius: 10vh;
+   height: 1vh;
+}
+
+
+.box2 {
+   grid-area: box2;
+
+   height: 100%;
+   width: 100%;
+   margin-left: 10%;
+}
+
+.img2 {
+   width: 90%;
+   height: 100%;
+   opacity: 100%;
+border-radius: 10%;
+
+}
+
+.img4 {
+   width: 90%;
+   height: 100%;
+   opacity: 100%;
+border-radius: 10%;
+}
+.box3 {
+   grid-area: box3;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 70vh;
+width: 80%;
+ color: rgb(0, 0, 0);
+ margin-left: 13%;
+}
+
+.text {
+   font-family: "Yanone Kaffeesatz";
+   font-size: 3.5vh;
+   text-align: center;
+   padding: 0 2vh;
+}
+
+.overlay {
+   z-index: 100;
+}
+
+.wrapper {
+   display: inline-block;
+   margin: 0 5px;
+}
+
+.letter {
+   transition: ease-out 1s;
+   transform: translateY(40%);
+}
+
+.shadow {
+   color: #141414;
+   transition: ease-in 3s, ease-out 3s;
+}
+
+.text:hover .letter {
+   transform: translateY(-200%);
+}
+
+.text:hover .shadow {
+   opacity: 0;
+   transform: translateY(200%);
+}
+
+.box4 {
+   grid-area: box4;
+
+   height: 100%;
+   width: 100%;
+   margin-left: 10%;
+}
+
+.box4P {
+   color: #000000;
+   text-align: center;
+   font-size: 1rem;
+   font-weight: bold;
+   text-transform: uppercase;
+   letter-spacing: 2px;
+   font-size: medium;
    width: 100%;
 }
 
-.project {
-   color: rgb(255, 255, 255);
+.box5 {
+   grid-area: box5;
+
+   height: 100%;
+   width: 80%;
+   margin-left: 13%;
 }
 
-.img {
-   height: 3vh;
-}
-
-.A {
-   display: flex;
-   flex-wrap: wrap;
-   padding: 0;
-   list-style-type: none;
-}
-
-li {
-   flex: 1 1 0;
-   max-width: 150px;
-   text-align: center;
-}
-
-img {
-   width: 70%;
-   height: auto;
-   border-radius: 50%;
-}
-
-.hidden-link {
-   display: none;
-}
-
-a {
-   text-decoration: none;
+.p5h {
    color: rgb(0, 0, 0);
-   font-weight: bold;
+   text-align: center;
+   width: 100%;
+margin-left: 0;
+
+  
 }
 
-li:hover a {
-   color: red; /* Change the color to red on hover */
+.p5 {
+color: #000000;
+font-size: 1rem;
+font-weight: bold;
+text-transform: uppercase;
+letter-spacing: 2px;
+font-size: medium;
+z-index: 100;
+
+
+}
+.text {
+   font-family: "Yanone Kaffeesatz";
+   font-size: 3.5vh;
+   text-align: center;
+   padding: 0 2vh;
+   color: black; /* Change text color to black */
 }
 
-@media screen and (max-width: 768px) {
-   /* הגדרות עיצוב עבור מכשירים ניידים (טאבלטים ופלאפונים) */
-   header {
-      padding: 5px;
-      height: auto;
-   }
 
-   nav ul li {
-      margin-right: 5%;
-      
-   }
 
-   .box {
-      padding: 5%;
-   }
 
-   .img {
-      height: 5vh;
-   }
+body h1 {
+   font-weight: 600;
 }
 
-@media screen and (max-width: 480px) {
-   /* הגדרות עיצוב עבור מכשירים סלולריים */
-   nav ul li {
-      margin-right: 1%;
-      font-size: 0.7rem;
+body hr {
+   width: 50px;
+   border: none;
+   border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+} 
 
+.container1 {
+   margin: 1rem auto;
+   padding: 1rem;
+   text-align: justify;
+   transition: all 0.3s;
+}
+
+.container1 p {
+   line-height: 1.5;
+   letter-spacing: 0.3px;
+   word-spacing: 2px;
+   text-align: justify;
+}
+
+
+
+.box6 {
+   grid-area: box6;
+   height: 48%;
+   width: 100%;
+   margin-top: 0%;
+   padding: 0;
+}
+
+.img6
+{
+   width: 100%;
+   height: 100%;
+   opacity: 100%;
+   object-fit:fill; 
+
+}
+
+
+
+
+
+
+.button5,
+.button6,
+.buttonvideo {
+    background-color: transparent;
+    color: rgb(7, 60, 95);
+    border: 1.9px solid rgb(11, 69, 98);
+    cursor: pointer;
+    font-size: 1.7rem;
+    height: 5vh;
+    margin-left: 35%;
+    width: 30%;
+    border-radius: 10%;
+}
+.button5
+{
+   width: 55%;
+   margin-left: 25%;
+}
+.button5:hover,
+.button6:hover,
+.buttonvideo:hover {
+    color: #000000;
+    background-color: rgb(10, 61, 99);
+    border-color: black;
+}
+
+.button5
+{
+   margin-top: 15%;
+}
+
+.project
+{
+   color: #000000;
+   font-size: 1.7rem;
+   width: 100%;
+   text-align: center;
+   margin-top: 10%;
+}
+
+.navlinks li a {
+   position: relative;
+}
+
+.navlinks li a::after {
+   content: "";
+   position: absolute;
+   bottom: -1px;
+   left: 0;
+   width: 100%;
+   height: 1px;
+   background-color: white;
+   visibility: hidden;
+   transform: scaleX(0);
+   transition: all 0.3s ease-in-out 0s;
+}
+
+.navlinks li a:hover::after {
+   visibility: visible;
+   transform: scaleX(1);
+}
+
+.navlinks li a {
+   transition: all 0.3s;
+}
+
+.navlinks li a:hover {
+   color: black;
+   background-color: white;
+}
+.text {
+   position: relative;
+}
+
+.text::before {
+   content: "";
+   position: absolute;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   background: rgba(0, 0, 0, 0.5);
+   z-index: -1;
+}
+
+.text::after {
+   content: attr(data-content);
+   position: absolute;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   color: white;
+   z-index: 0;
+   mix-blend-mode: difference;
+}
+.img2:hover {
+   transform: scale(1.1);
+   transition: transform 0.5s;
+}
+
+.img4:hover {
+   transform: scale(1.1);
+   transition: transform 0.5s;
+}
+
+.img:hover {
+   transform: scale(1.1);
+   transition: transform 0.5s;
+}
+
+@media  (max-width: 650px) 
+{
+   @import url("./mobile-index.css");
+
+    
+   body {
+      background-color: rgb(255, 255, 255);
+      font-family: "Protest Strike", sans-serif;
+      margin: 0;
+      padding: 0;
    }
-
-   .box {
-      padding: 1%;
+   
+   .container {
+      display: grid;
+      grid-template-areas: 
+      'box1 box1 box1'
+      'box2 box5 box5'
+      'box4 box3 box5'
+      'box6 box6 box6';
+   
+      margin: 0;
+      padding: 0;
+      grid-template-columns: auto;
+      row-gap: 20vh;
+   }
+   
+   .box1 {
+      grid-area: box1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      overflow: hidden;
+   }
+   
+   .video {
+      width: 100vw;
+      height: 75vh;
+      opacity: 100%;
+      object-fit: fill;
+      box-shadow: #000000;
+   }
+   
+   .logo {
+      top: 4vh;
+      left: 3px;
+      position: fixed;
+      z-index: 110;
+      opacity: 90%;
+      height: 6vh;
+   }
+   
+   .navbar {
+      overflow: hidden;
+      z-index: 200;
+      top: 0;
+      position: fixed;
+      height: 8vh;
+      width: 100%;
+      padding-right: 55%;
+   background-color:#053c5c;
+   }
+   
+   .navlinks li {
+      float: right;
+   }
+   
+   .navlinks {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+   }
+   
+   .navlinks li a {
+      font-family: 'Protest Strike', sans-serif;
+      color: white;
+      display: block;
+      text-align: center;
+      padding: 2vh 2vw;
+      text-decoration: none;
+      margin-top: 1vh;
+   }
+   
+   .navlinks li a:hover {
+      color: rgb(5, 5, 5);
+      background: #fdfcfb;
+      border-radius: 0%;
+      margin-top:1vh ;
+      height: 1.5vh;
+   
+   }
+   
+   .navlinks img {
+      border-radius: 10vh;
+      height: 1vh;
+   }
+   
+   
+   .box2 {
+      grid-area: box2;
+   
+      height: 100%;
+      width: 100%;
+      margin-left: 10%;
+   }
+   
+   .img2 {
+      width: 90%;
+      height: 100%;
+      opacity: 70%;
+   border-radius: 10%;
+   
+   }
+   
+   .img4 {
+      width: 90%;
+      height: 100%;
+      opacity: 70%;
+   border-radius: 10%;
+   }
+   .box3 {
+      grid-area: box3;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 70vh;
+   width: 80%;
+    color: white;
+    margin-left: 13%;
+   }
+   
+   .text {
+      font-family: "Yanone Kaffeesatz";
+      font-size: 3.5vh;
+      text-align: center;
+      padding: 0 2vh;
+   }
+   
+   .overlay {
+      z-index: 100;
+   }
+   
+   .wrapper {
+      display: inline-block;
+      margin: 0 5px;
+   }
+   
+   .letter {
+      transition: ease-out 1s;
+      transform: translateY(40%);
+   }
+   
+   .shadow {
+      color: #141414;
+      transition: ease-in 3s, ease-out 3s;
+   }
+   
+   .text:hover .letter {
+      transform: translateY(-200%);
+   }
+   
+   .text:hover .shadow {
+      opacity: 0;
+      transform: translateY(200%);
+   }
+   
+   .box4 {
+      grid-area: box4;
+   
+      height: 100%;
+      width: 100%;
+      margin-left: 10%;
+   }
+   
+   .box4P {
+      color: #000000;
+      text-align: center;
+      font-size: 1rem;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: medium;
+      width: 100%;
+   }
+   
+   .box5 {
+      grid-area: box5;
+   
+      height: 100%;
       width: 80%;
-      height: 56%;
-      font-size: 0.7rem;
-
+      margin-left: 13%;
    }
-
-   .img {
-      height: 3vh;
+   
+   .p5h {
+      color: rgb(0, 0, 0);
+      text-align: center;
+      width: 100%;
+   margin-left: 0;
+   
+     
    }
-   .project
+   
+   .p5 {
+   color: #000000;
+   font-size: 1rem;
+   font-weight: bold;
+   text-transform: uppercase;
+   letter-spacing: 2px;
+   font-size: medium;
+   width: 100%;
+   
+   }
+   
+   
+   
+   body h1 {
+      font-weight: 600;
+   }
+   
+   body hr {
+      width: 50px;
+      border: none;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+   } 
+   
+   .container1 {
+      margin: 1rem auto;
+      padding: 1rem;
+      text-align: justify;
+      transition: all 0.3s;
+   }
+   
+   .container1 p {
+      line-height: 1.5;
+      letter-spacing: 0.3px;
+      word-spacing: 2px;
+      text-align: justify;
+   }
+   
+   
+   
+   .box6 {
+      grid-area: box6;
+      height: 48%;
+      width: 100%;
+      margin-top: 0%;
+      padding: 0;
+   }
+   
+   .img6
    {
-      font-size: 0.7rem;
-
+      width: 100%;
+      height: 100%;
+      opacity: 100%;
+      object-fit:fill; 
+   
+   }
+   
+   
+   
+   
+   
+   
+   .button5,
+   .button6,
+   .buttonvideo {
+       background-color: transparent;
+       color: rgb(7, 60, 95);
+       border: 1.9px solid rgb(11, 69, 98);
+       cursor: pointer;
+       font-size: 1.7rem;
+       height: 5vh;
+       margin-left: 35%;
+       width: 30%;
+       border-radius: 10%;
+       margin-top: 0%;
+   }
+   .button5
+   {
+      width: 55%;
+      margin-left: 25%;
+   }
+   .button5:hover,
+   .button6:hover,
+   .buttonvideo:hover {
+       color: #000000;
+       background-color: rgb(10, 61, 99);
+       border-color: black;
+   }
+   
+   .button5
+   {
+      margin-top: 15%;
    }
 }
-li:hover a {
-   color: #000000; /* שינוי צבע הטקסט לשחור */
-   background-color: #ffffff; /* שינוי צבע הרקע ללבן */
-}
+
+

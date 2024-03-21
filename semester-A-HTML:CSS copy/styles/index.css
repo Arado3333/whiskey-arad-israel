@@ -253,7 +253,7 @@ body hr {
    height: 100%;
    opacity: 100%;
    object-fit: fill;
-   border-radius: 20%;
+   border-radius: 40%;
 }
 
 
@@ -326,7 +326,11 @@ margin-left: 10%;
     width: 30%;
     border-radius: 10%;
 }
-
+.button5
+{
+   width: 55%;
+   margin-left: 25%;
+}
 .button5:hover,
 .button6:hover,
 .buttonvideo:hover {
@@ -530,7 +534,7 @@ border-radius: 10%;
    grid-area: box5;
    background-color: rgb(0, 0, 0);
    height: 100%;
-   width: 80%;
+   width: 100%;
    margin-left: 13%;
    display: block;
 
@@ -633,7 +637,8 @@ margin-left: 10%;
 
 .p5
 {
-font-size: 0.2rem;
+font-size: 0.49rem;
+max-height: fit-content;
 }
 .p5h
 {
@@ -650,11 +655,15 @@ font-size: 0.2rem;
    font-size: 0.7rem;
    height: 5vh;
    margin-left: 26%;
-   width: 50%;
+   width: 80vw;
    border-radius: 10%;
 
 }
-
+.button5
+{
+   width:100%;
+   right:20vw ;
+}
 .button:hover,
 .button5:hover,
 .button6:hover,
