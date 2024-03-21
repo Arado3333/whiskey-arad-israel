@@ -4,14 +4,14 @@
    #shop-container {
    
       display: grid; 
-      grid-template-columns: repeat(4, 1fr);
-      gap: 15px;
-      padding: 0 10%;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 40px;
+      padding: 0;
     }
    
     .box0 {
-      max-height: 65vh;
-      grid-column: span 4;
+      height: 80vh;
+      grid-column: span 3;
     }
    
     .video {
@@ -20,8 +20,8 @@
     }
     
     #shop-navbar {
-      min-height: 5vh;
-      grid-column: span 4;
+      max-height: 5vh;
+      grid-column: span 3;
       background-color: transparent;
       display: flex;
       align-items: center;
@@ -31,7 +31,7 @@
    
     
     .video-heading{
-      font-size: minmax(1em, 3em);
+      font-size: 1em;
       margin-top: 10%;
     }
     
@@ -68,9 +68,9 @@
     }
     
     .navlinks li a:hover{
-       color:#301e17;
+       /* color:#301e17; */
        transition: 0.5s;
-       background-color: #a86824;
+       /* background-color: #a86824; */
     }
     
     .box {
@@ -78,7 +78,7 @@
       flex-direction: column;
       align-items: center;
        border: 1px solid #000;
-       border-radius: 12px;
+       border-radius: 5px;
        padding: 10px;
        text-align: center;
        background-color: #8b6b48;
@@ -100,9 +100,9 @@
     
     .imgbox1
     {
-       grid-area: box1;
+       /* grid-area: box1; */
        pointer-events: all;
-       height: 20vh;
+       height: 18vh;
     }
     
     .product-info button {

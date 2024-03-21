@@ -4,7 +4,7 @@
 
    display: grid; 
    grid-template-columns: repeat(3, 1fr);
-   gap: 15px;
+   gap: 40px;
    padding: 0 10%;
  }
 
@@ -19,6 +19,7 @@
  }
  
  #shop-navbar {
+  
    min-height: 5vh;
    grid-column: span 3;
    background-color: transparent;
@@ -67,9 +68,9 @@
  }
  
  .navlinks li a:hover{
-    color:#301e17;
+    /* color:#301e17; */
     transition: 0.5s;
-    background-color: #a86824;
+    /* background-color: #a86824; */
  }
  
  .box {

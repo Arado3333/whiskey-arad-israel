@@ -4,8 +4,8 @@
 
     display: grid; 
     grid-template-columns: repeat(auto-fit, minmax(min(16rem, 100%), 1fr));
-    gap: 10px;
-    padding: 0 15px;
+    gap: 20px;
+    padding: 0 30px;
   }
   
   #shop-navbar {
@@ -17,7 +17,10 @@
     justify-content: center;
   }
 
-  
+  .video { 
+    height: 20%;
+  }
+
   .video-heading{
     font-size: 1.5em;
   }
@@ -56,9 +59,9 @@
   }
   
   .navlinks li a:hover{
-     color:#301e17;
+     /* color:#301e17; */
      transition: 0.5s;
-     background-color: #a86824;
+     /* background-color: #a86824; */
   }
   
   .box {
