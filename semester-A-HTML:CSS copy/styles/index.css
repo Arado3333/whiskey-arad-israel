@@ -191,28 +191,41 @@ margin-left: -100%;
 
 .p5h {
    color: #ffffff;
-   font-size: 2rem;
-   font-weight: bold;
-   letter-spacing: 2px;
-   font-size: medium;
-   width: 60%;
-   text-align: right;
-   margin-top: 15%;
-   
-   
+   font-size: 2em;
+   font-weight: 600;
+   letter-spacing: 2px;   
 }
 
+.heading-paragraph {
+   order: 1;
+   text-align: right;
+   width: 35%;
+   line-height: 2;
+}
+
+.heading-paragraph2 {
+   order: 1;
+   text-align: right;
+   width: 35%;
+   line-height: 1.5;
+}
+
+.heading-paragraph3 {
+   order: 1;
+   text-align: left;
+   width: 35%;
+   line-height: 1.5;
+}
 
 .p5 {
    color: #ffffff;
    font-size: 1.5rem;
-   font-weight: bold;
+   font-weight: 400;
    letter-spacing: 2px;
-   font-size: medium;
-   width: 60%;
-   text-align: right;
-   margin-top: 0; /* יש לשנות את הערך ל- 0 כדי להוריד את הרווח */
+   font-size: 1rem;
+   margin: 0;
 }
+
 .p10h {
    color: #ffffff;
    font-size: 2rem;
@@ -248,9 +261,9 @@ p
 
 
 .container1 {
-   margin: 1rem auto;
-   padding: 1rem;
-   text-align: justify;
+   /* margin: 1rem auto;
+   padding: 1rem; */
+   /* text-align: justify; */
    transition: all 0.3s;
 }
 
@@ -258,7 +271,7 @@ p
    line-height: 1.5;
    letter-spacing: 0.3px;
    word-spacing: 2px;
-   text-align: justify;
+   /* text-align: justify; */
 }
 
 
@@ -284,52 +297,61 @@ p
 
 
 .box10 {
+   display: flex;
+   flex-wrap: wrap;
+   flex-direction: row;
+   gap: 15%;
+   justify-content: center;
    grid-area: box10;
-   background-color: rgb(0, 0, 0);
-   font-size: 1vw; /* גודל הטקסט ב box10 יהיה 3% מרוחב המסך */
-   height: 100%;
-   width: 100%;
-
-
+   font-size: 1rem; /* גודל הטקסט ב box10 יהיה 3% מרוחב המסך */
 }
 
 .box11 {
+   margin: 0;
    grid-area: box11;
-   background-color: rgb(0, 0, 0);
-   font-size: 1vw; /* גודל הטקסט ב box11 יהיה 3% מרוחב המסך */
-   height: 100%;
-   width: 100%;
+   display: flex;
+   flex-wrap: wrap;
+   flex-direction: row;
+   gap: 15%;
+   justify-content: center;
+   font-size: 1rem; /* גודל הטקסט ב box10 יהיה 3% מרוחב המסך */
 
 
 }
 .divider {
+   order: 2;
    width: 100%;
    border-bottom: 1px solid #ffffff; /* צבע קו לבן */
-   margin: 20px 0; /* מרווח למעלה ולמטה מהקו */
+   margin: 2px 0; /* מרווח למעלה ולמטה מהקו */
+   
  }
 .box12 {
    grid-area: box12;
-   background-color: rgb(0, 0, 0);
-   font-size: 1vw; /* גודל הטקסט ב box12 יהיה 3% מרוחב המסך */
-   height: 100%;
-width: 100%;
+   width: 100%;
+   display: flex;
+   flex-wrap: wrap;
+   flex-direction: row-reverse;
+   gap: 15%;
+   justify-content: center;
+   font-size: 1rem; /* גודל הטקסט ב box10 יהיה 3% מרוחב המסך */
 
 }
 
 .box13 .box14 .box15
 {
-   height: 100%;
-   width: 100%;
+   /* height: 100%;
+   width: 100%; */
 }
+
 .img13
 {
+   align-self: center;
    width: 30%;
-   height: 30%;
+   height: auto;
    opacity: 100%;
-   object-fit: fill;
    border-radius: 20%;
-   margin-left: 70%;
-   margin-top: -28%;
+   /* margin-left: 70%; */
+   /* margin-top: -28%; */
 }
 .img14
 {
@@ -383,6 +405,9 @@ width: 100%;
 {
 }
 
+
+
+/*------------------- MOBILE ----------*/
 @media  (max-width: 650px) 
 {
    @import url("./mobile-index.css");
@@ -402,8 +427,8 @@ width: 100%;
        'box4 box5 box5'
        'box6 box6 box6'
        'box10 box10 box10'
-       'box11 box11 box11'
        'box12 box12 box12'
+       'box11 box11 box11'
        'box13 box14 box15';
    margin: 0;
    padding: 0;
@@ -413,7 +438,9 @@ width: 100%;
 
 
 
-
+.img13 {
+   object-fit: cover;
+}
 
 
 
@@ -579,24 +606,28 @@ border-radius: 10%;
 
 }
 
-.p5h {
-   color: white;
-text-align:center;
-font-size: 0.2rem;
-  
+.heading-paragraph {
+   align-content: flex-start;
+   order: 1;
+   text-align: right;
+   width: 55%;
+   line-height: 1.5;
 }
 
-.p5 {
-color: #ffffff;
-text-align: center;
-font-size: 0.2rem;
-
-
-
+.heading-paragraph2 {
+   align-content: flex-start;
+   order: 1;
+   text-align: left;
+   width: 55%;
+   line-height: 1.5;
 }
 
-
-
+.heading-paragraph3 {
+   order: 1;
+   text-align: left;
+   width: 55%;
+   line-height: 1.5;
+}
 
 body hr {
    width: 5vw;
@@ -640,9 +671,13 @@ font-size: 2rem;
    grid-area: box10;
    background-color: rgb(0, 0, 0);
    font-size: 1rem; /* גודל הטקסט ב box10 יהיה 3% מרוחב המסך */
-   height: 100%;
-   width: 80%;
-   margin-left: 10%;
+   width: 100%;
+   margin: 0;
+   flex-direction: row-reverse;
+   justify-content: center;
+   align-items: center;
+   
+   
 
 
 }
@@ -664,7 +699,8 @@ font-size: 2rem;
    background-color: rgb(0, 0, 0);
    font-size: 1rem; /* גודל הטקסט ב box12 יהיה 3% מרוחב המסך */
    height: 100%;
-width: 100%;
+   width: 100%;
+   margin: 0;
 
 }
 
@@ -675,12 +711,10 @@ width: 100%;
 
 .p5
 {
-font-size: 0.49rem;
+   text-align: right;
+   font-size: 0.7rem;
 }
-.p5h
-{
-   font-size: 1em;
-}
+
 .button5
 
 {
