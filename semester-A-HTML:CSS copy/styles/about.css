@@ -423,7 +423,7 @@ body hr {
    }
    
    .logo {
-      top: 4vh;
+      top: 1vh;
       left: 3px;
       position: fixed;
       z-index: 110;
