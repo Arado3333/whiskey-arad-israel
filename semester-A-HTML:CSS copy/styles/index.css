@@ -191,6 +191,7 @@ margin-left: -100%;
 
 .p5h {
    color: #ffffff;
+<<<<<<< HEAD
    font-size: 0.6rem;
    font-weight: bold;
    letter-spacing: 2px;
@@ -200,18 +201,52 @@ margin-left: -100%;
    margin-top: 15%;
    
    
+=======
+   font-size: 2em;
+   font-weight: 600;
+   letter-spacing: 2px;   
+>>>>>>> 8fe15a1aae1ee81adf76df5436421e548a8deddd
 }
 
+.heading-paragraph {
+   order: 1;
+   text-align: right;
+   width: 35%;
+   line-height: 2;
+}
+
+.heading-paragraph2 {
+   order: 1;
+   text-align: right;
+   width: 35%;
+   line-height: 1.5;
+}
+
+.heading-paragraph3 {
+   order: 1;
+   text-align: left;
+   width: 35%;
+   line-height: 1.5;
+}
 
 .p5 {
    color: #ffffff;
+<<<<<<< HEAD
    font-size: 0.1rem;
    letter-spacing: 2px;
    width: 60%;
    max-height: 100%;
    text-align: right;
    margin-top: 0; /* יש לשנות את הערך ל- 0 כדי להוריד את הרווח */
+=======
+   font-size: 1.5rem;
+   font-weight: 400;
+   letter-spacing: 2px;
+   font-size: 1rem;
+   margin: 0;
+>>>>>>> 8fe15a1aae1ee81adf76df5436421e548a8deddd
 }
+
 .p10h {
    color: #ffffff;
    font-size: 0.7rem;
@@ -247,8 +282,14 @@ p
 
 
 .container1 {
+<<<<<<< HEAD
    margin: 0.5rem auto;
    text-align: justify;
+=======
+   /* margin: 1rem auto;
+   padding: 1rem; */
+   /* text-align: justify; */
+>>>>>>> 8fe15a1aae1ee81adf76df5436421e548a8deddd
    transition: all 0.3s;
 }
 
@@ -256,7 +297,7 @@ p
    line-height: 0.5;
    letter-spacing: 0.3px;
    word-spacing: 2px;
-   text-align: justify;
+   /* text-align: justify; */
 }
 
 
@@ -282,52 +323,61 @@ p
 
 
 .box10 {
+   display: flex;
+   flex-wrap: wrap;
+   flex-direction: row;
+   gap: 15%;
+   justify-content: center;
    grid-area: box10;
-   background-color: rgb(0, 0, 0);
-   font-size: 1vw; /* גודל הטקסט ב box10 יהיה 3% מרוחב המסך */
-   height: 100%;
-   width: 100%;
-
-
+   font-size: 1rem; /* גודל הטקסט ב box10 יהיה 3% מרוחב המסך */
 }
 
 .box11 {
+   margin: 0;
    grid-area: box11;
-   background-color: rgb(0, 0, 0);
-   font-size: 1vw; /* גודל הטקסט ב box11 יהיה 3% מרוחב המסך */
-   height: 100%;
-   width: 100%;
+   display: flex;
+   flex-wrap: wrap;
+   flex-direction: row;
+   gap: 15%;
+   justify-content: center;
+   font-size: 1rem; /* גודל הטקסט ב box10 יהיה 3% מרוחב המסך */
 
 
 }
 .divider {
+   order: 2;
    width: 100%;
    border-bottom: 1px solid #ffffff; /* צבע קו לבן */
-   margin: 20px 0; /* מרווח למעלה ולמטה מהקו */
+   margin: 2px 0; /* מרווח למעלה ולמטה מהקו */
+   
  }
 .box12 {
    grid-area: box12;
-   background-color: rgb(0, 0, 0);
-   font-size: 1vw; /* גודל הטקסט ב box12 יהיה 3% מרוחב המסך */
-   height: 100%;
-width: 100%;
+   width: 100%;
+   display: flex;
+   flex-wrap: wrap;
+   flex-direction: row-reverse;
+   gap: 15%;
+   justify-content: center;
+   font-size: 1rem; /* גודל הטקסט ב box10 יהיה 3% מרוחב המסך */
 
 }
 
 .box13 .box14 .box15
 {
-   height: 100%;
-   width: 100%;
+   /* height: 100%;
+   width: 100%; */
 }
+
 .img13
 {
+   align-self: center;
    width: 30%;
-   height: 30%;
+   height: auto;
    opacity: 100%;
-   object-fit: fill;
    border-radius: 20%;
-   margin-left: 70%;
-   margin-top: -28%;
+   /* margin-left: 70%; */
+   /* margin-top: -28%; */
 }
 .img14
 {
@@ -381,10 +431,196 @@ width: 100%;
 {
 }
 
+
+
+/*------------------- MOBILE ----------*/
 @media  (max-width: 650px) 
 {
    @import url("./mobile-index.css");
   
+<<<<<<< HEAD
+=======
+  body {
+   background-color: rgb(0, 0, 0);
+   margin: 0;
+   padding: 0;
+}
+
+.container {
+   display: grid;
+   grid-template-areas: 
+       'box1 box1 box1'
+       'box2 box3 box3'
+       'box4 box5 box5'
+       'box6 box6 box6'
+       'box10 box10 box10'
+       'box12 box12 box12'
+       'box11 box11 box11'
+       'box13 box14 box15';
+   margin: 0;
+   padding: 0;
+   grid-template-columns: auto;
+   row-gap: 10vh;
+}
+
+
+
+.img13 {
+   object-fit: cover;
+}
+
+
+
+.box1 {
+   grid-area: box1;
+   background-color: rgb(0, 0, 0);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100%;
+   overflow: hidden;
+}
+
+.video {
+   width: 100vw;
+   height: 60vh;
+   object-fit: cover;
+   opacity: 100%;
+}
+
+.logo {
+   top: 1vh;
+   left: 3px;
+   position: fixed;
+   z-index: 110;
+   opacity: 90%;
+   height: 6vh;
+}
+
+.navbar {
+   overflow: hidden;
+   z-index: 200;
+   top: 0;
+   position: fixed;
+   height: 8vh;
+   width: 100%;
+   padding-right: 22%;
+   font-size: xx-small;
+}
+
+.navlinks li {
+   float: right;
+}
+
+.navlinks {
+   list-style-type: none;
+   margin: 0;
+   padding: 0;
+}
+
+.navlinks li a {
+   font-family: 'Protest Strike', sans-serif;
+   color: white;
+   display: block;
+   text-align: center;
+   padding: 2vh 2vw;
+   text-decoration: none;
+   margin-top: 1vh;
+}
+
+.navlinks li a:hover {
+   color: rgb(5, 5, 5);
+   background: #fdfcfb;
+   border-radius: 0%;
+   margin-top:1vh ;
+   height: 1.5vh;
+
+}
+
+.navlinks img {
+   border-radius: 10vh;
+   height: 2vh;
+}
+
+.box2 {
+   grid-area: box2;
+   background-color: rgb(0, 0, 0);
+   height: 100%;
+   width: 100%;
+   margin-left: 10%;
+}
+
+.img2 {
+   width: 90%;
+   height: 100%;
+   opacity: 100%;
+border-radius: 10%;
+
+}
+
+.img4 {
+   width: 90%;
+   height: 100%;
+   opacity: 40%;
+border-radius: 10%;
+}
+.box3 {
+   grid-area: box3;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color: rgb(0, 0, 0);
+   height: 100%;
+
+   color: white;
+}
+
+.text {
+   font-family: "Yanone Kaffeesatz";
+   font-size: 1rem;
+}
+
+.overlay {
+   z-index: 100;
+}
+
+.wrapper {
+   display: inline-block;
+   margin: 0 5px;
+}
+
+.letter {
+   transition: ease-out 1s;
+   transform: translateY(40%);
+}
+
+.shadow {
+   color: #141414;
+   transition: ease-in 3s, ease-out 3s;
+}
+
+.text:hover .letter {
+   transform: translateY(-200%);
+}
+
+.text:hover .shadow {
+   opacity: 0;
+   transform: translateY(200%);
+}
+
+.box4 {
+   grid-area: box4;
+   background-color: rgba(0, 0, 0, 0.713);
+   height: 100%;
+   width: 100%;
+   margin-left: 10%;
+   margin-top: 7vh;
+}
+
+.box4P {
+   color: #ffffff;
+   font-size: 1rem;
+>>>>>>> 8fe15a1aae1ee81adf76df5436421e548a8deddd
    
      body {
       background-color: rgb(0, 0, 0);
@@ -552,6 +788,7 @@ width: 100%;
       transform: translateY(-100%);
       z-index: 10;
 
+<<<<<<< HEAD
    }
    
    .text:hover .shadow {
@@ -780,6 +1017,151 @@ width: 100%;
       font-family: 'Heebo', sans-serif;
       font-size: xx-small;
    }
+=======
+.heading-paragraph {
+   align-content: flex-start;
+   order: 1;
+   text-align: right;
+   width: 55%;
+   line-height: 1.5;
+}
+
+.heading-paragraph2 {
+   align-content: flex-start;
+   order: 1;
+   text-align: left;
+   width: 55%;
+   line-height: 1.5;
+}
+
+.heading-paragraph3 {
+   order: 1;
+   text-align: left;
+   width: 55%;
+   line-height: 1.5;
+}
+
+body hr {
+   width: 5vw;
+   border: none;
+   border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+} 
+
+.container1 {
+font-size: 2rem;
+ 
+   text-align: justify;
+   transition: all 0.3s;
+}
+
+.container1 p {
+   text-align: justify;
+}
+
+
+
+
+.box6 {
+   grid-area: box6;
+   background-color: rgb(0, 0, 0);
+   height: 80%;
+   width: 100%;
+}
+
+.img6
+{
+   width: 100%;
+   height: 100%;
+   opacity: 100%;
+   object-fit: fill;
+   border-radius: 20%;
+}
+
+
+
+.box10 {
+   grid-area: box10;
+   background-color: rgb(0, 0, 0);
+   font-size: 1rem; /* גודל הטקסט ב box10 יהיה 3% מרוחב המסך */
+   width: 100%;
+   margin: 0;
+   flex-direction: row-reverse;
+   justify-content: center;
+   align-items: center;
+   
+   
+
+
+}
+
+.box11 {
+   grid-area: box11;
+   background-color: rgb(0, 0, 0);
+   font-size: 1rem; /* גודל הטקסט ב box11 יהיה 3% מרוחב המסך */
+   height: 100%;
+   width: 80%;
+   margin-left: 10%;
+
+
+
+}
+
+.box12 {
+   grid-area: box12;
+   background-color: rgb(0, 0, 0);
+   font-size: 1rem; /* גודל הטקסט ב box12 יהיה 3% מרוחב המסך */
+   height: 100%;
+   width: 100%;
+   margin: 0;
+
+}
+
+.img2, .img4, .img6 {
+   max-width: 100%;
+   height: auto;
+}
+
+.p5
+{
+   text-align: right;
+   font-size: 0.7rem;
+}
+
+.button5
+
+{
+   color: rgb(255, 255, 255);
+    border: 0.4px solid rgb(255, 255, 255);
+    background-color: transparent;
+   cursor: pointer;
+   font-size: 0.7rem;
+   height: 5vh;
+   margin-left: 26%;
+   border-radius: 10%;
+
+}
+.button6,
+.buttonvideo 
+{
+   color: rgb(255, 255, 255);
+    border: 0.4px solid rgb(255, 255, 255);
+    background-color: transparent;
+   cursor: pointer;
+   font-size: 0.7rem;
+   height: 5vh;
+   margin-left: 35%;
+   border-radius: 10%;
+}
+.button:hover,
+.button5:hover,
+.button6:hover,
+.buttonvideo:hover {
+   color: #000000;
+    background-color: rgb(255, 255, 255);
+    border-color: black;
+}
+
+>>>>>>> 8fe15a1aae1ee81adf76df5436421e548a8deddd
 }
 
 
