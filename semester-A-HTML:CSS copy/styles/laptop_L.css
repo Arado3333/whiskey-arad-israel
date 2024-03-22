@@ -6,7 +6,11 @@
       display: grid; 
       grid-template-columns: repeat(3, 1fr);
       gap: 40px;
-      padding: 0;
+      padding: 0 15px;
+    }
+
+    .shop-nav-vid {
+      grid-column: span 3;
     }
    
     .box0 {
@@ -32,7 +36,7 @@
     
     .video-heading{
       font-size: 1em;
-      margin-top: 10%;
+      margin-top: 14%;
     }
     
     .vheading-marked-up{
@@ -156,12 +160,13 @@
     }
    
    @media (min-width: 1340px) and (max-width: 1439px) {
+
       #shop-navbar {
-      grid-column: span 4;
+      grid-column: span 3;
     }
    
     .box0 {
-      grid-column: span 4;
+      grid-column: span 3;
     }
    }
 }

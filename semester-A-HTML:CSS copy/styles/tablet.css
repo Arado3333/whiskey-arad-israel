@@ -8,6 +8,10 @@
     padding: 0 20px;
   }
 
+  .shop-nav-vid {
+    grid-column: span 2;
+}
+
   .box0 {
     height: 75%;
     grid-column: span 2;
@@ -26,6 +30,7 @@
   
   .video-heading{
     font-size: 1em;
+    margin-top: 10%;
   }
   
   .vheading-marked-up{
@@ -73,7 +78,7 @@
     align-items: center;
      border: 1px solid #000;
      border-radius: 5px;
-     /* padding: 10px; */
+     padding: 10px;
      text-align: center;
      background-color: #8b6b48;
      box-shadow: 0px 3px 5px black;;
@@ -180,6 +185,10 @@
     #shop-navbar {
     grid-column: span 3;
   }
+
+  .shop-nav-vid {
+    grid-column: span 3;
+}
 
   .box0 {
     grid-column: span 3;

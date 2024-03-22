@@ -5,8 +5,12 @@
    display: grid; 
    grid-template-columns: repeat(3, 1fr);
    gap: 40px;
-   padding: 0 10%;
+   padding: 0 15px;
  }
+
+ .shop-nav-vid {
+  grid-column: span 3;
+}
 
  .box0 {
    max-height: 65vh;
@@ -184,12 +188,22 @@
 }
 
 @media (min-width: 1340px) and (max-width: 1439px) {
+  #shop-container {
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    padding: 0 10%;
+  }
+
    #shop-navbar {
-   grid-column: span 4;
+   grid-column: span 3;
  }
+ .shop-nav-vid {
+  grid-column: span 3;
+}
 
  .box0 {
-   grid-column: span 4;
+   grid-column: span 3;
  }
 }
 
