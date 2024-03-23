@@ -187,47 +187,76 @@ margin-left: -100%;
    grid-area: box5;
    background-color: rgb(0, 0, 0);
    height: 100%;
-   width: 80%;
+   width: 100%;
    margin-left: 23%;
 }
 
 .p5h {
    color: #ffffff;
-   font-size: 2em;
-   font-weight: 600;
+   font-size: 3rem;
    letter-spacing: 2px;   
+   text-align: right;
+   width: 100%;
+   margin-top: 10%;
+
+}.p5h1 {
+   color: #ffffff;
+   font-size: 2em;
+   letter-spacing: 2px;   
+   text-align: right;
+   width: 60%;
+   margin-top: 10%;
+
+}.p5h2 {
+   color: #ffffff;
+   font-size: 2em;
+   letter-spacing: 2px;   
+   text-align: left;
+   width: 100%;
+   margin-top: 10%;
+
 }
 /*-------------- Arad -------------*/
 .heading-paragraph {
    order: 1;
    text-align: right;
-   width: 35%;
-   line-height: 2;
+   width: 50%;
+   line-height: 1.5;
+   margin-right: -10%;
 }
 
 .heading-paragraph2 {
    order: 1;
    text-align: right;
-   width: 35%;
+   width: 50%;
    line-height: 1.5;
+   margin-right: -10%;
 }
 
 .heading-paragraph3 {
    order: 1;
    text-align: left;
-   width: 35%;
+   width: 50%;
    line-height: 1.5;
+   margin-right: -20%;
 }
  /*-------------- Arad -------------*/
 .p5 {
    color: #ffffff;
    font-size: 1.5rem;
-   font-weight: 400;
+   letter-spacing: 2px;
+   font-size: 0.9rem;
+   margin: 0;
+   width: 100%;
+}
+.p51 {
+   color: #ffffff;
+   font-size: 1.5rem;
    letter-spacing: 2px;
    font-size: 1rem;
    margin: 0;
+   width: 65%;
 }
-
 .p10h {
    color: #ffffff;
    font-size: 0.7rem;
@@ -259,17 +288,17 @@ p{
 }
 
 .container1 {
-   /* margin: 1rem auto;
-   padding: 1rem; */
-   /* text-align: justify; */
+   margin: 1rem auto;
+   padding: 1rem; 
+   /* text-align: justify;
    transition: all 0.3s;
 }
 
-.container1 p {
+/* .container1 p {
    line-height: 0.5;
    letter-spacing: 0.3px;
    word-spacing: 2px;
-   /* text-align: justify; */
+   text-align: justify; */
 }
 
 
@@ -332,52 +361,52 @@ p{
    display: flex;
    flex-wrap: wrap;
    flex-direction: row-reverse;
-   gap: 15%;
+   gap: 25%;
    justify-content: center;
    font-size: 1rem; /* גודל הטקסט ב box10 יהיה 3% מרוחב המסך */
+   margin-right: -1%;
 
 }
 /*-------------- Arad -------------*/
 
 .box13 .box14 .box15
 {
-   /* height: 100%;
-   width: 100%; */
+   height: 80%;
+   width: 100%;
+   
 }
 
 /*-------------- Arad -------------*/
 .img13
 {
-   align-self: center;
-   width: 30%;
-   height: auto;
+   width: 20%;
+   height: 70%;
    opacity: 100%;
    border-radius: 20%;
-   /* margin-left: 70%; */
-   /* margin-top: -28%; */
+   margin-top: 6%;
+   margin-left: -15%;
 }
 
 /*-------------- Arad -------------*/
 
 .img14
 {
-   width: 30%;
-   height: 30%;
+   width: 20%;
+   height: 70%;
    opacity: 100%;
-   object-fit: fill;
    border-radius: 20%;
-   margin-top: -28%;
+   margin-top: 6%;
+   margin-left: -15%;
 }
 
 .img15
 {
-   width: 30%;
-   height: 30%;
+   width: 20%;
+   height: 70%;
    opacity: 100%;
-   object-fit: fill;
    border-radius: 20%;
-   margin-left: 70%;
-   margin-top: -28%;
+   margin-top: 6%;
+   margin-right: -15%;
 }
 
 .button5,
@@ -395,10 +424,6 @@ p{
 }
 .buttonvideo 
 {
-   position: absolute;
-   margin-top: 25%;
-   margin-left: -60%;
-   z-index: 100;
 }
 .button5:hover,
 .button6:hover,
@@ -410,6 +435,7 @@ p{
 
 .button5
 {
+   margin-top: 5%;
 }
 
 
@@ -538,10 +564,11 @@ border-radius: 10%;
 }
 
 .img4 {
-   width: 90%;
+   width: 100%;
    height: 100%;
-   opacity: 40%;
+   opacity: 100%;
 border-radius: 10%;
+z-index: 100;
 }
 .box3 {
    grid-area: box3;
@@ -556,7 +583,7 @@ border-radius: 10%;
 
 .text {
    font-family: "Yanone Kaffeesatz";
-   font-size: 1rem;
+   font-size: 0.rem;
 }
 
 .overlay {
@@ -651,7 +678,7 @@ border-radius: 10%;
 
       z-index: 110;
       opacity: 100%;
-      height: 5vh;
+      height: 3vh;
    }
    
    .navbar {
@@ -661,7 +688,7 @@ border-radius: 10%;
       position: fixed;
       height: 10%;
       width: 100%;
-      padding-right: 17%;
+      padding-right: 30%;
       background-color: #000000;
       font-size: x-small;
       
@@ -709,7 +736,7 @@ border-radius: 10%;
    
    .img2 {
       width: 40%;
-      height: 90%;
+      height: 100%;
       opacity: 100%;
    border-radius: 5%;
    margin-top: 5%;
@@ -719,12 +746,14 @@ border-radius: 10%;
    }
    
    .img4 {
-      width: 110%;
+      width: 100%;
       height: 60%;
       opacity: 100%;
    border-radius: 5%;
    margin-top: 5%;
+   z-index: 100;
    }
+
 
    /*-------------- Arad -------------*/
    .box3 {
@@ -738,13 +767,120 @@ border-radius: 10%;
       color: white;
    }
    /*-------------- Arad -------------*/
-   
+   .box5 {
+      grid-area: box5;
+      background-color: rgb(0, 0, 0);
+      height: 100%;
+      width: 100%;
+      margin-right: -10%;
+      grid-auto-columns: 10%;
+   }
    .text {
       font-family: "Yanone Kaffeesatz";
       font-size: 1.5vh;
       text-align: center;
    }
    
+
+.p5h {
+   color: #ffffff;
+   font-size: 1.5rem;
+   letter-spacing: 2px;   
+   text-align: right;
+   width: 130%;
+   margin-top: 10%;
+   margin-left: -20%;
+
+}.p5h1 {
+   color: #ffffff;
+   font-size: 1rem;
+   letter-spacing: 2px;   
+   text-align: right;
+   width: 100%;
+   margin-top:40%;
+   margin-left: -20%;
+
+}.p5h2 {
+   color: #ffffff;
+   font-size: 0.5rem;
+   letter-spacing: 2px;   
+   text-align: left;
+   width: 100%;
+   margin-top: 10%;
+
+}
+/*-------------- Arad -------------*/
+.heading-paragraph {
+   order: 1;
+   text-align: right;
+   width: 100%;
+   line-height: 0.5;
+   margin-right: -10%;
+}
+
+.heading-paragraph2 {
+   order: 1;
+   text-align: right;
+   width: 100%;
+   line-height: 0.5;
+   margin-right: -10%;
+}
+
+.heading-paragraph3 {
+   order: 1;
+   text-align: left;
+   width: 100%;
+   line-height: 0.5;
+   margin-right: -20%;
+}
+ /*-------------- Arad -------------*/
+.p5 {
+   color: #ffffff;
+   font-size: 0.3rem;
+   letter-spacing: 2px;
+   margin: 0;
+   width: 100%;
+   height: 30%;
+}
+.p51 {
+   color: #ffffff;
+   font-size: 0.5rem;
+   letter-spacing: 2px;
+   margin: 0;
+   width: 65%;
+   margin-left: -20%;
+   
+}
+.p10h {
+   color: #ffffff;
+   font-size: 0.3rem;
+   font-weight: bold;
+   letter-spacing: 2px;
+   font-size: medium;
+   width: 100%;
+   text-align: right;
+   
+   
+}
+
+
+.p10 {
+   color: #ffffff;
+   font-size: 0.5rem;
+   font-weight: bold;
+   letter-spacing: 2px;
+   font-size: medium;
+   width: 100%;
+   text-align: right;
+   margin-top: 0; /* יש לשנות את הערך ל- 0 כדי להוריד את הרווח */
+   
+}
+
+
+p{
+   margin-right: 40%;
+}
+
    .overlay {
       z-index: 10;
    }
@@ -781,6 +917,8 @@ border-radius: 10%;
    text-align: right;
    width: 55%;
    line-height: 1.5;
+   font-size: xx-small
+
 }
 
 .heading-paragraph2 {
@@ -789,13 +927,16 @@ border-radius: 10%;
    text-align: left;
    width: 55%;
    line-height: 1.5;
+   font-size: xx-small
+
 }
 
 .heading-paragraph3 {
    order: 1;
    text-align: left;
-   width: 55%;
+   width: 50%;
    line-height: 1.5;
+   font-size: xx-small
 }
 
 /*-------------- Arad -------------*/
@@ -807,7 +948,7 @@ body hr {
 } 
 
 .container1 {
-font-size: 2rem;
+font-size: 0.4rem;
  
    text-align: justify;
    transition: all 0.3s;
@@ -815,6 +956,8 @@ font-size: 2rem;
 
 .container1 p {
    text-align: justify;
+   font-size: 0.5rem;
+   width: 100%;
 }
 
 
@@ -872,8 +1015,7 @@ font-size: 2rem;
    font-size: 1rem; /* גודל הטקסט ב box12 יהיה 3% מרוחב המסך */
    height: 100%;
    width: 100%;
-   margin: 0;
-
+margin-right: -10%;
 }
 
 .img2, .img4, .img6 {
@@ -885,6 +1027,7 @@ font-size: 2rem;
 {
    text-align: right;
    font-size: 0.7rem;
+
 }
 
 .button5
@@ -895,9 +1038,11 @@ font-size: 2rem;
     background-color: transparent;
    cursor: pointer;
    font-size: 0.7rem;
-   height: 5vh;
+   height: 4.5vh;
    margin-left: 26%;
    border-radius: 10%;
+   width: 55%;
+
 
 }
 
@@ -912,6 +1057,7 @@ font-size: 2rem;
    height: 5vh;
    margin-left: 35%;
    border-radius: 10%;
+   width: 30%;
 }
 
 .button:hover,
@@ -923,15 +1069,82 @@ font-size: 2rem;
     border-color: black;
 }
 
+.box10 .box11 .box12
+{
+   height: 80%;
+   width: 80%;
+   
 }
 
+/*-------------- Arad -------------*/
+.img13
+{
+   width: 20%;
+   height: 12vh;
+   opacity: 100%;
+   border-radius: 20%;
+   margin-left: -95%;
+   object-fit: cover;
+}
 
+/*-------------- Arad -------------*/
+
+.img14
+{
+   height: 12vh;
+   opacity: 100%;
+   border-radius: 20%;
+   margin-top: 42%;
+   object-fit: cover;
+   margin-left: -15%;
+}
+
+.img15
+{
+   width: 22%;
+   height: 30%;
+   opacity: 100%;
+   border-radius: 20%;
+   margin-top: 32%;
+   object-fit: cover;
+
+
+}
+
+.box10
+{
+   width: 90%;
+   margin-left: -10%;
+}
+.box11
+{
+   width: 90%;
+   margin-left: 5%;
+
+
+
+}
+.box12
+{
+   margin-left:0%;
+   width: 90%;
+   
+
+}
+}
+
+.container
+{
+   padding-left: -0;
+   padding-right: -0;
+}
 .project
 {
    color: #fdfcfb;
-   font-size: 0.7rem;
+   font-size: 0.5rem;
    width: 100%;
    text-align: center;
+   margin-top: 10%;
 }
 
 .navlinks li a {
