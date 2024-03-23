@@ -1,5 +1,5 @@
 
-@media (min-width: 1440px) {
+@media (min-width: 1440px) and (max-width: 2559px) {
    /*----------------- Shop Page -----------*/
    #shop-container {
    
@@ -35,7 +35,7 @@
    
     
     .video-heading{
-      font-size: 1em;
+      font-size: 3em;
       margin-top: 14%;
     }
     
@@ -98,10 +98,10 @@
        margin-bottom: 10px;
     }
     
-    /* .box1
+     .box1
     {
-       grid-area: box1;
-    } */
+      /* align-self: center; */
+    } 
     
     .imgbox1
     {
