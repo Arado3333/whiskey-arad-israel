@@ -4,11 +4,12 @@
 
    display: grid; 
    grid-template-columns: repeat(3, 1fr);
-   gap: 40px;
+   gap: 30px;
    padding: 0 15px;
  }
 
  .shop-nav-vid {
+  height: 81vh;
   grid-column: span 3;
 }
 
@@ -18,8 +19,8 @@
  }
 
  .video {
-   max-width: 100%;
-   max-height: 65%;
+   /* max-width: 100%; */
+   /* max-height: 59vh; */
  }
  
  #shop-navbar {

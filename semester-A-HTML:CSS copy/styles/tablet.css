@@ -5,11 +5,12 @@
     display: grid; 
     grid-template-columns: repeat(auto-fit, minmax(min(20rem, 100%), 1fr));
     gap: 30px;
-    padding: 0 20px;
+    padding: 0 10px;
   }
 
   .shop-nav-vid {
     grid-column: span 2;
+    
 }
 
   .box0 {
