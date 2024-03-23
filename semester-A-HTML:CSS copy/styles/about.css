@@ -1,9 +1,11 @@
 @import url("./mobile-index.css");
 
-  
+*p {
+   font-family: 'Heebo', sans-serif;
+   font-weight: 400;
+}
   body {
    background-color: rgb(255, 255, 255);
-   font-family: "Protest Strike", sans-serif;
    margin: 0;
    padding: 0;
 }
@@ -12,7 +14,7 @@
    display: grid;
    grid-template-areas: 
    'box1 box1 box1'
-   'box2 box5 box5'
+   'box5 box5 box2'
    'box4 box3 box3'
    'box6 box6 box6';
 
@@ -20,6 +22,7 @@
    padding: 0;
    grid-template-columns: auto;
    row-gap: 20vh;
+   grid-template-rows: auto;
 }
 
 .box1 {
@@ -33,7 +36,7 @@
 
 .video {
    width: 100vw;
-   height: 75vh;
+   height: 55vh;
    opacity: 100%;
    object-fit: fill;
    box-shadow: #000000;
@@ -53,10 +56,11 @@
    z-index: 200;
    top: 0;
    position: fixed;
-   height: 8vh;
+   height: 10vh;
    width: 100%;
    padding-right: 55%;
-background-color:#053c5c;
+   background-color: #000000;
+   
 }
 
 .navlinks li {
@@ -70,7 +74,7 @@ background-color:#053c5c;
 }
 
 .navlinks li a {
-   font-family: 'Protest Strike', sans-serif;
+
    color: white;
    display: block;
    text-align: center;
@@ -81,7 +85,6 @@ background-color:#053c5c;
 
 .navlinks li a:hover {
    color: rgb(5, 5, 5);
-   background: #fdfcfb;
    border-radius: 0%;
    margin-top:1vh ;
    height: 1.5vh;
@@ -99,11 +102,10 @@ background-color:#053c5c;
 
    height: 100%;
    width: 100%;
-   margin-left: 10%;
 }
 
 .img2 {
-   width: 90%;
+   width: 100%;
    height: 100%;
    opacity: 100%;
 border-radius: 10%;
@@ -124,50 +126,14 @@ border-radius: 10%;
    height: 70vh;
 width: 80%;
  color: rgb(0, 0, 0);
- margin-left: 13%;
 }
 
-.text {
-   font-family: "Yanone Kaffeesatz";
-   font-size: 3.5vh;
-   text-align: center;
-   padding: 0 2vh;
-}
-
-.overlay {
-   z-index: 100;
-}
-
-.wrapper {
-   display: inline-block;
-   margin: 0 5px;
-}
-
-.letter {
-   transition: ease-out 1s;
-   transform: translateY(40%);
-}
-
-.shadow {
-   color: #141414;
-   transition: ease-in 3s, ease-out 3s;
-}
-
-.text:hover .letter {
-   transform: translateY(-200%);
-}
-
-.text:hover .shadow {
-   opacity: 0;
-   transform: translateY(200%);
-}
 
 .box4 {
    grid-area: box4;
 
    height: 100%;
    width: 100%;
-   margin-left: 10%;
 }
 
 .box4P {
@@ -175,7 +141,6 @@ width: 80%;
    text-align: center;
    font-size: 1rem;
    font-weight: bold;
-   text-transform: uppercase;
    letter-spacing: 2px;
    font-size: medium;
    width: 100%;
@@ -185,15 +150,15 @@ width: 80%;
    grid-area: box5;
 
    height: 100%;
-   width: 80%;
-   margin-left: 13%;
+   width: 100%;
+   margin-left: 50%
+
 }
 
 .p5h {
    color: rgb(0, 0, 0);
    text-align: center;
    width: 100%;
-margin-left: 0;
 
   
 }
@@ -202,33 +167,20 @@ margin-left: 0;
 color: #000000;
 font-size: 1rem;
 font-weight: bold;
-text-transform: uppercase;
 letter-spacing: 2px;
 font-size: medium;
 z-index: 100;
+width: 60%;
 
 
 }
-.text {
-   font-family: "Yanone Kaffeesatz";
-   font-size: 3.5vh;
-   text-align: center;
-   padding: 0 2vh;
-   color: black; /* Change text color to black */
-}
 
 
 
 
-body h1 {
-   font-weight: 600;
-}
 
-body hr {
-   width: 50px;
-   border: none;
-   border-bottom: 1px solid rgba(0, 0, 0, 0.25);
-} 
+
+
 
 .container1 {
    margin: 1rem auto;
@@ -237,27 +189,21 @@ body hr {
    transition: all 0.3s;
 }
 
-.container1 p {
-   line-height: 1.5;
-   letter-spacing: 0.3px;
-   word-spacing: 2px;
-   text-align: justify;
-}
+
 
 
 
 .box6 {
    grid-area: box6;
-   height: 48%;
+   height: 60vh;
    width: 100%;
-   margin-top: 0%;
    padding: 0;
 }
 
 .img6
 {
    width: 100%;
-   height: 100%;
+   height: 50vh;
    opacity: 100%;
    object-fit:fill; 
 
@@ -319,7 +265,6 @@ body hr {
    left: 0;
    width: 100%;
    height: 1px;
-   background-color: white;
    visibility: hidden;
    transform: scaleX(0);
    transition: all 0.3s ease-in-out 0s;
@@ -335,8 +280,8 @@ body hr {
 }
 
 .navlinks li a:hover {
-   color: black;
-   background-color: white;
+   color: rgb(45, 45, 45);
+
 }
 .text {
    position: relative;
@@ -558,7 +503,6 @@ body hr {
       text-align: center;
       font-size: 1rem;
       font-weight: bold;
-      text-transform: uppercase;
       letter-spacing: 2px;
       font-size: medium;
       width: 100%;
@@ -585,7 +529,6 @@ body hr {
    color: #000000;
    font-size: 1rem;
    font-weight: bold;
-   text-transform: uppercase;
    letter-spacing: 2px;
    font-size: medium;
    width: 100%;
@@ -676,3 +619,25 @@ body hr {
 }
 
 
+
+.navlinks li a {
+   position: relative;
+}
+
+.navlinks li a::after {
+   content: "";
+   position: absolute;
+   bottom: -1px;
+   left: 0;
+   width: 100%;
+   height: 1px;
+   background-color: white;
+   visibility: hidden;
+   transform: scaleX(0);
+   transition: all 0.3s ease-in-out 0s;
+}
+
+.navlinks li a:hover::after {
+   visibility: visible;
+   transform: scaleX(1);
+}
