@@ -13,6 +13,14 @@
 
 }
 
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 50vh;
+  background-color: #053C5C;
+  grid-column: span 2;
+}
 
   .box0 {
     height: 75%;

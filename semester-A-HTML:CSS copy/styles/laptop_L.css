@@ -159,6 +159,15 @@
    #favorite-item img {
       height: 20px;
     }
+
+    .footer {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      height: 50vh;
+      background-color: #053C5C;
+      grid-column: span 3;
+   }
    
    @media (min-width: 1340px) and (max-width: 1439px) {
 

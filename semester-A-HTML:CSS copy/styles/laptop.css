@@ -8,6 +8,15 @@
    padding: 0 15px;
  }
 
+ .footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 50vh;
+  background-color: #053C5C;
+  grid-column: span 3;
+}
+
  .shop-nav-vid {
   height: 105vh;
   grid-column: span 3;
@@ -186,6 +195,8 @@
 /* .project > p {
   margin-top: 5rem;
 } */
+
+
 }
 
 @media (min-width: 1340px) and (max-width: 1439px) {
