@@ -9,12 +9,12 @@
  }
 
  .shop-nav-vid {
-  height: 81vh;
+  height: 105vh;
   grid-column: span 3;
 }
 
  .box0 {
-   max-height: 65vh;
+   height: 65vh;
    grid-column: span 3;
  }
 
@@ -36,8 +36,8 @@
 
  
  .video-heading{
-   font-size: minmax(1em, 3em);
-   margin-top: 10%;
+   font-size: 2em;
+   margin-top: 20%;
  }
  
  .vheading-marked-up{
