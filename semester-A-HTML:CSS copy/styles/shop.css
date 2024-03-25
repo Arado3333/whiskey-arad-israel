@@ -293,14 +293,15 @@
 
    .foot-logo-info > p {
       font-weight: 200;
+      font-size: 2.8em;
       line-height: 2;
       color: white;
    }
 
    .foot-section-2 {
       height: 52%;
-      font-size: large;
-      padding: 60px 0;
+      font-size: 2.5em;
+      padding: 95px 0;
       color: white;
       display: flex;
       flex-direction: column;
@@ -309,8 +310,8 @@
 
    .foot-section-3 {
       height: 17.5%;
-      font-size: large;
-      padding: 60px 0;
+      font-size: 2.5em;
+      padding: 100px 0;
       color: white;
       display: flex;
       flex-direction: column;
@@ -328,8 +329,8 @@
       height: 30%;
       width: 18%;
       justify-content: center;
-      font-size: large;
-      padding: 30px 20px;
+      font-size: 2.5em;
+      padding: 40px 20px;
       color: white;
       display: flex;
       flex-direction: row;
@@ -351,11 +352,14 @@
    }
 
    .footer-logo {
-      height: 25vh;
+      height: 21vh;
    }
 
    .foot-logo-info {
       grid-column: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
    }
 
    #fb, #yt, #tw, #ig {
