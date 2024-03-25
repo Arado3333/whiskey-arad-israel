@@ -165,7 +165,7 @@
       flex-direction: row;
       justify-content: space-between;
       height: 50vh;
-      background-color: #053C5C;
+      background-color: black;
       grid-column: span 3;
     }
     
@@ -264,7 +264,7 @@
       flex-direction: row;
       justify-content: space-between;
       height: 50vh;
-      background-color: #053C5C;
+      background-color: black;
       grid-column: span 3;
     }
     

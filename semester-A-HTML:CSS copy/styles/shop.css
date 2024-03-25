@@ -85,7 +85,7 @@
    
    .navlinks li a {
       padding: 25px 23px;
-      color: #f7e8d8;
+      color: #fff;
       font-size: 1em;
       text-decoration: none;
       transition: 0.5s;
@@ -287,7 +287,7 @@
       flex-direction: row;
       justify-content: space-between;
       height: 50vh;
-      background-color: #053C5C;
+      background-color: black;
       grid-column: span 3;
    }
 

@@ -17,7 +17,8 @@
   flex-direction: row;
   justify-content: space-between;
   height: 50vh;
-  background-color: #053C5C;
+  /* background-color: #053C5C; */
+  background-color: #000;
   grid-column: span 2;
 }
 
@@ -119,10 +120,6 @@
     width: 10%;
  }
 
-  .video { 
-
-  }
-
   .video-heading{
     font-size: 1.5em;
     margin-top: 10%;
@@ -131,12 +128,7 @@
   .vheading-marked-up{
      color: #f5a248;
   }
-/*   
-  #shop-navbar:hover{
-     transition: 0.5s;
-     background-color: #f1c698;
-  } */
-  
+
   #shop-navbar > .navlinks {
     display: flex;
     flex-wrap: wrap;
@@ -155,16 +147,14 @@
   
   .navlinks li a {
      padding: 25px 23px;
-     color: #a86824;
+     color: white;
      font-size: 2em;
      text-decoration: none;
      transition: 0.5s;
   }
   
   .navlinks li a:hover{
-     /* color:#301e17; */
      transition: 0.5s;
-     /* background-color: #a86824; */
   }
   
   .box {
@@ -186,11 +176,6 @@
      background-position: center;
      margin-bottom: 10px;
   }
-  
-  /* .box1
-  {
-     grid-area: box1;
-  } */
   
   .imgbox1
   {
@@ -229,7 +214,6 @@
   }
 
   .product-info > p, h3 {
-    /* max-width: 15rem; */
     text-align: left;
   }
   
@@ -250,6 +234,12 @@
 #favorite-item img {
     height: 20px;
   }
+}
+
+
+/*-------------- Sign in Page ---------------------*/
+.signin-logo {
+  z-index: 110;
 }
 
 @media (min-width: 552px) and (max-width: 767px) {
