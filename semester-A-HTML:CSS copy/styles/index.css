@@ -1,11 +1,9 @@
 @import url("./mobile-index.css");
 @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap');
-/*-------------- Arad -------------*/
  *p {
    font-family: 'Heebo', sans-serif;
    font-weight: 400;
 }
-/*-------------- Arad -------------*/
 
   body {
    background-color: rgb(0, 0, 0);
@@ -24,11 +22,12 @@
    'box6 box6 box6'
    'box10 box10 box10'
    'box12 box12 box12'
-   'box11 box11 box11';
+   'box11 box11 box11'
+   'footindex footindex footindex';
 
    margin: 0;
    padding: 0;
-   grid-template-columns: auto;
+   grid-template-columns: 1fr 1fr 1fr;
    row-gap: 10vh;
 }
 
@@ -190,6 +189,11 @@ margin-left: -100%;
    width: 100%;
    margin-left: 23%;
 }
+.line {
+   width: 100%;
+   height: 1px;
+   background-color: white;
+}
 
 .p5h {
    color: #ffffff;
@@ -216,7 +220,6 @@ margin-left: -100%;
    margin-top: 10%;
 
 }
-/*-------------- Arad -------------*/
 .heading-paragraph {
    order: 1;
    text-align: right;
@@ -240,7 +243,6 @@ margin-left: -100%;
    line-height: 1.5;
    margin-right: -20%;
 }
- /*-------------- Arad -------------*/
 .p5 {
    color: #ffffff;
    font-size: 1.5rem;
@@ -290,15 +292,7 @@ p{
 .container1 {
    margin: 1rem auto;
    padding: 1rem; 
-   /* text-align: justify;
-   transition: all 0.3s;
-}
-
-/* .container1 p {
-   line-height: 0.5;
-   letter-spacing: 0.3px;
-   word-spacing: 2px;
-   text-align: justify; */
+  
 }
 
 
@@ -322,7 +316,6 @@ p{
 
 
 
-/*-------------- Arad -------------*/
 .box10 {
    display: flex;
    flex-wrap: wrap;
@@ -344,7 +337,6 @@ p{
    font-size: 1rem; /* גודל הטקסט ב box10 יהיה 3% מרוחב המסך */
 
 }
-/*-------------- Arad -------------*/
 
 .divider {
    order: 2;
@@ -354,7 +346,6 @@ p{
    
  }
 
- /*-------------- Arad -------------*/
 .box12 {
    grid-area: box12;
    width: 100%;
@@ -367,7 +358,6 @@ p{
    margin-right: -1%;
 
 }
-/*-------------- Arad -------------*/
 
 .box13 .box14 .box15
 {
@@ -376,7 +366,6 @@ p{
    
 }
 
-/*-------------- Arad -------------*/
 .img13
 {
    width: 20%;
@@ -387,7 +376,6 @@ p{
    margin-left: -15%;
 }
 
-/*-------------- Arad -------------*/
 
 .img14
 {
@@ -437,6 +425,87 @@ p{
 {
    margin-top: 5%;
 }
+.footindex {
+   grid-area: footindex;
+   background-color: #0a0a0a;
+   color: #fff;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-around;
+   align-items: flex-start;
+   padding: auto;
+}
+
+.footindex div {
+   flex: 1;
+   margin: 10px;
+}
+
+.footindex .footer-logo {
+   max-width: 100px;
+}
+
+.footindex p {
+   margin: 5px 0;
+}
+
+.footindex h2 {
+   font-size: 1.2em;
+   margin-bottom: 10px;
+}
+
+.footindex .footer-links {
+   list-style-type: none;
+   padding: 0;
+}
+
+.footindex .footer-links li {
+   margin-bottom: 5px;
+}
+
+.footindex a {
+   color: #fff;
+   text-decoration: none;
+}
+
+.footindex a:hover {
+   text-decoration: underline;
+}
+
+#fb, #yt, #tw, #ig {
+   max-width: 30px;
+   margin-right: 5px;
+}
+form {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-top: 20px;
+}
+.foot4
+{
+   margin-top: 30%;
+}
+input[type="email"] {
+   padding: 10px;
+   border: 2px solid #000;
+   border-radius: 5px;
+   font-size: 16px;
+}
+
+input[type="submit"] {
+   padding: 10px 20px;
+   border: none;
+   border-radius: 5px;
+   font-size: 16px;
+   background-color: #000;
+   color: white;
+   cursor: pointer;
+}
+
+input[type="submit"]:hover {
+   background-color: #333;
+}
 
 
 
@@ -450,209 +519,25 @@ p{
    margin: 0;
    padding: 0;
 }
-
+ 
 .container {
    display: grid;
    grid-template-areas: 
-       'box1 box1 box1'
-       'box2 box3 box3'
-       'box4 box5 box5'
-       'box6 box6 box6'
-       'box10 box10 box10'
-       'box12 box12 box12'
-       'box11 box11 box11'
-       'box13 box14 box15';
+   'box1 box1 box1'
+   'box2 box2 box3'
+   'box5 box5 box4'
+   'box6 box6 box6'
+   'box10 box10 box10'
+   'box12 box12 box12'
+   'box11 box11 box11'
+   'footindex footindex footindex';
+
    margin: 0;
    padding: 0;
-   grid-template-columns: auto;
+   grid-template-columns: 1fr 1fr 1fr;
    row-gap: 10vh;
 }
 
-
-/*-------------- Arad -------------*/
-.img13 {
-   object-fit: cover;
-}
-/*-------------- Arad -------------*/
-
-
-.box1 {
-   grid-area: box1;
-   background-color: rgb(0, 0, 0);
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   height: 100%;
-   overflow: hidden;
-}
-
-.video {
-   width: 100vw;
-   height: 60vh;
-   object-fit: cover;
-   opacity: 100%;
-}
-
-.logo {
-   top: 1vh;
-   left: 3px;
-   position: fixed;
-   z-index: 110;
-   opacity: 90%;
-   height: 6vh;
-}
-
-.navbar {
-   overflow: hidden;
-   z-index: 200;
-   top: 0;
-   position: fixed;
-   height: 8vh;
-   width: 100%;
-   padding-right: 22%;
-   font-size: xx-small;
-}
-
-.navlinks li {
-   float: right;
-}
-
-.navlinks {
-   list-style-type: none;
-   margin: 0;
-   padding: 0;
-}
-
-.navlinks li a {
-   font-family: 'Protest Strike', sans-serif;
-   color: white;
-   display: block;
-   text-align: center;
-   padding: 2vh 2vw;
-   text-decoration: none;
-   margin-top: 1vh;
-}
-
-.navlinks li a:hover {
-   color: rgb(5, 5, 5);
-   background: #fdfcfb;
-   border-radius: 0%;
-   margin-top:1vh ;
-   height: 1.5vh;
-
-}
-
-.navlinks img {
-   border-radius: 10vh;
-   height: 2vh;
-}
-
-.box2 {
-   grid-area: box2;
-   background-color: rgb(0, 0, 0);
-   height: 100%;
-   width: 100%;
-   margin-left: 10%;
-}
-
-.img2 {
-   width: 90%;
-   height: 100%;
-   opacity: 100%;
-border-radius: 10%;
-
-}
-
-.img4 {
-   width: 100%;
-   height: 100%;
-   opacity: 100%;
-border-radius: 10%;
-z-index: 100;
-}
-.box3 {
-   grid-area: box3;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   background-color: rgb(0, 0, 0);
-   height: 100%;
-
-   color: white;
-}
-
-.text {
-   font-family: "Yanone Kaffeesatz";
-   font-size: 0.rem;
-}
-
-.overlay {
-   z-index: 100;
-}
-
-.wrapper {
-   display: inline-block;
-   margin: 0 5px;
-}
-
-.letter {
-   transition: ease-out 1s;
-   transform: translateY(40%);
-}
-
-.shadow {
-   color: #141414;
-   transition: ease-in 3s, ease-out 3s;
-}
-
-.text:hover .letter {
-   transform: translateY(-200%);
-}
-
-.text:hover .shadow {
-   opacity: 0;
-   transform: translateY(200%);
-}
-
-.box4 {
-   grid-area: box4;
-   background-color: rgba(0, 0, 0, 0.713);
-   height: 100%;
-   width: 100%;
-   margin-left: 10%;
-   margin-top: 7vh;
-}
-
-.box4P {
-   color: #ffffff;
-   font-size: 1rem;
-}
-   
-   body {
-   background-color: rgb(0, 0, 0);
-   font-family: "Yanone Kaffeesatz";
-   margin: 0;
-   padding: 0;
-   }
-   
-   .container {
-      display: grid;
-      grid-template-areas: 
-      'box1 box1 box1'
-      'box2 box2 box3'
-      'box5 box5 box4'
-      'box6 box6 box6'
-      'box10 box10 box10'
-      'box12 box12 box12'
-      'box11 box11 box11';
-   
-      margin: 0;
-      padding: 0;
-      grid-template-columns: auto;
-      row-gap: 10vh;
-   }
-
-   /*-------------- Arad -------------*/
    .box1 {
       grid-area: box1;
       background-color: rgb(0, 0, 0);
@@ -663,7 +548,6 @@ z-index: 100;
       width: 100%;
       overflow: hidden;
    }
-   /*-------------- Arad -------------*/
 
    .video {
       width: 100%;
@@ -746,7 +630,7 @@ z-index: 100;
    }
    
    .img4 {
-      width: 100%;
+      width: 50%;
       height: 60%;
       opacity: 100%;
    border-radius: 5%;
@@ -755,7 +639,6 @@ z-index: 100;
    }
 
 
-   /*-------------- Arad -------------*/
    .box3 {
       grid-area: box3;
       display: flex;
@@ -766,12 +649,11 @@ z-index: 100;
    margin-left: -100%;
       color: white;
    }
-   /*-------------- Arad -------------*/
    .box5 {
       grid-area: box5;
       background-color: rgb(0, 0, 0);
-      height: 100%;
-      width: 100%;
+      height: 50%;
+      width: 70%;
       margin-right: -10%;
       grid-auto-columns: 10%;
    }
@@ -809,7 +691,6 @@ z-index: 100;
    margin-top: 10%;
 
 }
-/*-------------- Arad -------------*/
 .heading-paragraph {
    order: 1;
    text-align: right;
@@ -833,7 +714,6 @@ z-index: 100;
    line-height: 0.5;
    margin-right: -20%;
 }
- /*-------------- Arad -------------*/
 .p5 {
    color: #ffffff;
    font-size: 0.3rem;
@@ -909,7 +789,6 @@ p{
       z-index: 10;
    }
 
-/*-------------- Arad -------------*/
 
 .heading-paragraph {
    align-content: flex-start;
@@ -939,7 +818,6 @@ p{
    font-size: xx-small
 }
 
-/*-------------- Arad -------------*/
 
 body hr {
    width: 5vw;
@@ -980,7 +858,6 @@ font-size: 0.4rem;
 }
 
 
-/*-------------- Arad -------------*/
 .box10 {
    grid-area: box10;
    background-color: rgb(0, 0, 0);
@@ -995,7 +872,6 @@ font-size: 0.4rem;
 
 
 }
-/*-------------- Arad -------------*/
 
 .box11 {
    grid-area: box11;
@@ -1075,7 +951,6 @@ margin-right: -10%;
    
 }
 
-/*-------------- Arad -------------*/
 .img13
 {
    width: 20%;
@@ -1086,7 +961,6 @@ margin-right: -10%;
    object-fit: cover;
 }
 
-/*-------------- Arad -------------*/
 
 .img14
 {
@@ -1130,6 +1004,86 @@ margin-right: -10%;
    
 
 }
+/* Base styles */
+.footindex {
+   grid-area: footindex;
+   background-color: #000000;
+   color: #fff;
+   display: flex;
+   flex-wrap: wrap;
+   align-items: flex-start;
+   padding: 2vh;
+   width: 100%;
+}
+
+.footindex div {
+   flex: 1;
+   margin: 2vh;
+}
+
+.footindex .footer-logo {
+   max-width: 20%;
+}
+
+.footindex p {
+   margin: 1vh 0;
+}
+
+.footindex h2 {
+   font-size: 2vh;
+   margin-bottom: 1vh;
+}
+
+.footindex .footer-links {
+   list-style-type: none;
+   padding: 0;
+}
+
+.footindex .footer-links li {
+   margin-bottom: 1vh;
+}
+
+.footindex a {
+   color: #fff;
+   text-decoration: none;
+}
+
+.footindex a:hover {
+   text-decoration: underline;
+}
+
+#fb, #yt, #tw, #ig {
+   margin-right: 1vh;
+   width: 12%;
+}
+form {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-top: 2vh;
+}
+
+input[type="email"] {
+   padding: 1vh;
+   border: 0.2vh solid #000;
+   border-radius: 1vh;
+   font-size: 0.6rem;
+   margin-right: 1vh;
+}
+
+input[type="submit"] {
+   padding: 1vh 2vh;
+   border: none;
+   border-radius: 1vh;
+   font-size: 0.6rem;
+   background-color: #000;
+   color: white;
+   cursor: pointer;
+}
+
+
+
+/* --------------end---------------- */
 }
 
 .container
