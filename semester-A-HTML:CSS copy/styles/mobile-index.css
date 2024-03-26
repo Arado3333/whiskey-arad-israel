@@ -368,6 +368,8 @@ width: 70%;
 #fb, #yt, #tw, #ig {
    max-width: 30px;
    margin-right: 5px;
+   filter: brightness(0) invert(1);
+
 }
 form {
    display: flex;
