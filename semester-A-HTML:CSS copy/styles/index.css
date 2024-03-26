@@ -1,6 +1,6 @@
 @import url("./mobile-index.css");
 @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap');
-@media  (min-width: 1220px) 
+@media  (min-width: 800px) and (max-width: 1500px)
 {
 
  *p {
@@ -23,15 +23,15 @@
    'box2 box2 box3'
    'box5 box5 box4'
    'box6 box6 box6'
-   'box10 box10 box10'
-   'box12 box12 box12'
-   'box11 box11 box11'
+   'box10 box10 box11'
+   'box12 box12 box13'
+   'box15 box14 box14'
    'footindex footindex footindex';
 
    margin: 0;
    padding: 0;
    grid-template-columns: 1fr 1fr 1fr;
-   row-gap: 10vh;
+   row-gap: 20vh;
 }
 
 
@@ -121,7 +121,6 @@
    width: 40%;
    height: 90%;
    opacity: 100%;
-border-radius: 5%;
 margin-top: 5%;
 
 }
@@ -130,7 +129,6 @@ margin-top: 5%;
    width: 90%;
    height: 100%;
    opacity: 70%;
-border-radius: 5%;
 margin-left: 5%;
 }
 
@@ -207,74 +205,34 @@ margin-left: -100%;
    color: #ffffff;
    font-size: 1.5rem;
    letter-spacing: 2px;   
-   text-align: right;
-   width: 100%;
-   margin-top: 10%;
+  
+ 
 
 }.p5h1 {
    color: #ffffff;
-   font-size: 1.5em;
-   letter-spacing: 2px;   
-   text-align: right;
-   width: 60%;
-   margin-top: 10%;
+  
 
 }.p5h2 {
    color: #ffffff;
-   font-size: 1.5em;
-   letter-spacing: 2px;   
-   text-align: left;
-   width: 100%;
-   margin-top: 10%;
+
 
 }
-.heading-paragraph {
-   order: 1;
-   text-align: right;
-   width: 50%;
-   line-height: 1.5;
-   margin-right: -10%;
-}
 
-.heading-paragraph2 {
-   order: 1;
-   text-align: right;
-   width: 50%;
-   line-height: 1.5;
-   margin-right: -10%;
-}
-
-.heading-paragraph3 {
-   order: 1;
-   text-align: left;
-   width: 50%;
-   line-height: 1.5;
-   margin-right: -20%;
-}
 .p5 {
    color: #ffffff;
    font-size: 1.5rem;
    letter-spacing: 2px;
-   font-size: 0.9rem;
-   margin: 0;
-   width: 100%;
 }
 .p51 {
    color: #ffffff;
    font-size: 1.5rem;
    letter-spacing: 2px;
-   font-size: 1rem;
-   margin: 0;
-   width: 65%;
+  
 }
 .p10h {
    color: #ffffff;
    font-size: 0.7rem;
-   font-weight: bold;
-   letter-spacing: 2px;
-   font-size: medium;
-   width: 60%;
-   text-align: right;
+
    
    
 }
@@ -316,9 +274,7 @@ p{
 {
    width: 100%;
    height: 100%;
-   opacity: 100%;
    object-fit: fill;
-   border-radius: 40%;
 }
 
 
@@ -334,17 +290,7 @@ p{
    font-size: 1rem; /* גודל הטקסט ב box10 יהיה 3% מרוחב המסך */
 }
 
-.box11 {
-   margin: 0;
-   grid-area: box11;
-   display: flex;
-   flex-wrap: wrap;
-   flex-direction: row;
-   gap: 15%;
-   justify-content: center;
-   font-size: 1rem; /* גודל הטקסט ב box10 יהיה 3% מרוחב המסך */
 
-}
 
 .divider {
    order: 2;
@@ -354,56 +300,13 @@ p{
    
  }
 
-.box12 {
-   grid-area: box12;
-   width: 100%;
-   display: flex;
-   flex-wrap: wrap;
-   flex-direction: row-reverse;
-   gap: 25%;
-   justify-content: center;
-   font-size: 1rem; /* גודל הטקסט ב box10 יהיה 3% מרוחב המסך */
-   margin-right: -1%;
-
-}
-
-.box13 .box14 .box15
-{
-   height: 80%;
-   width: 100%;
-   
-}
-
-.img13
-{
-   width: 20%;
-   height: 70%;
-   opacity: 100%;
-   border-radius: 20%;
-   margin-top: 6%;
-   margin-left: -15%;
-}
 
 
-.img14
-{
-   width: 20%;
-   height: 70%;
-   opacity: 100%;
-   border-radius: 20%;
-   margin-top: 6%;
-   margin-left: -15%;
-}
 
-.img15
-{
-   width: 20%;
-   height: 70%;
-   opacity: 100%;
-   border-radius: 20%;
-   margin-top: 6%;
-   margin-right: -15%;
-}
+
+
+
+
 
 .button5,
 .button6,
@@ -513,6 +416,41 @@ input[type="submit"] {
 
 input[type="submit"]:hover {
    background-color: #333;
+}
+.box10
+{
+   width: 100%;
+   height: 100%;
+}
+.box11
+{
+   width: 100%;
+   height: 100%;
+}
+.box12
+{
+   width: 100%;
+   height: 100%;
+   margin-left: 20%;
+}
+.box13
+{
+   width: 100%;
+   height: 100%;
+   margin-left: 20%;
+
+}
+.box14
+{
+   width: 100%;
+   height: 100%;
+   margin-top: 20%;
+
+}
+.box15
+{
+   width: 100%;
+   height: 100%;
 }
 }
 
