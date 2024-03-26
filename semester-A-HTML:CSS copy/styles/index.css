@@ -95,7 +95,7 @@
 }
 
 .navlinks li a:hover {
-   color: rgb(45, 45, 45);
+   color: rgb(255, 255, 255);
 
 }
 
@@ -512,3 +512,7 @@ input[type="submit"]:hover {
 }
 }
 
+*
+{
+
+}
