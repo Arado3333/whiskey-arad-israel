@@ -9,6 +9,17 @@
       /* padding: 0 15px; */
     }
 
+    .logo {
+      overflow: hidden;
+      height: 12%;
+      width: 10%;
+      margin-left: 5%;
+    }
+
+    .menu-icon-mobile {
+      display: none;
+     }
+
     .shop-nav-vid {
       grid-column: span 3;
     }
@@ -33,7 +44,7 @@
     }
     
     #shop-navbar {
-      max-height: 5vh;
+      height: 5vh;
       grid-column: span 3;
       background-color: transparent;
       display: flex;

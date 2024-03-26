@@ -8,6 +8,12 @@
     /* padding: 0 10px; */
   }
 
+  .logo {
+    /* height: auto; */
+    width: 8%;
+    margin-left: 2%;
+ }
+
   .shop-nav-vid {
     grid-column: span 2;
 
@@ -109,9 +115,16 @@ input[type="submit"]:hover {
     height: 75%;
     grid-column: span 2;
   }
+
+  .menu-icon-mobile {
+    display: none;
+    margin-right: 40px;
+    filter: invert(100%);
+    height: 10vh;
+  }
   
   #shop-navbar {
-    min-height: 5vh;
+    height: 5vh;
     grid-column: span 2;
     background-color: transparent;
     display: flex;
