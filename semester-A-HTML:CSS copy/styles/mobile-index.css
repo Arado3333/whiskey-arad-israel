@@ -1,130 +1,101 @@
 @media  (max-width: 650px) 
 {
-  
-  body {
-   background-color: rgb(0, 0, 0);
-   margin: 0;
-   padding: 0;
+   body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #000000;
 }
-
+*{
+   max-width: 100%;
+   max-height: 100%;
+   color: white;
+}
 .container {
-   display: grid;
-   grid-template-areas: 
-       'box1 box1 box1'
-       'box2 box3 box3'
-       'box4 box5 box5'
-       'box6 box6 box6'
-       'box10 box10 box10'
-       'box12 box12 box12'
-       'box11 box11 box11'
-       'box13 box14 box15';
-   margin: 0;
-   padding: 0;
-   grid-template-columns: auto;
-   row-gap: 10vh;
+  display: grid;
+  grid-template-areas:
+    'box1'
+    'box3'
+    'box2'
+    'box5'
+    'box4'
+    'box6'
+    'box10'
+    'box11'
+    'box12'
+    'footindex';
+    gap: 22vh;
+    
+}
+
+.container > div {
+  background-color: #000000;
 }
 
 
-/*-------------- Arad -------------*/
-.img13 {
-   object-fit: cover;
+.navbar-mobile
+{
+   display: none;
 }
-/*-------------- Arad -------------*/
 
 
 .box1 {
    grid-area: box1;
-   background-color: rgb(0, 0, 0);
-   display: flex;
-   justify-content: center;
-   align-items: center;
    height: 100%;
-   overflow: hidden;
+
+   
 }
 
 .video {
-   width: 100vw;
-   height: 60vh;
-   object-fit: cover;
-   opacity: 100%;
+   height: 100%;
+   width: 100%;
+ 
 }
 
 .logo {
-   top: 1vh;
-   left: 3px;
-   position: fixed;
-   z-index: 110;
-   opacity: 90%;
-   height: 6vh;
+ height: 10vh;
+ width: 20vw;
+ margin-left: 10%;
 }
+.br
+{
+   margin-left: 40%;
+   z-index: 100;
+   filter: brightness(0) invert(1);
 
+   
+}
 .navbar {
    overflow: hidden;
    z-index: 200;
    top: 0;
-   position: fixed;
-   height: 8vh;
+   height: 10vh;
    width: 100%;
-   padding-right: 22%;
-   font-size: xx-small;
-}
+   background-color: #000000;
+   position: fixed;
 
-.navlinks li {
-   float: right;
-}
-
-.navlinks {
-   list-style-type: none;
-   margin: 0;
-   padding: 0;
-}
-
-.navlinks li a {
-   font-family: 'Protest Strike', sans-serif;
-   color: white;
-   display: block;
-   text-align: center;
-   padding: 2vh 2vw;
-   text-decoration: none;
-   margin-top: 1vh;
-}
-
-.navlinks li a:hover {
-   color: rgb(5, 5, 5);
-   background: #fdfcfb;
-   border-radius: 0%;
-   margin-top:1vh ;
-   height: 1.5vh;
-
-}
-
-.navlinks img {
-   border-radius: 10vh;
-   height: 2vh;
+   
 }
 
 .box2 {
    grid-area: box2;
-   background-color: rgb(0, 0, 0);
-   height: 100%;
-   width: 100%;
-   margin-left: 10%;
+ 
 }
 
 .img2 {
-   width: 90%;
-   height: 100%;
-   opacity: 100%;
-border-radius: 10%;
 
+height: 100%;
+width: 70%;
+padding-left: 15%;
 }
 
-.img4 {
-   width: 90%;
-   height: 100%;
-   opacity: 40%;
-border-radius: 10%;
+.img4 
+{
+   height:  100%;
+   width: 70%;
+   padding-left: 15%;
 }
+
 .box3 {
    grid-area: box3;
    display: flex;
@@ -132,13 +103,14 @@ border-radius: 10%;
    align-items: center;
    background-color: rgb(0, 0, 0);
    height: 100%;
-
    color: white;
 }
 
 .text {
-   font-family: "Yanone Kaffeesatz";
-   font-size: 0.rem;
+   font-size: 3.5vh;
+   text-align: center;
+   padding: 0 2vh;
+   margin-top: 10%;
 }
 
 .overlay {
@@ -151,500 +123,280 @@ border-radius: 10%;
 }
 
 .letter {
-   transition: ease-out 1s;
-   transform: translateY(40%);
+   transition: ease-out 2s;
+   transform: translateY(70%);
 }
 
 .shadow {
-   color: #141414;
+   color: #131212;
    transition: ease-in 3s, ease-out 3s;
 }
 
 .text:hover .letter {
-   transform: translateY(-200%);
+   transform: translateY(-100%);
 }
 
 .text:hover .shadow {
    opacity: 0;
-   transform: translateY(200%);
+   transform: translateY(100%);
 }
-
 .box4 {
    grid-area: box4;
-   background-color: rgba(0, 0, 0, 0.713);
-   height: 100%;
-   width: 100%;
+  
+}
+
+
+
+.box5 {
+   grid-area: box5;
+   
+}
+.line {
+
+}
+
+.p5h 
+{
+   font-size: 1.2rem; 
+   text-align: left;
    margin-left: 10%;
-   margin-top: 7vh;
 }
+.p5h1 
+{
+  font-size: 1.2rem; 
+  text-align: left;
+  margin-left: 10%;
 
-.box4P {
-   color: #ffffff;
-   font-size: 1rem;
+
+
 }
-   
-   body {
-   background-color: rgb(0, 0, 0);
-   font-family: "Yanone Kaffeesatz";
-   margin: 0;
-   padding: 0;
-   }
-   
-   .container {
-      display: grid;
-      grid-template-areas: 
-      'box1 box1 box1'
-      'box2 box2 box3'
-      'box5 box5 box4'
-      'box6 box6 box6'
-      'box10 box10 box10'
-      'box12 box12 box12'
-      'box11 box11 box11';
-   
-      margin: 0;
-      padding: 0;
-      grid-template-columns: auto;
-      row-gap: 10vh;
-   }
-
-   /*-------------- Arad -------------*/
-   .box1 {
-      grid-area: box1;
-      background-color: rgb(0, 0, 0);
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100%;
-      width: 100%;
-      overflow: hidden;
-   }
-   /*-------------- Arad -------------*/
-
-   .video {
-      width: 100%;
-      height: 30vh;
-      object-fit: cover;
-      opacity: 100%;
-   }
-   
-   .logo {
-      top: 1.6vh;
-      left: 3px;
-      position: fixed;
-      z-index: 110;
-      opacity: 100%;
-      height: 5vh;
-   }
-   
-   .navbar {
-      overflow: hidden;
-      z-index: 200;
-      top: 0;
-      position: fixed;
-      height: 10%;
-      width: 100%;
-      padding-right: 17%;
-      background-color: #000000;
-      font-size: x-small;
-      
-   }
-   
-   .navlinks li {
-      float: right;
-   
-   }
-   
-   .navlinks {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-   }
-   
-   .navlinks li a {
-      color: white;
-      display: block;
-      text-align: center;
-      padding: 2vh 2vw;
-      text-decoration: none;
-      margin-top: 2vh;
-      background-color: #000000;
-   }
-   
-   .navlinks li a:hover {
-      color: rgb(45, 45, 45);
-   
-   }
-   
-   .navlinks img {
-      border-radius: 10vh;
-      height: 1vh;
-   }
-   
-   
-   .box2 {
-      grid-area: box2;
-      background-color: rgb(0, 0, 0);
-      height: 100%;
-      width: 100%;
-      margin-left: 10%;
-   }
-   
-   .img2 {
-      width: 40%;
-      height: 90%;
-      opacity: 100%;
-   border-radius: 5%;
-   margin-top: 5%;
-   z-index: 100;
-
-   
-   }
-   
-   .img4 {
-      width: 110%;
-      height: 60%;
-      opacity: 100%;
-   border-radius: 5%;
-   margin-top: 5%;
-   }
-
-   /*-------------- Arad -------------*/
-   .box3 {
-      grid-area: box3;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background-color: rgb(0, 0, 0);
-      height: 100%;
-   margin-left: -100%;
-      color: white;
-   }
-   /*-------------- Arad -------------*/
-   
-   .text {
-      font-family: "Yanone Kaffeesatz";
-      font-size: 1.5vh;
-      text-align: center;
-   }
-   
-
-.p5h {
-   color: #ffffff;
-   font-size: 0.5rrem;
-   letter-spacing: 2px;   
-   text-align: right;
-   width: 100%;
-   margin-top: 10%;
-
-}.p5h1 {
-   color: #ffffff;
-   font-size: 0.5rem;
-   letter-spacing: 2px;   
-   text-align: right;
-   width: 60%;
-   margin-top: 10%;
-
-}.p5h2 {
-   color: #ffffff;
-   font-size: 0.5rem;
-   letter-spacing: 2px;   
+.p5h2
+{
+   font-size: 1.2rem; 
    text-align: left;
-   width: 100%;
-   margin-top: 10%;
+   margin-left: 10%;
 
 }
-/*-------------- Arad -------------*/
-.heading-paragraph {
-   order: 1;
-   text-align: right;
-   width: 50%;
-   line-height: 0.5;
-   margin-right: -10%;
-}
 
-.heading-paragraph2 {
-   order: 1;
-   text-align: right;
-   width: 50%;
-   line-height: 0.5;
-   margin-right: -10%;
-}
-
-.heading-paragraph3 {
-   order: 1;
-   text-align: left;
-   width: 50%;
-   line-height: 0.5;
-   margin-right: -20%;
-}
- /*-------------- Arad -------------*/
-.p5 {
+.p5 
+{
    color: #ffffff;
-   font-size: 0.5rem;
+   font-size: 0.8rem;
    letter-spacing: 2px;
-   font-size: 0.9rem;
-   margin: 0;
-   width: 100%;
+   padding: 15%;
+  
 }
-.p51 {
+.p51 
+{
    color: #ffffff;
-   font-size: 0.5rem;
+   font-size: 0.8rem;
    letter-spacing: 2px;
-   font-size: 1rem;
-   margin: 0;
-   width: 65%;
+   padding: 15%;
 }
 .p10h {
-   color: #ffffff;
-   font-size: 0.7rem;
-   font-weight: bold;
-   letter-spacing: 2px;
-   font-size: medium;
-   width: 60%;
-   text-align: right;
+ 
    
    
 }
 
 
 .p10 {
-   color: #ffffff;
-   font-size: 0.5rem;
-   font-weight: bold;
-   letter-spacing: 2px;
-   font-size: medium;
-   width: 100%;
-   text-align: right;
-   margin-top: 0; /* יש לשנות את הערך ל- 0 כדי להוריד את הרווח */
+  
    
 }
 
 
 p{
-   margin-right: 40%;
 }
-
-   .overlay {
-      z-index: 10;
-   }
-   
-   .wrapper {
-      display: inline-block;
-      margin: 0 5px;
-   }
-   
-   .letter {
-      transition: ease-out 2s;
-      transform: translateY(70%);
-      z-index: 10;
-
-   }
-   
-   .shadow {
-      color: #141414;
-      transition: ease-in 3s, ease-out 3s;
-      z-index: 10;
-      
-   }
-   
-   .text:hover .letter {
-      transform: translateY(-100%);
-      z-index: 10;
-   }
-
-/*-------------- Arad -------------*/
-
-.heading-paragraph {
-   align-content: flex-start;
-   order: 1;
-   text-align: right;
-   width: 55%;
-   line-height: 1.5;
-   font-size: xx-small
-
-}
-
-.heading-paragraph2 {
-   align-content: flex-start;
-   order: 1;
-   text-align: left;
-   width: 55%;
-   line-height: 1.5;
-   font-size: xx-small
-
-}
-
-.heading-paragraph3 {
-   order: 1;
-   text-align: left;
-   width: 50%;
-   line-height: 1.5;
-   font-size: xx-small
-}
-
-/*-------------- Arad -------------*/
-
-body hr {
-   width: 5vw;
-   border: none;
-   border-bottom: 1px solid rgba(0, 0, 0, 0.25);
-} 
 
 .container1 {
-font-size: 0.4rem;
- 
-   text-align: justify;
-   transition: all 0.3s;
+  
+  
 }
-
-.container1 p {
-   text-align: justify;
-   font-size: 0.5rem;
-   width: 100%;
-}
-
 
 
 
 .box6 {
    grid-area: box6;
-   background-color: rgb(0, 0, 0);
-   height: 80%;
-   width: 100%;
+ height: 45vh;
 }
 
 .img6
 {
-   width: 100%;
    height: 100%;
-   opacity: 100%;
-   object-fit: fill;
-   border-radius: 20%;
+   width: 100;
+   border-radius: 35%;
 }
 
 
-/*-------------- Arad -------------*/
-.box10 {
+
+
+.box10 
+{
    grid-area: box10;
-   background-color: rgb(0, 0, 0);
-   font-size: 1rem; /* גודל הטקסט ב box10 יהיה 3% מרוחב המסך */
-   width: 100%;
-   margin: 0;
-   flex-direction: row-reverse;
-   justify-content: center;
-   align-items: center;
    
-   
-
-
 }
-/*-------------- Arad -------------*/
 
-.box11 {
+.box11
+ {
    grid-area: box11;
-   background-color: rgb(0, 0, 0);
-   font-size: 1rem; /* גודל הטקסט ב box11 יהיה 3% מרוחב המסך */
-   height: 100%;
-   width: 80%;
-   margin-left: 10%;
-
-
 
 }
+
+.divider {
+  
+   
+ }
 
 .box12 {
    grid-area: box12;
-   background-color: rgb(0, 0, 0);
-   font-size: 1rem; /* גודל הטקסט ב box12 יהיה 3% מרוחב המסך */
-   height: 100%;
-   width: 100%;
-margin-right: -10%;
-}
 
-.img2, .img4, .img6 {
-   max-width: 100%;
-   height: auto;
-}
 
-.p5
-{
-   text-align: right;
-   font-size: 0.7rem;
-
-}
-
-.button5
-
-{
-   color: rgb(255, 255, 255);
-    border: 0.4px solid rgb(255, 255, 255);
-    background-color: transparent;
-   cursor: pointer;
-   font-size: 0.7rem;
-   height: 5vh;
-   margin-left: 26%;
-   border-radius: 10%;
-
-}
-
-.button6,
-.buttonvideo 
-{
-   color: rgb(255, 255, 255);
-    border: 0.4px solid rgb(255, 255, 255);
-    background-color: transparent;
-   cursor: pointer;
-   font-size: 0.7rem;
-   height: 5vh;
-   margin-left: 35%;
-   border-radius: 10%;
-}
-
-.button:hover,
-.button5:hover,
-.button6:hover,
-.buttonvideo:hover {
-   color: #000000;
-    background-color: rgb(255, 255, 255);
-    border-color: black;
 }
 
 .box13 .box14 .box15
 {
-   height: 80%;
-   width: 100%;
-   
+
+   height: 70%;
+width: 70%;
 }
 
-/*-------------- Arad -------------*/
 .img13
 {
-   width: 20%;
-   height: 30%;
-   opacity: 100%;
-   border-radius: 20%;
-   margin-top: 6%;
-   margin-left: -15%;
+   height: 60%;
+   width: 70%;
+   padding-left: 15%;
+   margin-top: 10%;
 }
 
-/*-------------- Arad -------------*/
 
 .img14
 {
-   width: 20%;
-   height: 30%;
-   opacity: 100%;
-   border-radius: 20%;
-   margin-top: 6%;
-   margin-left: -15%;
+   height: 60%;
+   width: 70%;
+   padding-left: 15%; 
+   margin-top: 10%;
+
+
 }
 
 .img15
 {
-   width: 20%;
-   height: 30%;
-   opacity: 100%;
-   border-radius: 20%;
-   margin-top: 6%;
-   margin-right: -15%;
+   height: 60%;
+   width: 70%;
+   padding-left: 15%;
+   margin-top: 10%;
+}
+
+.button5,
+.button6,
+.buttonvideo {
+    background-color: transparent;
+    color: rgb(255, 255, 255);
+    border: 1px solid rgb(255, 255, 255);
+    cursor: pointer;
+    font-size: 1rem;
+    height: 5vh;
+    margin-left: 25%;
+    width: 50%;
+    border-radius: 50px;
+}
+.buttonvideo 
+{
+   width: 50%;
+   margin-left: 25%;
+}
+.button5:hover,
+.button6:hover,
+.buttonvideo:hover {
+    color: #000000;
+    background-color: rgb(255, 255, 255);
+    border-color: black;
+}
+
+.button5
+{
+   margin-left: 8%;
+}
+.footindex {
+   grid-area: footindex;
+   background-color: #0a0a0a;
+   color: #fff;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-around;
+   align-items: flex-start;
+   padding: auto;
+}
+
+.footindex div {
+   flex: 1;
+   margin: 10px;
+}
+
+.footindex .footer-logo {
+   max-width: 100px;
+}
+
+.footindex p {
+   margin: 5px 0;
+}
+
+.footindex h2 {
+   font-size: 1.2em;
+   margin-bottom: 10px;
+}
+
+.footindex .footer-links {
+   list-style-type: none;
+   padding: 0;
+}
+
+.footindex .footer-links li {
+   margin-bottom: 5px;
+}
+
+.footindex a {
+   color: #fff;
+   text-decoration: none;
+}
+
+.footindex a:hover {
+   text-decoration: underline;
+}
+
+#fb, #yt, #tw, #ig {
+   max-width: 30px;
+   margin-right: 5px;
+}
+form {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-top: 20px;
+}
+.foot4
+{
+   margin-top: 30%;
+}
+input[type="email"] {
+   padding: 10px;
+   border: 2px solid #000;
+   border-radius: 5px;
+   font-size: 16px;
+}
+
+input[type="submit"] {
+   padding: 10px 20px;
+   border: none;
+   border-radius: 5px;
+   font-size: 16px;
+   background-color: #000;
+   color: white;
+   cursor: pointer;
+}
+
+input[type="submit"]:hover {
+   background-color: #333;
+}
 }
