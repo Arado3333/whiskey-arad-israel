@@ -1,5 +1,9 @@
 :root {
     --font-main: 'Heebo', sans-serif;  
-    --font-weight-normal: 400;
+    --font-weight-normal: 500;
+    --font-weight-light: 200;
+    --font-weight-bold: 700;
     --font-weight-paragraph: 200;
+    --fs-paragraph: 0.95em;
+    --fs-heading: 1.3em;
 }

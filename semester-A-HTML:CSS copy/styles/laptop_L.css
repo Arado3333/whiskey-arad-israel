@@ -45,7 +45,6 @@
     #shop-navbar {
       height: 5vh;
       grid-column: span 3;
-      background-color: transparent;
       display: flex;
       align-items: center;
       flex-wrap: wrap;
@@ -105,7 +104,7 @@
        border-radius: 5px;
        padding: 10px;
        text-align: center;
-       background-color: #8b6b48;
+
     }
    
    
@@ -118,12 +117,13 @@
     
      .box1
     {
-      /* align-self: center; */
+      grid-area: box1;
     } 
+
+    .
     
     .imgbox1
     {
-       /* grid-area: box1; */
        pointer-events: all;
        height: 18vh;
     }

@@ -34,6 +34,11 @@
    row-gap: 10vh;
 }
 
+
+.br {
+   display: none;
+}
+
 .box1 {
    grid-area: box1;
    background-color: rgb(0, 0, 0);
