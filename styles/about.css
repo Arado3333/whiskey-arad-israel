@@ -29,8 +29,8 @@
 }
 
 .video {
-   width: 100vw;
-   height: 55vh;
+   width: 100%;
+   height: auto;
    opacity: 70%;
    object-fit: fill;
 }
@@ -93,12 +93,12 @@
 
 .box2 {
    grid-area: box2;
-margin-left: 35%;
+  
 }
 
 .img2 {
 
-width: auto;
+width: 30vw;
 height: auto;
 border-radius: 40px;
 
@@ -115,10 +115,11 @@ border-radius: 40px;
    color: white;
    font-size: 1rem;
    letter-spacing: 2px;
+   font-size: 2rem;
 }
 .img4 {
    height: auto;
-   width: 100%;
+   width: 30vw;
    border-radius: 40px;
 }
 .box3 {
@@ -138,7 +139,8 @@ margin: 15%;
 .box5 {
    grid-area: box5;
 width:100%;
-margin: 30%;
+margin-top: 20%;
+margin-left: 25%;
 }
 
 .p5h {
