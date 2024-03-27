@@ -267,83 +267,93 @@ width: 60%;
 }
 .footindex {
    grid-area: footindex;
-   background-color: #000000;
-   color: #fff;
-   display: flex;
-   flex-wrap: wrap;
-   justify-content: space-around;
-   align-items: flex-start;
-   padding: 20px;
-}
+   
+      display: flex;
+      justify-content: space-around;
+      color: #fff;
+      padding: 10px;
+      flex-wrap: wrap;
+   }
+   
+   .footer-item {
+      flex: 1;
+      margin: 10%;
+      
+   }
+   .footer-item form {
+      margin-top: 10px;
+   }
+   
+   .footer-item input[type="email"] {
+      padding: 10px;
+      border: 2px solid #000;
+      border-radius: 5px;
+      font-size: 16px;
+      width: 200px;
+      margin-right: 10px;
+   }
+   
+   .footer-item input[type="submit"] {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      background-color: #000;
+      color: white;
+      cursor: pointer;
+   }
+   
+   .footer-item input[type="submit"]:hover {
+      background-color: #333;
+   }
+   
+   .footer-links {
+      padding-left: 0;
+   }
+   
+   .footer-links li {
+      list-style-type: none;
+      margin-bottom: 5px;
+   }
+   
+   .footer-links a {
+      color: #fff;
+      text-decoration: none;
+   }
+   
+   .footer-links a:hover {
+      text-decoration: underline;
+   }
 
-.footindex div {
-   flex: 1;
-   margin: 10px;
-}
-
-.footindex .footer-logo {
-   max-width: 100px;
-}
-
-.footindex p {
-   margin: 5px 0;
-}
-
-.footindex h2 {
-   font-size: 1.2em;
-   margin-bottom: 10px;
-}
-
-.footindex .footer-links {
-   list-style-type: none;
-   padding: 0;
-}
-
-.footindex .footer-links li {
-   margin-bottom: 5px;
-}
-
-.footindex a {
-   color: #fff;
+.navbar a {
+   position: relative;
    text-decoration: none;
-}
-
-.footindex a:hover {
-   text-decoration: underline;
-}
-
-#fb, #yt, #tw, #ig {
-   max-width: 30px;
-   margin-right: 5px;
-}
-form {
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   margin-top: 20px;
-}
-
-input[type="email"] {
-   padding: 10px;
-   border: 2px solid #000;
-   border-radius: 5px;
-   font-size: 16px;
-   margin-right: 5px;
-}
-
-input[type="submit"] {
-   padding: 10px 20px;
-   border: none;
-   border-radius: 5px;
-   font-size: 16px;
-   background-color: #000;
-   color: white;
-   cursor: pointer;
-}
-
-input[type="submit"]:hover {
-   background-color: #333;
-}
+   color: rgb(255, 255, 255);
+ }
+ 
+ .navbar a::after {
+   content: '';
+   display: block;
+   width: 0;
+   height: 1px;
+   margin-top: 1px;
+   background: rgb(255, 255, 255);
+   transition: width 0.1s;
+ }
+ 
+ .navbar a:hover::after {
+   width: 100%;
+ }
+   
+   @media (max-width: 600px) {
+      .footindex {
+          flex-direction: column;
+      }
+   
+      .footer-item {
+          width: 100%;
+      }
+   }
 
 @media  (max-width: 650px) 
 {
@@ -563,82 +573,6 @@ input[type="submit"]:hover {
    
  
    
-   .footindex {
-      grid-area: footindex;
-     
-      background-color: #0a0a0a;
-      color: #fff;
-      display: flex;
-      flex-wrap: wrap;
-      align-items: flex-start;
-      padding: 2vh;
-      width: 100%;
-   }
-   
-   .footindex div {
-      flex: 1;
-      margin: 2vh;
-   }
-   
-   .footindex .footer-logo {
-      max-width: 20%;
-   }
-   
-   .footindex p {
-      margin: 1vh 0;
-   }
-   
-   .footindex h2 {
-      font-size: 2vh;
-      margin-bottom: 1vh;
-   }
-   
-   .footindex .footer-links {
-      list-style-type: none;
-      padding: 0;
-   }
-   
-   .footindex .footer-links li {
-      margin-bottom: 1vh;
-   }
-   
-   .footindex a {
-      color: #fff;
-      text-decoration: none;
-   }
-   
-   .footindex a:hover {
-      text-decoration: underline;
-   }
-   
-   #fb, #yt, #tw, #ig {
-      margin-right: 1vh;
-      width: 10%;
-   }
-   form {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin-top: 2vh;
-   }
-   
-   input[type="email"] {
-      padding: 1vh;
-      border: 0.2vh solid #000;
-      border-radius: 1vh;
-      font-size: 0.6rem;
-      margin-right: 1vh;
-   }
-   
-   input[type="submit"] {
-      padding: 1vh 2vh;
-      border: none;
-      border-radius: 1vh;
-      font-size: 0.6rem;
-      background-color: #000;
-      color: white;
-      cursor: pointer;
-   }
    .navbar a {
       position: relative;
       text-decoration: none;
