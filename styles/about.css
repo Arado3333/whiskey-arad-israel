@@ -1,6 +1,4 @@
-
-
-  body {
+ body {
    background-color: rgb(0, 0, 0);
    margin: 0;
    padding: 0;
@@ -53,8 +51,8 @@
    width: 100%;
    background-color: #000000;
    font-size: 1rem;
-   display: flex; /* הוספת פלקס בכדי להשתמש ב־flexbox */
-   justify-content: center; /* ממרכז את האלמנטים באופן אופקי */
+   display: flex;
+   justify-content: center; 
 }
 
 .navlinks li {
