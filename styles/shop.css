@@ -116,13 +116,13 @@
    }
    
    .navlinks li a {
-      /* background: linear-gradient(to right, white, white);
+      display: block;
+      background: linear-gradient(to right, white, white);
       background-size: 0% 3px;
       background-repeat: no-repeat;
-      background-position: center bottom; */
+      background-position: center bottom;
       transition: 0.5s;
       color: white;
-      display: block;
       text-align: center;
       padding: 2vh 2vw;
       text-decoration: none;
@@ -131,7 +131,7 @@
    
    .navlinks li a:hover {
       transition: 0.5s;
-      /* background-size: 100% 3px; */
+      background-size: 100% 3px;
       color: #515050;
    
    }
@@ -363,25 +363,6 @@
       padding: 0;
    }
    
-   .navlinks li a {
-      /* background: linear-gradient(to right, white, white);
-      background-size: 0% 3px;
-      background-repeat: no-repeat;
-      background-position: center bottom; */
-      color: white;
-      display: block;
-      text-align: center;
-      padding: 2vh 2vw;
-      text-decoration: none;
-      margin-top: 2vh;
-      background-color: #000000;
-   }
-   
-   .navlinks li a:hover {
-      /* background-size: 100% 3px; */
-      color: rgb(148, 145, 145);
-      background: linear-gradient(white white);
-   }
    
    .navlinks img {
       border-radius: 10vh;
@@ -565,20 +546,6 @@
    }
    
    #shop-navbar {
-<<<<<<< HEAD
-      
-         overflow: hidden;
-         z-index: 200;
-         top: 0;
-         position: fixed;
-         height: 10vh;
-         width: 100%;
-         background-color: #000000;
-         font-size: 1rem;
-         display: flex; /* הוספת פלקס בכדי להשתמש ב־flexbox */
-         justify-content: center; /* ממרכז את האלמנטים באופן אופקי */
-      
-=======
       grid-area: header;
       display: flex;
       justify-content: center;
@@ -589,7 +556,6 @@
       height: 10vh;
       width: 100%;
       background-color: #000000;
->>>>>>> 745528862d19ccc86d097a8cf655e686fe286ced
       
    }
    
@@ -601,21 +567,16 @@
    }
    
    .navlinks li a {
-      /* background: linear-gradient(to right, white, white);
-      background-size: 0% 3px;
-      background-repeat: no-repeat;
-      background-position: center bottom; */
       color: white;
       display: block;
       text-align: center;
       padding: 2vh 2vw;
       text-decoration: none;
-      margin-top: 2vh;
+      /* margin-top: 2vh; */
       background-color: #000000;
    }
    
    .navlinks li a:hover {
-      /* background-size: 100% 3px; */
       color: #515050;
    
    }
@@ -838,21 +799,16 @@
    }
    
    .navlinks li a {
-      /* background: linear-gradient(to right, white, white);
-      background-size: 0% 3px;
-      background-repeat: no-repeat;
-      background-position: center bottom; */
       color: white;
       display: block;
       text-align: center;
       padding: 2vh 2vw;
       text-decoration: none;
-      margin-top: 2vh;
+      /* margin-top: 2vh; */
       background-color: #000000;
    }
    
    .navlinks li a:hover {
-      /* background-size: 100% 3px; */
       color: rgb(148, 145, 145);
    
    }
@@ -980,23 +936,18 @@
    }
 
    .navlinks li a {
-      /* background: linear-gradient(to right, white, white);
-      background-size: 0% 3px;
-      background-repeat: no-repeat;
-      background-position: center bottom; */
       transition: 0.5s;
       color: white;
       display: block;
       text-align: center;
       padding: 2vh 2vw;
       text-decoration: none;
-      margin-top: 2vh;
+      /* margin-top: 2vh; */
       background-color: #000000;
    }
    
    .navlinks li a:hover {
       transition: 0.5s;
-      /* background-size: 100% 3px; */
       color: #515050;
    
    }
@@ -1039,23 +990,17 @@
    }
 
    .navlinks li a {
-      /* background: linear-gradient(to right, white, white);
-      background-size: 0% 3px;
-      background-repeat: no-repeat;
-      background-position: center bottom; */
       transition: 0.5s;
       color: white;
       display: block;
       text-align: center;
       padding: 2vh 2vw;
       text-decoration: none;
-      margin-top: 2vh;
       background-color: #000000;
    }
    
    .navlinks li a:hover {
       transition: 0.5s;
-      /* background-size: 100% 3px; */
       color: #515050;
    
    }
