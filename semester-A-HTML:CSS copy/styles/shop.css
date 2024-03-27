@@ -52,16 +52,18 @@ background-color: #ffffff;
    }
    
    .buttonvideo {
+      font-weight: var(--font-weight-bold);
       transition: 0.6s;
       background-color: transparent;
-      color: rgb(0, 0, 0);
-      border: 1px solid rgb(0, 0, 0);
+      color: black;
+      border: 1px solid black;
       cursor: pointer;
       font-size: 1rem;
       height: 5vh;
       margin-left: 40%;
       width: 20%;
       border-radius: 50px;
+      
   }
 
   .buttonvideo:hover {
@@ -144,6 +146,10 @@ background-color: #ffffff;
 
    .box4 {grid-area: box4;}
 
+   .box4 img {
+      height: 27vh;
+   } 
+
    .box5 {grid-area: box5;}
 
    .box6 {grid-area: box6;}
@@ -154,7 +160,15 @@ background-color: #ffffff;
 
    .box9 {grid-area: box9;}
 
+   .box9 img {
+      height: 33vh;
+   } 
+
    .box10 {grid-area: box10;}
+
+   .box10 img {
+      margin-bottom: 3%;
+   } 
 
    .box11 {grid-area: box11;}
 
@@ -170,7 +184,7 @@ background-color: #ffffff;
    .imgbox1
    {
       transition: 0.7s;
-      height: 23vh;
+      height: 30vh;
    }
 
    .imgbox1:hover {
@@ -202,13 +216,18 @@ background-color: #ffffff;
    }
 
    .product-info .buybutton {
+      border: 1px solid rgb(0, 0, 0);
+      border-radius: 50px;
+      width: 120px;
+      height: 40px;
       transition: 0.3s;
    }
    
    .product-info .buybutton:hover{
       transition: 0.3s;
       font-weight: 600;
-      color: black;
+      background-color: black;
+      color: white
 
    }
 
@@ -221,6 +240,7 @@ background-color: #ffffff;
    .product-info > h3 {
       font-family: var(--font-main);
       font-weight: var(--font-weight-normal);
+      font-size: var(--fs-heading);
    }
 
    .product-info > p {
@@ -236,7 +256,7 @@ background-color: #ffffff;
    
    
    .buybutton {
-      order: 3; /* Keep the button below the product info */
+      order: 2; /* Keep the button below the product info */
       width: 5%;
       background-color: #ffffff;
       border-radius: 6px;
@@ -275,7 +295,7 @@ background-color: #ffffff;
       font-weight: 500;
       font-size: 1.3em;
       line-height: 1.3;
-      padding: 0 50px;
+      padding: 0 17%;
    }
 
    #shop-navbar > .navlinks a {
@@ -334,7 +354,7 @@ background-color: #ffffff;
 }
 
 .navlinks li a:hover {
-   color: rgb(255, 255, 255);
+   color: rgb(148, 145, 145);
 
 }
 
