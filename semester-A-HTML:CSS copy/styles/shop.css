@@ -541,17 +541,18 @@
    }
    
    #shop-navbar {
-      grid-area: header;
-      display: flex;
-      justify-content: center;
-      overflow: hidden;
-      z-index: 200;
-      top: 0;
-      position: fixed;
-      height: 10vh;
-      width: 100%;
-   
-      background-color: #000000;
+      
+         overflow: hidden;
+         z-index: 200;
+         top: 0;
+         position: fixed;
+         height: 10vh;
+         width: 100%;
+         background-color: #000000;
+         font-size: 1rem;
+         display: flex; /* הוספת פלקס בכדי להשתמש ב־flexbox */
+         justify-content: center; /* ממרכז את האלמנטים באופן אופקי */
+      
       
    }
    

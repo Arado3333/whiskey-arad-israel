@@ -1,4 +1,5 @@
-@media  (max-width: 650px) 
+@media (max-width: 700px) 
+
 {
    body {
   margin: 0;
@@ -25,8 +26,11 @@
     'box10'
     'box11'
     'box12'
+    'box13'
+    'box14'
+    'box15'
     'footindex';
-    gap: 22vh;
+    gap: 10vh;
     
 }
 
@@ -55,8 +59,8 @@
 }
 
 .logo {
- height: 10vh;
- width: 20vw;
+   height: auto;
+ width: 15%;
  margin-left: 10%;
 }
 
@@ -87,16 +91,18 @@
 
 .img2 {
 
-height: 100%;
-width: 70%;
-padding-left: 15%;
+height: auto;
+width: 50%;
+border-radius: 25px;
+margin-left: 25%;
 }
 
 .img4 
 {
-   height:  100%;
-   width: 70%;
-   padding-left: 15%;
+   height: auto;
+   width: 50%;
+   border-radius: 25px;
+   margin-left: 25%;
 }
 
 .box3 {
@@ -161,137 +167,22 @@ padding-left: 15%;
 .p5h 
 {
    font-size: 1.2rem; 
-   text-align: left;
+   font-size: large;
+
+
+}
+.box5{
    margin-left: 10%;
-}
-.p5h1 
-{
-  font-size: 1.2rem; 
-  text-align: left;
-  margin-left: 10%;
-
-
-
-}
-.p5h2
-{
-   font-size: 1.2rem; 
-   text-align: left;
-   margin-left: 10%;
-
-}
-
-.p5 
-{
-   color: #ffffff;
-   font-size: 0.8rem;
-   letter-spacing: 2px;
-   padding: 15%;
-  
-}
-.p51 
-{
-   color: #ffffff;
-   font-size: 0.8rem;
-   letter-spacing: 2px;
-   padding: 15%;
-}
-.p10h {
- 
-   
    
 }
 
-
-.p10 {
-  
-   
+.p5{
+   width: 80%;
+   margin-right: -20%;
+   font-size: medium;
 }
 
 
-p{
-}
-
-.container1 {
-  
-  
-}
-
-
-
-.box6 {
-   grid-area: box6;
- height: 45vh;
-}
-
-.img6
-{
-   height: 100%;
-   width: 100;
-   border-radius: 35%;
-}
-
-
-
-
-.box10 
-{
-   grid-area: box10;
-   
-}
-
-.box11
- {
-   grid-area: box11;
-
-}
-
-.divider {
-  
-   
- }
-
-.box12 {
-   grid-area: box12;
-
-
-}
-
-.box13 .box14 .box15
-{
-
-   height: 70%;
-width: 70%;
-}
-
-.img13
-{
-   height: 60%;
-   width: 70%;
-   padding-left: 15%;
-   margin-top: 10%;
-}
-
-
-.img14
-{
-   height: 60%;
-   width: 70%;
-   padding-left: 15%; 
-   margin-top: 10%;
-
-
-}
-
-.img15
-{
-   height: 60%;
-   width: 70%;
-   padding-left: 15%;
-   margin-top: 10%;
-}
-
-.button5,
 .button6,
 .buttonvideo {
     background-color: transparent;
@@ -300,15 +191,11 @@ width: 70%;
     cursor: pointer;
     font-size: 1rem;
     height: 5vh;
-    margin-left: 25%;
-    width: 50%;
+    width: 30%;
     border-radius: 50px;
+    margin-left: 34%;
 }
-.buttonvideo 
-{
-   width: 50%;
-   margin-left: 25%;
-}
+
 .button5:hover,
 .button6:hover,
 .buttonvideo:hover {
@@ -319,7 +206,14 @@ width: 70%;
 
 .button5
 {
-   margin-left: 8%;
+   width: 30%;
+   background-color: transparent;
+    color: rgb(255, 255, 255);
+    border: 1px solid rgb(255, 255, 255);
+    cursor: pointer;
+    font-size: 1rem;
+    height: 5vh;
+    border-radius: 50px;
 }
 .footindex {
    grid-area: footindex;
@@ -329,7 +223,23 @@ width: 70%;
    flex-wrap: wrap;
    justify-content: space-around;
    align-items: flex-start;
-   padding: auto;
+   font-size: 0.5;
+}
+
+.box6 {
+   grid-area: box6;
+   background-color: rgb(0, 0, 0);
+   height: 80%;
+   width: 100%;
+
+}
+
+.img6
+{
+   width: 100%;
+   height: 100%;
+   object-fit: fill;
+   border-radius: 30%;
 }
 
 .footindex div {
@@ -350,18 +260,21 @@ width: 70%;
    margin-bottom: 10px;
 }
 
-.footindex .footer-links {
+.footindex .footer-links1 {
    list-style-type: none;
    padding: 0;
 }
 
 .footindex .footer-links li {
    margin-bottom: 5px;
+   display: none;
 }
 
 .footindex a {
    color: #fff;
    text-decoration: none;
+   display: none;
+
 }
 
 .footindex a:hover {
@@ -372,12 +285,24 @@ width: 70%;
    max-width: 30px;
    margin-right: 5px;
    filter: brightness(0) invert(1);
+   display: none;
+}
+.h2f
+{
+   display: none;
 
+}
+.line {
+   width: 100%;
+   height: 1px;
+   background-color: white;
+   animation: wave 2s infinite alternate;
 }
 form {
    display: flex;
    justify-content: center;
    align-items: center;
+   display: none;
    margin-top: 20px;
 }
 .foot4
@@ -404,4 +329,110 @@ input[type="submit"] {
 input[type="submit"]:hover {
    background-color: #333;
 }
+
+
+.box10
+{
+   grid-area: box10;
+margin-left: 10%;
+  width: 80%;
 }
+.p10
+{
+   color: white;
+   font-size: 0.7rem;
+   letter-spacing: 2px;
+ 
+}
+.pp10
+{
+   color: white;
+  
+   font-size: 1rem;
+   letter-spacing: 2px;
+   
+   
+}
+.box11
+{
+   grid-area: box11;
+
+}
+.img11
+{
+   height: auto;
+   width: 50%;
+   border-radius: 25px;
+   margin-left: 25%;
+}
+
+
+.box12
+{
+   grid-area: box12;
+   margin-left: 10%;
+   width: 80%;
+  
+}
+.p12
+{
+   color: white;
+
+}
+.pp12
+{
+   color: white;
+ 
+}
+.box13
+{
+   grid-area: box13;
+
+  
+
+}
+.box14
+{
+   grid-area: box14;
+   margin-left: 10%;
+   width: 80%;
+
+}
+.pp14
+{
+
+
+}
+.p14
+{
+color: white;
+font-size: 1rem;
+letter-spacing: 2px;
+
+
+}
+.img14
+{
+   height: auto;
+   width: 50%;
+   border-radius: 25px;
+   margin-left: 25%;
+
+}
+.box15
+{
+   grid-area: box15;
+ 
+}
+.img15
+{
+   height: auto;
+   width: 50%;
+   border-radius: 25px;
+   margin-left: 25%;
+
+
+}
+}
+
+
