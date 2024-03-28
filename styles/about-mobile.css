@@ -32,15 +32,13 @@
 }
 
 
-.navbar-mobile
-{
-   display: none;
-}
+
 
 
 .box1 {
    grid-area: box1;
 width: 100%;
+z-index: 100;
    
 }
 
@@ -53,31 +51,46 @@ width: 100%;
 
 .logo {
    height: auto;
- width: 15%;
+ width: 30%;
  margin-left: 10%;
 }
 
 .br
 {
-   z-index: 100;
    filter: brightness(0) invert(1);
+   height: auto;
+   width: 20%;
+ margin-left: 70%;
 
-   
 }
 .navbar {
-   overflow: hidden;
-   z-index: 200;
+   position: fixed;
    top: 0;
-   height: 10vh;
+   left: 0;
    width: 100%;
    background-color: #000000;
-   position: fixed;
+   z-index: 1000; /* כדי שהתפריט יהיה מעל לתוכן */
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 10px 20px;
+ }
 
-   
+
+
+ .navlinks li {
+display: none;
 }
 
+.navlinks {
+   display: none;
 
+}
 
+.navlinks li a {
+   display: none;
+
+}
 
 
 .box5 {
@@ -262,6 +275,15 @@ input[type="submit"] {
 input[type="submit"]:hover {
    background-color: #333;
 }
+
+
+ 
+ 
+
+ 
+ 
+ }
+ 
 }
 
 
