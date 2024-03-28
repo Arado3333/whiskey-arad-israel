@@ -292,7 +292,7 @@
     }
 }
 
-@media (max-width: 520px){
+@media (max-width: 520px) and (min-height: 670px) and (max-height: 920px){
     .container {
         background-repeat: no-repeat;
         background-size: cover;
@@ -372,9 +372,17 @@
         padding: 10%;
         margin-top: 5%;
     }
+
+    .box1 {
+        margin-top: 10%;
+    }
 }
 
 @media (min-width: 768px) {
+
+    .box1 {
+        margin-top: 10%;
+    }
     .signin-logo {
     top: 0.2vh;
     left: 3px;
@@ -412,7 +420,15 @@
         padding: 0;
         
     }
+
+    @media (min-height: 1024px) and (max-height: 1370px) {
+        .signin-logo {
+            width: 12%;
+            margin-left: 3%;
+        }
+    }
 }
+
 
 @media (min-width: 520px) and (max-width: 767px){
     .burger-menu {display: none;}
