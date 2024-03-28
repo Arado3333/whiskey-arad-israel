@@ -1,14 +1,7 @@
-<<<<<<< HEAD
-@import url(./about-tablet.css);
-@import url(./about-mobile.css);
-@media  (min-width: 800px) and (max-width: 2560px)
+@media (min-width: 700px) and (max-width: 1000px)
 {
 
-
   body {
-=======
- body {
->>>>>>> ac97e06ff56da8fc0dfcd420fe098ef3c9a81adb
    background-color: rgb(0, 0, 0);
    margin: 0;
    padding: 0;
@@ -29,7 +22,7 @@
 
    margin: 0;
    padding: 0;
-   row-gap: 20vh;
+   row-gap: 10vh;
 }
 
 .box1 {
@@ -62,8 +55,8 @@
    width: 100%;
    background-color: #000000;
    font-size: 1rem;
-   display: flex;
-   justify-content: center; 
+   display: flex; /* הוספת פלקס בכדי להשתמש ב־flexbox */
+   justify-content: center; /* ממרכז את האלמנטים באופן אופקי */
 }
 
 .navlinks li {
@@ -102,80 +95,66 @@
 
 .box2 {
    grid-area: box2;
-  
+   margin-left: 40%;
 }
-
-.img2 {
-
-width: auto;
+.img2
+{
+   width: 30vw;
 height: auto;
 border-radius: 40px;
-
 }
+
 .p10
 {
    color: white;
    font-size: 1rem;
    letter-spacing: 2px;
+   width: 100%;
  
 }
 .pp10
 {
    color: white;
-   font-size: 1rem;
-   letter-spacing: 2px;
    font-size: 2rem;
+   letter-spacing: 2px;
 }
 .img4 {
-   height: auto;
    width: 30vw;
-   border-radius: 40px;
+height: auto;
+border-radius: 40px;
 }
 .box3 {
    grid-area: box3;
- width: 80%;
-   color: rgb(0, 0, 0);
+
 }
 
 
 .box4 {
    grid-area: box4;
-margin: 15%;  
 }
 
 
 
 .box5 {
    grid-area: box5;
-width:100%;
-margin-top: 20%;
-margin-left: 25%;
+width: 100%;
+margin-left: auto;
+margin-left: 10%;
+ 
 }
-
 
 .box6 {
    grid-area: box6;
-   height: 60vh;
-   width: 100%;
-   padding: 0;
 }
 
 .img6
 {
-   width: 100%;
-   height: 50vh;
-   opacity: 70%;
-   object-fit:cover; 
+height: 30vh;
+width: 100%;
 
 }
-.project
-{
-   color: #ffffff;
-   font-size: 1.7rem;
-   width: 100%;
-   text-align: center;
-   margin-top: 10%;
-}
+
+
 
 .navlinks li a {
    position: relative;
@@ -311,30 +290,10 @@ margin-left: 25%;
   
    
    
-   .box5 {
-      grid-area: box5;
+  
    
-      height: 100%;
-      width: 80%;
-      margin-left: 8%
+  
    
-   }
-   
-   .p5h {
-      color: rgb(255, 255, 255);
-      text-align: center;
-      width: 100%;
-   
-     
-   }
-   
-   .p56 {
-   color: #ffffff;
-   z-index: 100;
-   width: 20%;
-   text-align: right;
-   }
-   
+
    
 }
-
