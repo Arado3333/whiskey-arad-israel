@@ -1,4 +1,8 @@
 :root {
+   
+/*----------- Reset Properties --------*/
+    --zero-margin: 0;
+
 /*----------- Font Properties --------*/
     --font-main: 'Heebo', sans-serif;  
     --font-navbar: 'Times';

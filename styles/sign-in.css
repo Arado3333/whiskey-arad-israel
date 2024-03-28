@@ -1,4 +1,4 @@
-/* @import url("./reset.css"); */
+
 @import url("./vars.css");
  /* @import url("./mobile.css"); */
 /*@import url("./tablet.css");
@@ -11,7 +11,7 @@
 
 @media (max-width: 2560px){
     body { 
-        margin: 0;
+        margin: var(--zero-margin);
     }
     
     .signin-logo {
@@ -380,6 +380,14 @@
 
 @media (min-width: 768px) {
 
+
+    #sign-in-heading {
+        font-size: 1.5em;
+        font-weight: var(--font-weight-light);
+        justify-items: flex-start;
+        color: white;
+    }
+    
     .box1 {
         margin-top: 10%;
     }
@@ -443,6 +451,13 @@
         margin-left: 3%;
         }
 
+        #sign-in-heading {
+            font-size: 1.5em;
+            font-weight: var(--font-weight-light);
+            justify-items: flex-start;
+            color: white;
+        }
+
         .box1 {
             margin-top: 5%;
         }
@@ -454,8 +469,24 @@
          }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1024px) and (max-width: 1439px){
+    .signin-logo {
+        width: 8%;
+    }
+
+    .box1 {
+        margin-top: 5%;
+    }
+}
+
+@media (min-width: 1440px) {
     .signin-logo {
         width: 6%;
+        margin-left: 5%;
     }
+
+    .box1 {
+        margin-top: 5%;
+    }
+
 }
