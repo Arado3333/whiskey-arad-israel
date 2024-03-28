@@ -1,4 +1,4 @@
-@import url("reset.css");
+/* @import url("reset.css"); */
 @import url("vars.css");
 /* @import url("mobile.css");
 @import url("tablet.css");
@@ -11,11 +11,16 @@
 
 
 @media (max-width: 2560px) {
-   *p {
+
+   *p, h1, h2{
+      font-size: 2rem;
+      letter-spacing: 2px;
+   }
+   /* *p {
       font-family: var(--font-main);
       font-weight: 400;
       font-size: 1rem;
-   }
+   } */
       
    body {
    background-color: var(--bg-shop);
@@ -994,3 +999,4 @@
    
    }
 }
+
