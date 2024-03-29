@@ -16,6 +16,19 @@
       letter-spacing: 2px;
    }
       
+   /* *p {
+      font-family: var(--font-main);
+      font-weight: 400;
+      font-size: 1rem;
+   } */
+   .menu
+   {
+     display: none;
+   }
+   .checkbox, .menu-toggle, .menu-toggle
+   {
+     display: none;
+   } 
    body {
       margin: var(--zero-margin);
       background-color: var(--bg-shop);
@@ -458,7 +471,6 @@
            width: 100%;
        }
     }
-
 }
 
 
@@ -909,6 +921,13 @@
    input[type="submit"]:hover {
       background-color: #333;
    }
+
+
+
+
+
+
+   
 }
  
 @media (min-width: 451px) {
@@ -1068,7 +1087,14 @@
       height: 10vh;
       width: auto;
    }
-
+   .menu
+   {
+     display: none;
+   }
+   .checkbox, .menu-toggle, .menu-toggle
+   {
+     display: none;
+   }
    #shop-navbar > .navlinks a {
       font-size: 1em;
       text-align: center;
@@ -1157,5 +1183,13 @@
       height: 4.5vh;
       margin-left: 42%;
    }
+   .menu
+ {
+   display: none;
+ }
+ .checkbox, .menu-toggle, .menu-toggle
+ {
+   display: none;
+ }
 }
 

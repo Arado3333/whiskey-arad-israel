@@ -34,7 +34,10 @@
   background-color: #000000;
 }
 
-
+.logo
+{
+   display: none;
+}
 
 
 .box1 {
@@ -50,8 +53,8 @@
 
 .logo {
    height: auto;
- width: 23%;
- margin-left: 5%;
+ width: 20%;
+ margin-left: 10%;
 }
 
 .br
@@ -524,11 +527,40 @@ letter-spacing: 2px;
 
 }
 
+.navlinks
+{
+   display: none;
+}
+.nonmobile
+{
+   display: none;
+   color: white;
+}
 
+.menu ul {
+   list-style-type: none;
+   padding: 0;
+   margin: 0;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   display: none; /* הסתרת רשימת הקישורים */
+}
 
+.menu-toggle:checked + .hamburger + .menu ul {
+   display: block; /* הצגת רשימת הקישורים כאשר ההמבורגר פתוח */
+}
 
+.menu-toggle::after + .hamburger + .menu ul 
+{
+display: none;
+}
 
-
+.menu-toggle
+{
+   display: none;
+}
 
 
 
