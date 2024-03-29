@@ -35,10 +35,6 @@
 }
 
 
-.navbar-mobile
-{
-   display: none;
-}
 
 
 .box1 {
@@ -56,8 +52,8 @@
 
 .logo {
    height: auto;
- width: 15%;
- margin-left: 10%;
+ width: 23%;
+ margin-left: 5%;
 }
 
 .br
@@ -504,7 +500,7 @@ letter-spacing: 2px;
 /* עיצוב למסכי מובייל עם רוחב עד 600 פיקסלים */
 
 
-.menu ul {
+.menu ul::before {
    display: none; /* ערך הגנרי להסתרת התפריט */
    visibility: hidden; /* כדי שלא יתפרטס התפריט */
 }
