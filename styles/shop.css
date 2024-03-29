@@ -840,7 +840,7 @@
       height: 1vh;
    }
    
-   .footshop {
+   .footindex {
       grid-area: footer;
       background-color: #0a0a0a;
       color: #fff;
@@ -851,39 +851,39 @@
       padding: auto;
    }
    
-   .footshop div {
+   .footindex div {
       flex: 1;
       margin: 10px;
    }
    
-   .footshop .footer-logo {
+   .footindex .footer-logo {
       max-width: 100px;
    }
    
-   .footshop p {
+   .footindex p {
       margin: 5px 0;
    }
    
-   .footshop h2 {
+   .footindex h2 {
       font-size: 1.2em;
       margin-bottom: 10px;
    }
    
-   .footshop .footer-links {
+   .footindex .footer-links {
       list-style-type: none;
       padding: 0;
    }
    
-   .footshop .footer-links li {
+   .footindex .footer-links li {
       margin-bottom: 5px;
    }
    
-   .footshop a {
+   .footindex a {
       color: #fff;
       text-decoration: none;
    }
    
-   .footshop a:hover {
+   .footindex a:hover {
       text-decoration: underline;
    }
    
@@ -923,6 +923,131 @@
    }
 
 
+
+   .hamburger {
+
+      background: #333;
+       position: absolute;
+       padding: 11px 13px;
+       top: 5px;
+       right: 20px;
+       font-size: 30px;
+       cursor: pointer;
+       color: white;
+       z-index: 2;
+   }
+   
+   .menu {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.7);
+      z-index: 1;
+   }
+   
+   .menu ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+   }
+   
+   .menu ul li {
+      text-align: center;
+      margin-bottom: 20px;
+   }
+   
+   .menu ul li a {
+      text-decoration: none;
+      color: white;
+      font-size: 24px;
+   }
+   
+   .menu-toggle:checked + .hamburger {
+      background-color: transparent;
+      display: none;
+   }
+   
+   
+   
+   #shop-navbar input {
+      appearance: none;
+   }
+   
+   .menu-toggle:checked + .hamburger + .menu {
+      display: block;
+   }
+   
+   #menu-close:checked{
+      display: none;
+   }
+   
+   .close-menu {
+      background: #333;
+      position: absolute;
+      padding: 11px 16px;
+      top: 10px;
+      right: 20px;
+      font-size: 30px;
+      cursor: pointer;
+      color: white;
+      z-index: 2;
+   }
+   
+   
+   .close-menu:hover {
+      color: red; /* צבע כאשר מרחיקים מהכפתור */
+   }
+   /* עיצוב למסכי מובייל עם רוחב עד 600 פיקסלים */
+   
+   
+   .menu ul::before {
+      display: none; /* ערך הגנרי להסתרת התפריט */
+      visibility: hidden; /* כדי שלא יתפרטס התפריט */
+      
+   }
+   
+   .menu-toggle:checked + .hamburger + .menu ul {
+      display: block; /* הצגת התפריט כאשר ההמבורגר פתוח */
+      visibility: visible;
+   
+   }
+   
+   .navlinks
+   {
+      display: none;
+   }
+   
+   .menu ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      display: none; /* הסתרת רשימת הקישורים */
+   }
+   
+   .menu-toggle:checked + .hamburger + .menu ul {
+      display: block; /* הצגת רשימת הקישורים כאשר ההמבורגר פתוח */
+   }
+   
+   .menu-toggle::after + .hamburger + .menu ul 
+   {
+   display: none;
+   }
+   
+   .menu-toggle
+   {
+      display: none;
+   }
 
 
 
