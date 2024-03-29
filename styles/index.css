@@ -555,19 +555,11 @@ border-radius: 20px;
    width: 100%;
  }
  
-
-
-
-
-
-
-
-
-
-
-
-
  
+ .menu
+ {
+   display: none;
+ }
 }
 
 

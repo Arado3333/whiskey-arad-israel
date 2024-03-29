@@ -34,7 +34,14 @@
       row-gap: 20vh;
    }
    
-   
+   .menu-toggle
+   {
+      display: none;
+   }
+   .menu
+   {
+     display: none;
+   }
    .br {
       display: none;
    }

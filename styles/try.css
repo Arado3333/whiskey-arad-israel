@@ -1,113 +1,108 @@
-*,
-*::after,
-*::before {
-    box-sizing: border-box;
-}
-
-body {
-    margin: 0;
-}
-
-:root {
-    --bar-width: 60px;
-    --bar-height: 8px;
-    --hamburger-gap: 6px;
-    --foreground: #ea0000;
-    --background-color: white;
-    --hamburger-margin: 5px;
-    --animation-timing: 200ms ease-in-out;
-    --hamburger-height: calc(var(--bar-height) * 3 + var(--hamburger-gap) * 2);
-}
-
-.hamburger-menu {
-    --x-width: calc(var(--hamburger-height) * 1.41421356237);
-    display: flex;
-    flex-direction: column;
-    gap: var(--hamburger-gap);
-    width: max-content;
-    position: absolute;
-    top: var(--hamburger-margin);
-    left: var(--hamburger-margin);
-    z-index: 2;
+.hamburger {
+    display: block;
+    text-align: center;
+    font-size: 30px;
     cursor: pointer;
+    padding: 15px;
+    background-color: #333;
+    color: white;
+    position: absolute;
+    top: 10px;
+    right: 10px; /* מיקום בפינה הימנית העליונה */
+    z-index: 2; /* כדי שיהיה מעל לתפריט */
 }
 
-.hamburger-menu:has(input:checked) {
-    --foreground: white;
-    --background: #333;
+.menu {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1;
 }
 
-.hamburger-menu:has(input:focus-visible)::before,
-.hamburger-menu:has(input:focus-visible)::after,
-.hamburger-menu input:focus-visible {
-    border: 1px solid var(--background);
-    box-shadow: 0 0 0 1px var(--foreground);
-}
-
-.hamburger-menu::before,
-.hamburger-menu::after,
-.hamburger-menu input {
-    content: "";
-    width: var(--bar-width);
-    height: var(--bar-height);
-    background-color: var(--foreground);
-    border-radius: 99999px;
-    transform-origin: left center;
-    transition: opacity var(--animation-timing), width var(--animation-timing), transform var(--animation-timing), background-color var(--animation-timing);
-}
-
-.hamburger-menu input {
-    appearance: none;
+.menu ul {
+    list-style-type: none;
     padding: 0;
     margin: 0;
-    outline: none;
-    pointer-events: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
-.hamburger-menu:has(input:checked)::before {
-    transform: rotate(45deg) translate(0, calc(var(--bar-height) / -2));
-    width: var(--x-width);
+.menu ul li {
+    text-align: center;
+    margin-bottom: 20px;
 }
 
-.hamburger-menu:has(input:checked)::after {
-    transform: rotate(-45deg) translate(0, calc(var(--bar-height) / 2));
+.menu ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
 }
 
-.hamburger-menu input:checked {
-    opacity: 0;
-    width: 0;
+.menu-toggle:checked + .hamburger {
+    background-color: transparent;
 }
 
-.sidebar {
-    transition: transform var(--animation-timing);
-    transform: translateX(-100%);
-    padding: calc(var(--hamburger-height) + var(--hamburger-margin) + 1rem);
-    background-color: var(--foreground);
-    color: var(--background);
-    max-width: 10rem;
-    min-height: 100vh;
+.menu-toggle:checked + .hamburger + .menu {
+    display: block;
 }
 
-.hamburger-menu:has(input:checked) + .sidebar {
-    transform: translateX(0);
-}
-/* סגנון כללי לקישורים */
-.sidebar nav a {
-   text-decoration: none; /* להסיר קו תחתון מהקישור */
-   color: var(--background-color); /* צבע הטקסט */
-   padding: 8px 16px; /* מרווח מסביב לטקסט בקישור */
-   display: block; /* כל קישור בנפרד יופיע בשורה נפרדת */
-   transition: background-color 0.3s; /* אנימציה לשינוי צבע הרקע במעבר */
+.close-menu {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+    z-index: 2;
 }
 
-/* סגנון כאשר העכבר עליו */
-.sidebar nav a:hover {
-   background-color: var(--foreground); /* צבע רקע במעבר העכבר */
-   color: var(--background-color); /* צבע טקסט במעבר העכבר */
+.close-menu:hover {
+    color: red; /* צבע כאשר מרחיקים מהכפתור */
+}
+/* עיצוב למסכי מובייל עם רוחב עד 600 פיקסלים */
+@media screen and (max-width: 600px) {
+    .hamburger {
+        top: 10px;
+        right: 10px;
+    }
+
+    .menu ul {
+        width: 80%;
+        margin: 0 auto; /* מרכז את התפריט באופן אוטומטי */
+    }
+
+    .menu ul li {
+        margin-bottom: 10px; /* רווח קטן יותר בין פריטי התפריט */
+    }
+
+    .menu ul li a {
+        font-size: 20px; /* גודל פונט קטן יותר לתפריט */
+    }
 }
 
-/* סגנון כאשר הקישור פעיל */
-.sidebar nav a:active {
-   background-color: var(--foreground); /* צבע רקע בלחיצה */
-   color: var(--background-color); /* צבע טקסט בלחיצה */
+/* עיצוב למסכי מחשב עם רוחב 601 פיקסלים ומעלה */
+@media screen and (min-width: 601px) {
+    .hamburger {
+        top: 10px;
+        right: 10px;
+    }
+
+    .menu ul {
+        width: auto; /* רוחב תפריט בגודל המקורי */
+        margin: 0; /* איפוס שולי התפריט */
+    }
+
+    .menu ul li {
+        margin-bottom: 20px; /* רווח רגיל בין פריטי התפריט */
+    }
+
+    .menu ul li a {
+        font-size: 24px; /* גודל פונט רגיל לתפריט */
+    }
 }
