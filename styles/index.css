@@ -40,6 +40,14 @@
 .br {
    display: none;
 }
+.menu
+ {
+   display: none;
+ }
+ .checkbox, .menu-toggle, .menu-toggle
+ {
+   display: none;
+ }
 
 .box1 {
    grid-area: box1;
@@ -556,14 +564,7 @@ border-radius: 20px;
  }
  
  
- .menu
- {
-   display: none;
- }
- .checkbox, .menu-toggle, .menu-toggle
- {
-   display: none;
- }
+ 
 }
 
 

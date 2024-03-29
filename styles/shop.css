@@ -21,7 +21,14 @@
       font-weight: 400;
       font-size: 1rem;
    } */
-      
+   .menu
+   {
+     display: none;
+   }
+   .checkbox, .menu-toggle, .menu-toggle
+   {
+     display: none;
+   } 
    body {
    background-color: var(--bg-shop);
    }
@@ -893,6 +900,13 @@
    input[type="submit"]:hover {
       background-color: #333;
    }
+
+
+
+
+
+
+   
 }
  
 @media (min-width: 460px) {
@@ -921,7 +935,14 @@
       height: 10vh;
       width: auto;
    }
-
+   .menu
+   {
+     display: none;
+   }
+   .checkbox, .menu-toggle, .menu-toggle
+   {
+     display: none;
+   }
    #shop-navbar > .navlinks a {
       font-size: 1em;
       text-align: center;
@@ -998,5 +1019,13 @@
       color: #515050;
    
    }
+   .menu
+ {
+   display: none;
+ }
+ .checkbox, .menu-toggle, .menu-toggle
+ {
+   display: none;
+ }
 }
 
