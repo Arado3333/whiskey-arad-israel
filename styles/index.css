@@ -11,7 +11,7 @@
 
   body {
    background-color: rgb(0, 0, 0);
-   font-family: "Yanone Kaffeesatz";
+   font-family: "Times New Roman";
 
    margin: 0;
    padding: 0;
@@ -114,13 +114,8 @@ margin-left: 6%;
    padding: 2vh 2vw;
    text-decoration: none;
    margin-top: 2vh;
-   background-color: #000000;
 }
 
-.navlinks li a:hover {
-   color: rgb(45, 45, 45);
-
-}
 
 .navlinks img {
    border-radius: 10vh;
@@ -550,27 +545,35 @@ border-radius: 20px;
 
 
 .navbar a {
+   transition: 0.5s;
    position: relative;
    text-decoration: none;
-   color: rgb(255, 255, 255);
+   color: white;
  }
  
  .navbar a::after {
    content: '';
    display: block;
    width: 0;
-   height: 1px;
-   margin-top: 1px;
-   background: rgb(255, 255, 255);
-   transition: width 0.1s;
+   height: 2px;
+   margin-top: 5px;
+   background: white;
+   transition: width ease 0.5s;
  }
  
  .navbar a:hover::after {
    width: 100%;
  }
  
- 
- 
+ .navbar a:hover {
+   color: white;
+ }
+
+
+ .menu
+ {
+   display: none;
+ }
 }
 
 

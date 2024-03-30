@@ -2,14 +2,16 @@
    
 /*----------- Reset Properties --------*/
     --zero-margin: 0;
+    --reset-padding: 0;
 
 /*----------- Font Properties --------*/
     --font-main: 'Heebo', sans-serif;  
-    --font-navbar: 'Times';
+    --font-navbar: 'Times New Roman', serif;
     --font-weight-normal: 400;
     --font-weight-lightest: 200;
     --font-weight-light: 300;
     --font-weight-bold: 700;
+    --font-weight-heavy-bold: 900;
     --font-weight-paragraph: 200;
     --fs-paragraph: 0.8em;
     --fs-heading: 0.9em;

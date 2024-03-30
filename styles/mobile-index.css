@@ -36,15 +36,13 @@
 
 .logo
 {
-   display: none;
+   display: block;
 }
 
 
 .box1 {
    grid-area: box1;
    height: 100%;
-
-   
 }
 
 .video {
@@ -64,9 +62,12 @@
    margin-left: 40%;
    z-index: 100;
    filter: brightness(0) invert(1);
-
-   
 }
+
+.navlinks {
+   display: none;
+}
+
 .navbar {
    overflow: hidden;
    z-index: 200;
@@ -75,8 +76,6 @@
    width: 100%;
    background-color: #000000;
    position: fixed;
-
-   
 }
 
 .box2 {
@@ -440,17 +439,15 @@ letter-spacing: 2px;
 }
 
 .hamburger {
-   display: block;
-   text-align: center;
-   font-size: 40px;
-   cursor: pointer;
-   padding: 15px;
-   background-color: #000000;
-   color: white;
-   position: absolute;
-   top: -10px;
-   right: 10px; /* מיקום בפינה הימנית העליונה */
-   z-index: 2; /* כדי שיהיה מעל לתפריט */
+   background: #333;
+    position: absolute;
+    padding: 11px 13px;
+    top: 5px;
+    right: 20px;
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+    z-index: 2;
 }
 
 .menu {
@@ -487,39 +484,47 @@ letter-spacing: 2px;
 
 .menu-toggle:checked + .hamburger {
    background-color: transparent;
+   display: none;
+}
+
+
+
+.navbar input {
+   appearance: none;
 }
 
 .menu-toggle:checked + .hamburger + .menu {
    display: block;
 }
 
+#menu-close:checked{
+   display: none;
+}
+
 .close-menu {
+   background: #333;
    position: absolute;
+   padding: 11px 16px;
    top: 10px;
-   right: 10px;
+   right: 20px;
    font-size: 30px;
    cursor: pointer;
    color: white;
    z-index: 2;
 }
-.close-menu + .menu-toggle::before
-{
-   display: none;
-}
-.close-menu:hover {
-   color: red; /* צבע כאשר מרחיקים מהכפתור */
-}
-/* עיצוב למסכי מובייל עם רוחב עד 600 פיקסלים */
+
 
 
 .menu ul::before {
    display: none; /* ערך הגנרי להסתרת התפריט */
    visibility: hidden; /* כדי שלא יתפרטס התפריט */
+   
 }
 
 .menu-toggle:checked + .hamburger + .menu ul {
    display: block; /* הצגת התפריט כאשר ההמבורגר פתוח */
    visibility: visible;
+
 }
 
 .navlinks
@@ -556,13 +561,6 @@ display: none;
 {
    display: none;
 }
-
-
-
-
-
-
-
 
 }
 

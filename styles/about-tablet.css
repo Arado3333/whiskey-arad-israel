@@ -3,7 +3,9 @@
    }
 
   
-
+   .menu, input.menu-toggle {
+      display: none;
+   }
 
 
   body {

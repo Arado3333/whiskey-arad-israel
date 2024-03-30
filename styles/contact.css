@@ -119,6 +119,215 @@ li:hover a {
    .img {
       height: 5vh;
    }
+
+   .hamburger {
+
+      background: #333;
+       position: absolute;
+       padding: 11px 13px;
+       top: 5px;
+       right: 20px;
+       font-size: 30px;
+       cursor: pointer;
+       color: white;
+       z-index: 2;
+   }
+   
+   .menu {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.7);
+      z-index: 1;
+   }
+   
+   .menu ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+   }
+   
+   .menu ul li {
+      text-align: center;
+      margin-bottom: 20px;
+   }
+   
+   .menu ul li a {
+      text-decoration: none;
+      color: white;
+      font-size: 24px;
+   }
+   
+   .menu-toggle:checked + .hamburger {
+      background-color: transparent;
+      display: none;
+   }
+   
+   
+   
+  .navbar input {
+      appearance: none;
+   }
+   
+   .menu-toggle:checked + .hamburger + .menu {
+      display: block;
+   }
+   
+   #menu-close:checked{
+      display: none;
+   }
+   
+   .close-menu {
+      background: #333;
+      position: absolute;
+      padding: 11px 16px;
+      top: 10px;
+      right: 20px;
+      font-size: 30px;
+      cursor: pointer;
+      color: white;
+      z-index: 2;
+   }
+   
+   
+   .close-menu:hover {
+      color: red; /* צבע כאשר מרחיקים מהכפתור */
+   }
+   /* עיצוב למסכי מובייל עם רוחב עד 600 פיקסלים */
+   
+   
+   .menu ul::before {
+      display: none; /* ערך הגנרי להסתרת התפריט */
+      visibility: hidden; /* כדי שלא יתפרטס התפריט */
+      
+   }
+   
+   .menu-toggle:checked + .hamburger + .menu ul {
+      display: block; /* הצגת התפריט כאשר ההמבורגר פתוח */
+      visibility: visible;
+   
+   }
+   
+   .navlinks
+   {
+      display: none;
+   }
+   
+   .menu ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      display: none; /* הסתרת רשימת הקישורים */
+   }
+   
+   .menu-toggle:checked + .hamburger + .menu ul {
+      display: block; /* הצגת רשימת הקישורים כאשר ההמבורגר פתוח */
+   }
+   
+   .menu-toggle::after + .hamburger + .menu ul 
+   {
+   display: none;
+   }
+   
+   .menu-toggle
+   {
+      display: none;
+   }
+
+   .footindex {
+      grid-area: footer;
+      background-color: #0a0a0a;
+      color: #fff;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-items: flex-start;
+      padding: auto;
+   }
+
+   #foot2 {display: none;}
+   
+   .footindex div {
+      flex: 1;
+      margin: 10px;
+   }
+   
+   .footindex .footer-logo {
+      max-width: 100px;
+   }
+   
+   .footindex p {
+      margin: 5px 0;
+   }
+   
+   .footindex h2 {
+      font-size: 1.2em;
+      margin-bottom: 10px;
+   }
+   
+   .footindex .footer-links {
+      list-style-type: none;
+      padding: 0;
+   }
+   
+   .footindex .footer-links li {
+      margin-bottom: 5px;
+   }
+   
+   .footindex a {
+      color: #fff;
+      text-decoration: none;
+   }
+   
+   .footindex a:hover {
+      text-decoration: underline;
+   }
+   
+   #fb, #yt, #tw, #ig {
+      max-width: 30px;
+      margin-right: 5px;
+   }
+   form {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 20px;
+   }
+   .foot4
+   {
+      margin-top: 30%;
+   }
+   input[type="email"] {
+      padding: 10px;
+      border: 2px solid #000;
+      border-radius: 5px;
+      font-size: 16px;
+   }
+   
+   input[type="submit"] {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      background-color: #000;
+      color: white;
+      cursor: pointer;
+   }
+   
+   input[type="submit"]:hover {
+      background-color: #333;
+   }
 }
 
 @media screen and (max-width: 480px) {
