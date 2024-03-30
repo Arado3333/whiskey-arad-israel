@@ -1,534 +1,251 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
 
-@import url("./vars.css");
- /* @import url("./mobile.css"); */
-/*@import url("./tablet.css");
-@import url("./laptop.css");
-@import url("./laptop_L.css"); */
-@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Protest+Riot&family=Protest+Strike&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@200..700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap');
-
-@media (max-width: 2560px){
-    body { 
-        margin: var(--zero-margin);
-    }
-    @import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
-*{
+* {
   margin: 0;
   padding: 0;
-  font-family: 'Poppins',sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
-body{
+
+.continer {
+  display: grid;
+  grid-template-areas: 'box1' 'login-form';
+}
+
+body {
   display: flex;
   height: 100vh;
   text-align: center;
   align-items: center;
   justify-content: center;
-  background: #151515;
-}
-.login-form{
-  position: relative;
-  width: 370px;
-  height: auto;
-  background: #1b1b1b;
-  padding: 40px 35px 60px;
-  box-sizing: border-box;
-  border: 1px solid black;
-  border-radius: 5px;
-  box-shadow: inset 0 0 1px #272727;
-}
-.text{
-  font-size: 30px;
-  color: #c7c7c7;
-  font-weight: 600;
-  letter-spacing: 2px;
-}
-form{
-  margin-top: 40px;
-}
-form .field{
-  margin-top: 20px;
-  display: flex;
-}
-.field .fas{
-  height: 50px;
-  width: 60px;
-  color: #868686;
-  font-size: 20px;
-  line-height: 50px;
-  border: 1px solid #444;
-  border-right: none;
-  border-radius: 5px 0 0 5px;
-  background: linear-gradient(#333,#222);
-}
-.field input,form button{
-  height: 50px;
-  width: 100%;
-  outline: none;
-  font-size: 19px;
-  color: #868686;
-  padding: 0 15px;
-  border-radius: 0 5px 5px 0;
-  border: 1px solid #444;
-  caret-color: #339933;
-  background: linear-gradient(#333,#222);
-}
-input:focus{
-  color: #339933;
-  box-shadow: 0 0 5px rgba(0,255,0,.2),
-              inset 0 0 5px rgba(0,255,0,.1);
-  background: linear-gradient(#333933,#222922);
-  animation: glow .8s ease-out infinite alternate;
-}
-@keyframes glow {
-   0%{
-    border-color: #339933;
-    box-shadow: 0 0 5px rgba(0,255,0,.2),
-                inset 0 0 5px rgba(0,0,0,.1);
-  }
-   100%{
-    border-color: #6f6;
-    box-shadow: 0 0 20px rgba(0,255,0,.6),
-                inset 0 0 10px rgba(0,255,0,.4);
-  }
-}
-button{
-  margin-top: 30px;
-  border-radius: 5px!important;
-  font-weight: 600;
-  letter-spacing: 1px;
-  cursor: pointer;
-}
-button:hover{
-  color: #339933;
-  border: 1px solid #339933;
-  box-shadow: 0 0 5px rgba(0,255,0,.3),
-              0 0 10px rgba(0,255,0,.2),
-              0 0 15px rgba(0,255,0,.1),
-              0 2px 0 black;
-}
-.link{
-  margin-top: 25px;
-  color: #868686;
-}
-.link a{
-  color: #339933;
-  text-decoration: none;
-}
-.link a:hover{
-  text-decoration: underline;
-}
+  background-image: url(../images/Golani\ Spirit\ Logo\ copy.png);
 }
 
-@media (max-width: 520px) and (min-height: 670px) and (max-height: 920px){
-    .container {
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-attachment: fixed;
-        background-position: center;
-
-        grid-template-areas:
-        'header'
-        'form'
-        'footer';
-    
-    }
-    
-    .navbar {
-        grid-area: header;
-        display: flex;
-        justify-content: center;
-        overflow: hidden;
-        z-index: 200;
-        top: 0;
-        position: fixed;
-        height: 10vh;
-        width: 100%;
-        background-color: #000000;
-        
-     }
-    
-
-    .burger-menu {
-        display: block;
-        height: 10%;
-        width: 15%;
-        filter: invert(100%);
-        position: relative;
-        left: 80%;
-        overflow: hidden;
-      }
-
-      .signin-logo {
-        top: 0.2vh;
-        left: 3px;
-        position: fixed;
-        z-index: 110;
-        opacity: 100%;
-        height: 10vh;
-        width: auto;
-     }
-
-     .navlinks {
-        display: none;
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-     }
-
-     #sign-in-heading {
-        font-size: 1.5em;
-        font-weight: var(--font-weight-light);
-        justify-items: flex-start;
-        color: white;
-    }
-
-    #sign-in-quote {
-        margin-top: 1%;
-        font-size: var(--fs-paragraph);
-        font-family: var(--font-main);
-        color: white;
-    }
-
-    .footer-item {
-        flex: 1;
-        margin: 0;
-        
-     }
-
-     .form {
-        padding: 10%;
-        margin-top: 5%;
-    }
-
-    .box1 {
-        margin-top: 20%;
-    }
-
-    .hamburger {
-
-        background: #333;
-         position: absolute;
-         padding: 11px 13px;
-         top: 5px;
-         right: 20px;
-         font-size: 30px;
-         cursor: pointer;
-         color: white;
-         z-index: 2;
-     }
-     
-     .menu {
-        display: none;
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(0, 0, 0, 0.7);
-        z-index: 1;
-     }
-     
-     .menu ul {
-        list-style-type: none;
-        padding: 0;
-        margin: 0;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-     }
-     
-     .menu ul li {
-        text-align: center;
-        margin-bottom: 20px;
-     }
-     
-     .menu ul li a {
-        text-decoration: none;
-        color: white;
-        font-size: 24px;
-     }
-     
-     .menu-toggle:checked + .hamburger {
-        background-color: transparent;
-        display: none;
-     }
-     
-     
-     
-    .navbar input {
-        appearance: none;
-     }
-     
-     .menu-toggle:checked + .hamburger + .menu {
-        display: block;
-     }
-     
-     #menu-close:checked{
-        display: none;
-     }
-     
-     .close-menu {
-        background: #333;
-        position: absolute;
-        padding: 11px 16px;
-        top: 10px;
-        right: 20px;
-        font-size: 30px;
-        cursor: pointer;
-        color: white;
-        z-index: 2;
-     }
-     
-     
-     .close-menu:hover {
-        color: red; /* צבע כאשר מרחיקים מהכפתור */
-     }
-     /* עיצוב למסכי מובייל עם רוחב עד 600 פיקסלים */
-     
-     
-     .menu ul::before {
-        display: none; /* ערך הגנרי להסתרת התפריט */
-        visibility: hidden; /* כדי שלא יתפרטס התפריט */
-        
-     }
-     
-     .menu-toggle:checked + .hamburger + .menu ul {
-        display: block; /* הצגת התפריט כאשר ההמבורגר פתוח */
-        visibility: visible;
-     
-     }
-     
-     .navlinks
-     {
-        display: none;
-     }
-     
-     .menu ul {
-        list-style-type: none;
-        padding: 0;
-        margin: 0;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        display: none; /* הסתרת רשימת הקישורים */
-     }
-     
-     .menu-toggle:checked + .hamburger + .menu ul {
-        display: block; /* הצגת רשימת הקישורים כאשר ההמבורגר פתוח */
-     }
-     
-     .menu-toggle::after + .hamburger + .menu ul 
-     {
-     display: none;
-     }
-     
-     .menu-toggle
-     {
-        display: none;
-     }
-
-     .footindex {
-        grid-area: footer;
-        background-color: #0a0a0a;
-        color: #fff;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        align-items: flex-start;
-        padding: auto;
-     }
-
-     #foot2 {display: none;}
-     
-     .footindex div {
-        flex: 1;
-        margin: 10px;
-     }
-     
-     .footindex .footer-logo {
-        max-width: 100px;
-     }
-     
-     .footindex p {
-        margin: 5px 0;
-     }
-     
-     .footindex h2 {
-        font-size: 1.2em;
-        margin-bottom: 10px;
-     }
-     
-     .footindex .footer-links {
-        list-style-type: none;
-        padding: 0;
-     }
-     
-     .footindex .footer-links li {
-        margin-bottom: 5px;
-     }
-     
-     .footindex a {
-        color: #fff;
-        text-decoration: none;
-     }
-     
-     .footindex a:hover {
-        text-decoration: underline;
-     }
-     
-     #fb, #yt, #tw, #ig {
-        max-width: 30px;
-        margin-right: 5px;
-     }
-     form {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-top: 20px;
-     }
-     .foot4
-     {
-        margin-top: 30%;
-     }
-     input[type="email"] {
-        padding: 10px;
-        border: 2px solid #000;
-        border-radius: 5px;
-        font-size: 16px;
-     }
-     
-     input[type="submit"] {
-        padding: 10px 20px;
-        border: none;
-        border-radius: 5px;
-        font-size: 16px;
-        background-color: #000;
-        color: white;
-        cursor: pointer;
-     }
-     
-     input[type="submit"]:hover {
-        background-color: #333;
-     }
-  
+.box1 {
+  grid-area: box1;
 }
 
-@media (min-width: 768px) {
-
-    .menu, input.menu-toggle{
-        display: none;
-    }
-
-    #sign-in-heading {
-        font-size: 1.5em;
-        font-weight: var(--font-weight-light);
-        justify-items: flex-start;
-        color: white;
-    }
-    
-    .box1 {
-        margin-top: 10%;
-    }
-    .signin-logo {
-    top: 0.2vh;
-    left: 3px;
-    position: fixed;
-    z-index: 110;
-    height: 10vh;
-    width: 8%;
-    margin-left: 6%;
-    }
-    
-    .burger-menu {display: none;}
-
-    .navbar {
-    
-        font-family: var(--font-navbar);
-          grid-area: header;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          overflow: hidden;
-          z-index: 1;
-          top: 0;
-          position: fixed;
-          height: 10vh;
-          width: 100%;
-          background-color: var(--bg-main);
-          
-    }
-    
-    .navlinks {
-        display: flex;
-        justify-content: center;
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        
-    }
-
-    @media (min-height: 1024px) and (max-height: 1370px) {
-        .signin-logo {
-            width: 12%;
-            margin-left: 3%;
-        }
-    }
+.menu {
+  display: none;
 }
 
-
-@media (min-width: 520px) and (max-width: 767px){
-    .burger-menu {display: none;}
-
-    .signin-logo {
-        top: 0.2vh;
-        left: 3px;
-        position: fixed;
-        z-index: 110;
-        height: 10vh;
-        width: 10%;
-        margin-left: 3%;
-        }
-
-        #sign-in-heading {
-            font-size: 1.5em;
-            font-weight: var(--font-weight-light);
-            justify-items: flex-start;
-            color: white;
-        }
-
-        .box1 {
-            margin-top: 5%;
-        }
-
-        .footer-item {
-            flex: 1;
-            margin: 0;
-            
-         }
+.checkbox,
+.menu-toggle,
+.menu-toggle {
+  display: none;
 }
 
-@media (min-width: 1024px) and (max-width: 1439px){
-    .signin-logo {
-        width: 8%;
-    }
-
-    .box1 {
-        margin-top: 5%;
-    }
+.logo {
+  top: 0.2vh;
+  left: 3px;
+  position: fixed;
+  z-index: 110;
+  opacity: 100%;
+  height: 10vh;
+  width: 5%;
+  margin-left: 6%;
 }
 
-@media (min-width: 1440px) {
-    .signin-logo {
-        width: 6%;
-        margin-left: 5%;
-    }
+.navbar {
+   z-index: 200;
+   top: 0;
+   width: 110%;
+   height: 10vh;
+   position: fixed;
+   width: 100%;
+   background-color: #000000;
+   margin-top: -0%;
+   margin-left: -50%;
 
-    .box1 {
-        margin-top: 5%;
-    }
+ }
+ 
+ .navlinks {
+   display: flex;
+   justify-content: center; /* מיישור האלמנטים לימין */
+   list-style-type: none;
+   margin: 0;
+   padding: 0;
+ }
+ 
+ .navlinks li {
+   margin-left: 20px; /* מרווח בין האלמנטים */
+ }
+ 
+ .navlinks li a {
+   color: white;
+   text-decoration: none;
+   padding: 10px;
+ }
+ 
+ @import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700|Poppins:400,500&display=swap');
+ *{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   user-select: none;
+ }
+ .bg-img{
+   background: url('bg.jpg');
+   height: 100vh;
+   background-size: cover;
+   background-position: center;
+ }
+ .bg-img:after{
+   position: absolute;
+   content: '';
+   top: 0;
+   left: 0;
+   height: 100%;
+   width: 100%;
+   background: rgba(0,0,0,0.7);
+ }
+ .content{
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   z-index: 999;
+   text-align: center;
+   padding: 60px 32px;
+   width: 370px;
+   transform: translate(-50%,-50%);
+   background: rgba(255,255,255,0.04);
+   box-shadow: -1px 4px 28px 0px rgba(0,0,0,0.75);
+ }
+ .content header{
+   color: white;
+   font-size: 33px;
+   font-weight: 600;
+   margin: 0 0 35px 0;
+   font-family: 'Montserrat',sans-serif;
+ }
+ .field{
+   position: relative;
+   height: 45px;
+   width: 100%;
+   display: flex;
+   background: rgba(255,255,255,0.94);
+ }
+ .field span{
+   color: #222;
+   width: 40px;
+   line-height: 45px;
+ }
+ .field input{
+   height: 100%;
+   width: 100%;
+   background: transparent;
+   border: none;
+   outline: none;
+   color: #222;
+   font-size: 16px;
+   font-family: 'Poppins',sans-serif;
+ }
+ .space{
+   margin-top: 16px;
+ }
+ .show{
+   position: absolute;
+   right: 13px;
+   font-size: 13px;
+   font-weight: 700;
+   color: #222;
+   display: none;
+   cursor: pointer;
+   font-family: 'Montserrat',sans-serif;
+ }
+ .pass-key:valid ~ .show{
+   display: block;
+ }
+ .pass{
+   text-align: left;
+   margin: 10px 0;
+ }
+ .pass a{
+   color: white;
+   text-decoration: none;
+   font-family: 'Poppins',sans-serif;
+ }
+ .pass:hover a{
+   text-decoration: underline;
+ }
+ .field input[type="submit"]{
+   background: #000000;
+   border: 1px solid #ffffff;
+   color: white;
+   font-size: 18px;
+   letter-spacing: 1px;
+   font-weight: 600;
+   cursor: pointer;
+   font-family: 'Montserrat',sans-serif;
+ }
+ .field input[type="submit"]:hover{
+   background: #000000;
+ }
+ .login{
+   color: white;
+   margin: 20px 0;
+   font-family: 'Poppins',sans-serif;
+ }
+ .links{
+   display: flex;
+   cursor: pointer;
+   color: white;
+   margin: 0 0 20px 0;
+ }
+ .facebook,.instagram{
+   width: 100%;
+   height: 45px;
+   line-height: 45px;
+   margin-left: 10px;
+ }
+ .facebook{
+   margin-left: 0;
+   background: #000000;
+   border: 1px solid #ffffff;
+ }
+ .instagram{
+   background: #000000;
+   border: 1px solid #000000;
+ }
+ .facebook:hover{
+   background: #000000;
+ }
+ .instagram:hover{
+   background: #000000;
+ }
+ .links i{
+   font-size: 17px;
+ }
+ i span{
+   margin-left: 8px;
+   font-weight: 500;
+   letter-spacing: 1px;
+   font-size: 16px;
+   font-family: 'Poppins',sans-serif;
+ }
+ .signup{
+   font-size: 15px;
+   color: white;
+   font-family: 'Poppins',sans-serif;
+ }
+ .signup a{
+   color: #000000;
+   text-decoration: none;
+ }
+ .signup a:hover{
+   text-decoration: underline;
+ }
 
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
