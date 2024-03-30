@@ -1,0 +1,85 @@
+/* Reset CSS */
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+   font-family: Arial, sans-serif;
+   background-color: #f0f0f0;
+}
+
+/* Navbar Styles */
+.navbar {
+   background-color: #333;
+   color: white;
+   text-align: center;
+   padding: 10px 0;
+}
+
+.navlinks {
+   list-style-type: none;
+}
+
+.navlinks li {
+   display: inline-block;
+   margin-right: 20px;
+}
+
+.navlinks li:last-child {
+   margin-right: 0;
+}
+
+.navlinks a {
+   color: white;
+   text-decoration: none;
+}
+
+/* Container Styles */
+.container {
+   max-width: 800px;
+   margin: 20px auto;
+   padding: 20px;
+   background-color: #fff;
+   border-radius: 5px;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.profile-info {
+   text-align: center;
+}
+
+.profile-info img {
+   width: 150px;
+   height: 150px;
+   border-radius: 50%;
+   margin-bottom: 20px;
+}
+
+/* Footer Styles */
+.footer {
+   background-color: #333;
+   color: white;
+   text-align: center;
+   padding: 10px 0;
+}
+
+.footer-links {
+   list-style-type: none;
+}
+
+.footer-links li {
+   display: inline-block;
+   margin-right: 20px;
+}
+
+.footer-links li:last-child {
+   margin-right: 0;
+}
+
+.footer-links a {
+   color: white;
+   text-decoration: none;
+}
