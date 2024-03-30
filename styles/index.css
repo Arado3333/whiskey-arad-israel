@@ -351,65 +351,7 @@ p{
    width: 20%;
    border-radius: 50px;
 }
-.footindex {
-grid-area: footindex;
 
-   display: flex;
-   justify-content: space-around;
-   color: #fff;
-   padding: 10px;
-   flex-wrap: wrap;
-}
-
-.footer-item {
-   flex: 1;
-   margin: 10%;
-   
-}
-.footer-item form {
-   margin-top: 10px;
-}
-
-.footer-item input[type="email"] {
-   padding: 10px;
-   border: 2px solid #000;
-   border-radius: 5px;
-   font-size: 16px;
-   width: 200px;
-   margin-right: 10px;
-}
-
-.footer-item input[type="submit"] {
-   padding: 10px 20px;
-   border: none;
-   border-radius: 5px;
-   font-size: 16px;
-   background-color: #000;
-   color: white;
-   cursor: pointer;
-}
-
-.footer-item input[type="submit"]:hover {
-   background-color: #333;
-}
-
-.footer-links {
-   padding-left: 0;
-}
-
-.footer-links li {
-   list-style-type: none;
-   margin-bottom: 5px;
-}
-
-.footer-links a {
-   color: #fff;
-   text-decoration: none;
-}
-
-.footer-links a:hover {
-   text-decoration: underline;
-}
 
 @media (max-width: 600px) {
    .footindex {
