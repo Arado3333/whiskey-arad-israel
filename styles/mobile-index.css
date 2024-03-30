@@ -37,19 +37,24 @@
 .logo
 {
    display: block;
+   height: auto;
+   width: 20%;
+   margin-top: -2%;
 }
 
 
-.box1 {
-   grid-area: box1;
-   height: 100%;
-}
+
 
 .video {
    height: 100%;
    width: 100%;
  
 }
+
+.box1 {
+   grid-area: box1;
+   height: 100%;
+} 
 
 .logo {
    height: auto;
@@ -64,19 +69,6 @@
    filter: brightness(0) invert(1);
 }
 
-.navlinks {
-   display: none;
-}
-
-.navbar {
-   overflow: hidden;
-   z-index: 200;
-   top: 0;
-   height: 10vh;
-   width: 100%;
-   background-color: #000000;
-   position: fixed;
-}
 
 .box2 {
    grid-area: box2;
@@ -439,11 +431,10 @@ letter-spacing: 2px;
 }
 
 .hamburger {
-   background: #333;
     position: absolute;
     padding: 11px 13px;
-    top: 5px;
-    right: 20px;
+    top: 0px;
+    right: 15px;
     font-size: 30px;
     cursor: pointer;
     color: white;
@@ -502,7 +493,6 @@ letter-spacing: 2px;
 }
 
 .close-menu {
-   background: #333;
    position: absolute;
    padding: 11px 16px;
    top: 10px;

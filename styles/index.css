@@ -88,10 +88,11 @@ margin-left: 6%;
    z-index: 200;
    top: 0;
    position: fixed;
-   height: 10vh;
    width: 100%;
    padding-right: 55%;
    background-color: #000000;
+   text-align: center;
+   margin-top: -2%;
    
 }
 
@@ -227,14 +228,6 @@ margin-left: -100%;
    animation: wave 2s infinite alternate;
 }
 
-@keyframes wave {
-   7% {
-      transform: translateY(0);
-   }
-   100% {
-      transform: translateY(10px);
-   }
-}
 
 
 .p5h {

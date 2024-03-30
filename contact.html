@@ -3,58 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact</title>
     <link rel="stylesheet" href="./styles/contact.css">
-    <title>Contact - Golani Distillery</title>
+
 </head>
 <body>
-    
-    <nav class="navbar">
 
-        <input type="checkbox" id="menu-toggle" class="menu-toggle">
-        <label for="menu-toggle" class="hamburger">&#9776;</label>
-        <div class="menu">
-            <input type="checkbox" id="menu-close">
-            <label for="menu-toggle" class="close-menu">&times;</label>
-            <ul class="navlinks">
-                <li><a href="./shop.html">Shop</a></li>
-                <li><a href="./contact.html">Contact</a></li>
-                <li><a href="./about.html">About Us</a></li>
-                <li><a href="./sign-up.html">Sign Up</a></li>
-                <li><a href="./sign-in.html">Sign In</a></li>
-                <li><a href="./index.html">Home</a></li>
-            </ul>
-        </div>
 
-        <ul class="navlinks">
-            <li><a href="./index.html">Home</a></li>
-            <li><a href="./sign-in.html">Sign-in</a></li>
-            <li><a href="./sign-up.html">Sign-up</a></li>
-            <li><a href="./contact.html">Contact</a></li>
-            <li><a href="./about.html">About</a></li>
-            <li><a href="./shop.html">Shop</a></li>
-        </ul>
-    </nav>
-   
-    
-    <section class="container">
+    <div class="container">
         <div class="box box1">
-            <h2>Contact Information</h2>
-            <p>Email: info@golanidistillery.com</p>
-            <p>Phone: +972-52-1234567</p>
-            <p>Address: 123 Main St, Golan Heights, Israel</p>
-            <h2>Connect With Us</h2>
-            <ul class="A">
-                <li><a href="https://www.facebook.com/golanidistillery"><img src="./images/facebook.png" alt="Facebook Icon"> Facebook</a></li>
-                <li><a href="https://twitter.com/golanidistillery"><img src="./images/twitter.png" alt="Twitter Icon"> Twitter</a></li>
-                <li><a href="https://www.instagram.com/golanidistillery"><img src="./images/instagram.png" alt="Instagram Icon"> Instagram</a></li>
-             </ul>
-             
-             
-             
+            <div class="navbar">
+                <input type="checkbox" id="menu-toggle" class="menu-toggle">
+<label for="menu-toggle" class="hamburger">&#9776;</label>
+<div class="menu">
+    <input type="checkbox" id="menu-close">
+    <label for="menu-toggle" class="close-menu">&times;</label>
+    <ul class="navlinks">
+        <li><a href="./shop.html">Shop</a></li>
+        <li><a href="./contact.html">Contact</a></li>
+        <li><a href="./about.html">About Us</a></li>
+        <li><a href="./sign-up.html">Sign Up</a></li>
+
+        <li><a href="./sign-in.html">Sign In</a></li>
+        <li><a href="./index.html">Home</a></li>
+    </ul>
+</div>
+               <a href="#"> <img class="logo" src="./images/Golani Spirit Logo copy.png" alt="Golani Distillery Logo"></a>
+                <ul class="navlinks">
+                    <li><a href="./shop.html">Shop</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                    <li><a href="./about.html">About Us</a></li>
+                    <li><a href="./sign-up.html">Sign Up</a></li>
+                    <li><a href="./sign-in.html">Sign In</a></li>
+                    <li><a href="./index.html">Home</a></li>
+                </ul>
+            </div>
+          
         </div>
-    </section>
-    <footer class="project">
-        <p>&copy; ***ISRAEL  - AND  - ARAD -  PROJECT***</p>
-    </footer>
+
+
+    <section id="contact">
+        <h1 class="section-header">Contact</h1>
+        <div class="contact-wrapper">
+          <!-- Left contact page -->
+          <form id="contact-form" class="form-horizontal" role="form">
+            <div class="form-group">
+              <div class="col-sm-12">
+                <input type="text" class="form-control" id="name" placeholder="NAME" name="name" value="" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-sm-12">
+                <input type="email" class="form-control" id="email" placeholder="EMAIL" name="email" value="" required>
+              </div>
+            </div>
+            <textarea class="form-control" rows="10" placeholder="MESSAGE" name="message" required></textarea>
+            <button onclick="window.location.href='./shop.html'" class="buttonvideo">Sand</button>
+            
+          </form>
+          <div class="direct-contact-container">
+            <ul class="contact-list">
+              <li class="list-item"><i class="fa fa-map-marker fa-2x"></i><span class="contact-text place">Israel, golan heights</span></li>
+              <li class="list-item"><i class="fa fa-phone fa-2x"></i><span class="contact-text phone"><a href="Tel: +972-53-339-4787" title="Give me a call">Tel: +972-53-339-4787</a></span></li>
+              <li class="list-item"><i class="fa fa-envelope fa-2x"></i><span class="contact-text gmail"><a href="mailto:#" title="Send me an email">IsraelAniti207@gmail.com</a></span></li>
+            </ul>
+            <hr>
+            
+            <ul class="social-media-list">
+              <li><a href="./images/30.png" target="_blank" class="contact-icon"><img src="./images/30.png" alt="GitHub"></a></li>
+              <li><a href="./images/31.png" target="_blank" class="contact-icon"><img src="./images/31.png" alt="CodePen"></a></li>
+              <li><a href="./images/32.png" target="_blank" class="contact-icon"><img src="./images/32.png" alt="Twitter"></a></li>
+              <li><a href="./images/33.png" target="_blank" class="contact-icon"><img src="./images/33.png" alt="Instagram"></a></li>
+            </ul>
+            
+            
+            <hr>
+            <div class="copyright">&copy; Israel and Arad </div>
+          </div>
+        </div>
+      </section>
 </body>
 </html>
+
+
+
+  

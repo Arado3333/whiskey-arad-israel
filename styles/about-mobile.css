@@ -51,16 +51,14 @@ z-index: 100;
 
 .logo {
    height: auto;
- width: 30%;
+ width: 25%;
  margin-left: 10%;
+ margin-top: -4%;
 }
 
 .br
 {
-   filter: brightness(0) invert(1);
-   height: auto;
-   width: 20%;
- margin-left: 70%;
+  display: none;
 
 }
 .navbar {
@@ -78,19 +76,6 @@ z-index: 100;
 
 
 
- .navlinks li {
-display: none;
-}
-
-.navlinks {
-   display: none;
-
-}
-
-.navlinks li a {
-   display: none;
-
-}
 
 
 .box5 {
@@ -175,7 +160,6 @@ display: none;
 
 .hamburger {
 
-   background: #333;
     position: absolute;
     padding: 11px 13px;
     top: 5px;
@@ -184,6 +168,7 @@ display: none;
     cursor: pointer;
     color: white;
     z-index: 2;
+    margin-right: 5%;
 }
 
 .menu {
@@ -238,7 +223,6 @@ display: none;
 }
 
 .close-menu {
-   background: #333;
    position: absolute;
    padding: 11px 16px;
    top: 10px;
