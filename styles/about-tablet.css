@@ -52,9 +52,11 @@
    left: 3px;
    position: fixed;
    z-index: 110;
-   opacity: 90%;
-   height: 6vh;
-}
+   opacity: 100%;
+   height: auto;
+   width: 8%;
+   margin-left: 6%;
+ }
 
 .navbar {
    overflow: hidden;

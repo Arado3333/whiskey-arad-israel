@@ -22,8 +22,9 @@
     'box4'
     'box3'
     'box6'
+    'footindex'
     'footindex';
-    gap: 20vh;
+    gap: 10vh;
     
 }
 
@@ -32,7 +33,10 @@
 }
 
 
-
+.footer-links, #foot2, .a, .b
+{
+   display: none;
+}
 
 
 .box1 {
@@ -51,7 +55,7 @@ z-index: 100;
 
 .logo {
    height: auto;
- width: 25%;
+ width: 18%;
  margin-left: 10%;
  margin-top: -4%;
 }
@@ -286,11 +290,11 @@ display: none;
    grid-area: footer;
    background-color: #0a0a0a;
    color: #fff;
-   display: flex;
    flex-wrap: wrap;
    justify-content: space-around;
    align-items: flex-start;
-   padding: auto;
+   margin-top: 40%;
+   row-gap: 10%;
 }
 
 #foot2 {display: none;}

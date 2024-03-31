@@ -284,21 +284,19 @@ margin-left: 6%;
 
 
 
- @media screen and (max-width: 850px) {
-   .navbar {
-     display: flex;
-     justify-content: center;
-     margin-right: -50%;
-     font-size: 0.7rem;
-   }
- }
- 
+
  
  
 
 
  /* Begin Media Queries*/
  @media screen and (max-width: 850px) {
+  .navbar {
+    display: flex;
+    justify-content: center;
+    margin-right: -50%;
+    font-size: 0.7rem;
+  }
    .contact-wrapper {
      display: flex;
      flex-direction: column;
@@ -326,6 +324,17 @@ margin-left: 6%;
    width: 300px;
 }
 
+.logo {
+  top: 1vh;
+  left: 3px;
+  position: fixed;
+  z-index: 110;
+  opacity: 100%;
+  height: auto;
+  width: 8%;
+  margin-left: 6%;
+}
+
 
 
  }
@@ -333,7 +342,11 @@ margin-left: 6%;
 
  @media screen and (max-width: 569px) {
 
-
+  .form-control
+  {
+     width: 500px;
+   gap: 10%;
+  }
 
 
  
@@ -399,10 +412,11 @@ margin-left: 6%;
    }
 
    .logo {
-      height: auto;
-    width: 15%;
-    margin-left: 10%;
-   }
+    height: auto;
+  width: 18%;
+  margin-left: 10%;
+  margin-top: -4%;
+ }
 
    #contact {
       grid-area: contact;
@@ -496,7 +510,7 @@ margin-left: 6%;
 
 
 
-.menu ul::before {
+.menu ul::before { 
   display: none; /* ערך הגנרי להסתרת התפריט */
   visibility: hidden; /* כדי שלא יתפרטס התפריט */
   
@@ -507,7 +521,10 @@ margin-left: 6%;
   visibility: visible;
 
 }
-
+.footer-item
+{
+  width: 100vw;
+}
 .navlinks
 {
   display: none;
