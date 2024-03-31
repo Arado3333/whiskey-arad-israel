@@ -286,7 +286,7 @@
       .product-info > h3 {
          font-family: var(--font-main);
          font-weight: var(--font-weight-normal);
-         font-size: var(--fs-heading);
+         font-size: var(--fs-heading-shop);
       }
    
       .product-info > p {
