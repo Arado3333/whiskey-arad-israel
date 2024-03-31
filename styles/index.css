@@ -164,9 +164,10 @@ border-radius: 20px;
 .img4 {
    width: 90%;
    height: 100%;
-   opacity: 70%;
+   opacity: 90%;
 margin-left: 5%;
 border-radius: 20px;
+z-index: 1000;
 
 }
 
@@ -342,7 +343,7 @@ top: 0%;
     border: 1px solid rgb(255, 255, 255);
     cursor: pointer;
     height: 5vh;
-    margin-left: 43%;
+    margin-left: 40%;
     width: 20%;
     border-radius: 50px;
 }
