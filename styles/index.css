@@ -152,6 +152,15 @@ margin-left: 6%;
    margin-left: 10%;
 }
 
+.img4:hover,
+.img11:hover,
+.img14:hover,
+.img15:hover {
+   transition: 0.5s;
+   transform: scale(1.1);
+}
+
+
 .img2 {
    width: 40%;
    height: 90%;
@@ -162,6 +171,7 @@ border-radius: 20px;
 }
 
 .img4 {
+   transition: 0.5s;
    width: 90%;
    height: 100%;
    opacity: 90%;
@@ -471,6 +481,7 @@ grid-area: footindex;
 }
 .img11
 {
+   transition: 0.5s;
    height: auto;
    width: 70%;
 margin-left: 20%;
@@ -533,6 +544,7 @@ margin-left: 15%;
 }
 .img14
 {
+   transition: 0.5s;
    height: auto;
    width: 70%;
 border-radius: 20px;
@@ -546,6 +558,7 @@ border-radius: 20px;
 }
 .img15
 {
+   transition: 0.5s;
    height: auto;
    width: 70%;
 margin-left: 20%;
