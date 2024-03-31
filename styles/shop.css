@@ -215,7 +215,7 @@
       .box10 {grid-area: box10;}
    
       .box10 img {
-         margin-bottom: 3%;
+         margin-bottom: 0;
       } 
    
       .box11 {grid-area: box11;}
