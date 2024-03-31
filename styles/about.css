@@ -49,13 +49,14 @@
 
 .box1 {
    grid-area: box1;
+   height: 40%;
 }
 
 .video {
    width: 100%;
-   height: 100;
-   opacity: 70%;
-   object-fit: fill;
+   height: 70vh;
+   object-fit:fill;
+   border-radius: 50px;
 }
 
 .logo {
@@ -158,7 +159,7 @@ button:hover {
 
 .img2 {
 
-width: 55%;
+width: 400px;
 height: auto;
 border-radius: 40px;
 margin-left: 20%;
@@ -178,14 +179,15 @@ margin-left: 20%;
 
 .img4 {
    height: auto;
-   width: 75%;
+   width: 350px;
    border-radius: 40px;
 }
 .box3 {
    grid-area: box3;
- width: 80%;
+ width: 100%;
    color: rgb(0, 0, 0);
    margin-top: 14%;
+   margin-left: -15%;
 }
 
 
