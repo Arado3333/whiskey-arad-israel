@@ -1,8 +1,11 @@
+@import url("./vars.css");
+
 * {
    margin: 0;
    padding: 0;
    box-sizing: border-box;
 }
+
 @media (min-width: 500px) 
 {
    .menu {
@@ -18,7 +21,7 @@
 
 
 .body {
-   background-image: url(../images/Golani\ Spirit\ Logo\ copy.png);
+   background-image: url("../images/Golani\ Spirit\ Logo\ copy.png");
 }
 
 .container {
@@ -27,7 +30,7 @@
        'box1'
        'continer1'
        'footindex';
-   background-image: url(../images/Golani\ Spirit\ Logo\ copy.png);
+   background-image: url("../images/Golani\ Spirit\ Logo\ copy.png");
    grid-template-rows: auto;
 }
 
@@ -93,17 +96,28 @@ p {
 }
 
 button {
+   font-size: var(--fs-buttons);
+   font-weight: var(--font-weight-normal);
+   transition: 0.6s;
+   align-self: center;
    margin: 2rem;
    margin-bottom: 1.5rem;
    padding: 0.5rem;
    cursor: pointer;
-   border-radius: 1rem;
-   border: none;
-   font-size: 1.1rem;
-   font-weight: bolder;
-   color: #ffffff;
-   background-color: #000;
+   border-radius: 999px;
+   border: solid 1px;
+   width: 30%;
+   color: #000;
+   background-color: transparent;
 }
+
+button:hover {
+   font-weight: var(--font-weight-bold);
+   transition: 0.5s;
+   color: white;
+   background-color: black;
+}
+
 
 .icons .fa-facebook-f {
    border-radius: 50%;
@@ -159,6 +173,20 @@ button {
    display: flex;
    justify-content: center; 
 }
+
+.navbar a::after {
+   content: '';
+   display: block;
+   width: 0;
+   height: 2px;
+   margin-top: 5px;
+   background: white;
+   transition: width ease 0.5s;
+ }
+ 
+ .navbar a:hover::after {
+   width: 100%;
+ }
 
 
 .navlinks li {
@@ -330,8 +358,8 @@ margin: 0;
    }
    .h2f
    {
-display: none; 
-  }
+      display: none; 
+   }
  
    form {
       display: flex;
@@ -339,10 +367,11 @@ display: none;
       align-items: center;
       margin-top: 20px;
    }
-   .foot4
-   {
+   
+   .foot4 {
       margin-top: 30%;
    }
+
    input[type="email"] {
       border: none;
       outline: none;
@@ -352,26 +381,12 @@ display: none;
       font-size: 1rem;
    }
    
-   
-
-   
-   
- 
-  
-  
-   
    .menu {
       display:list-item;
       text-align: center;
       z-index: 100;
    }
-   
-   .menu ul {
-      
-     
 
-   }
-   
    .menu ul li {
       text-align: center;
       margin-bottom: 20px;
@@ -663,7 +678,7 @@ display: none;
        height: 100vmax;
    }
 }
-}
+
 
 
 

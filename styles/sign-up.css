@@ -1,8 +1,11 @@
+@import url("./vars.css");
+
 * {
    margin: 0;
    padding: 0;
    box-sizing: border-box;
 }
+
 @media (min-width: 500px) 
 {
    .menu {
@@ -18,7 +21,7 @@
 
 
 .body {
-   background-image: url(../images/Golani\ Spirit\ Logo\ copy.png);
+   background-image: url("../images/Golani\ Spirit\ Logo\ copy.png");
 }
 
 .container {
@@ -27,7 +30,7 @@
        'box1'
        'continer1'
        'footindex';
-   background-image: url(../images/Golani\ Spirit\ Logo\ copy.png);
+   background-image: url("../images/Golani\ Spirit\ Logo\ copy.png");
    grid-template-rows: auto;
 }
 
@@ -41,7 +44,7 @@
    left: 50%;
    transform: translate(-50%, -50%);
    background: #ffffff;
-   width: 40%;
+   width: 30%;
    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3);
 }
 
@@ -92,17 +95,28 @@ p {
    margin: 0.2rem;
 }
 
+
 button {
+   font-size: var(--fs-buttons);
+   font-weight: var(--font-weight-normal);
+   transition: 0.6s;
+   align-self: center;
    margin: 2rem;
    margin-bottom: 1.5rem;
    padding: 0.5rem;
    cursor: pointer;
-   border-radius: 1rem;
-   border: none;
-   font-size: 1.1rem;
-   font-weight: bolder;
-   color: #ffffff;
-   background-color: #000;
+   border-radius: 999px;
+   border: solid 1px;
+   width: 30%;
+   color: #000;
+   background-color: transparent;
+}
+
+button:hover {
+   font-weight: var(--font-weight-bold);
+   transition: 0.5s;
+   color: white;
+   background-color: black;
 }
 
 .icons .fa-facebook-f {
@@ -343,6 +357,7 @@ display: none;
    {
       margin-top: 30%;
    }
+   
    input[type="email"] {
       border: none;
       outline: none;
@@ -471,9 +486,6 @@ display: none;
       display: none;
    }
 
-   html {
-       font-size: 15px;
-   }
    .container .form-1 {
        width: 300px;
    }
@@ -652,8 +664,6 @@ display: none;
    }
 }
 }
-
-
 
 .navbar a {
    transition: 0.5s;
