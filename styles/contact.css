@@ -423,10 +423,10 @@ margin-left: 6%;
    }
 
    .logo {
-    height: auto;
-  width: 18%;
-  margin-left: 10%;
-  margin-top: -4%;
+    height: 10vh;
+    width: 19%;
+    margin-left: 7%;
+    margin-top: -4%;
  }
 
    #contact {
@@ -443,7 +443,7 @@ margin-left: 6%;
    position: fixed;
    right: 10px; /* כמה פיקסלים מהצד הימני של הדף */
    padding: 11px 13px;
-   font-size: 30px;
+   font-size: 35px;
    cursor: pointer;
    color: white;
 }
@@ -478,9 +478,10 @@ margin-left: 6%;
 }
 
 .menu ul li a {
+  margin-top: 0;
    text-decoration: none;
    color: white;
-   font-size: 24px;
+   font-size: calc(var(--fs-mobile-menu) + 0.5em);
 
 }
  
@@ -553,7 +554,8 @@ margin-left: 6%;
 }
 
 .menu-toggle:checked + .hamburger + .menu ul {
-  display: block; /* הצגת רשימת הקישורים כאשר ההמבורגר פתוח */
+  display: flex; /* הצגת רשימת הקישורים כאשר ההמבורגר פתוח */
+  flex-direction: column;
 }
 
 .menu-toggle::after + .hamburger + .menu ul 

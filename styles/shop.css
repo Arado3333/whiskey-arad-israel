@@ -919,13 +919,11 @@
 
 
    .hamburger {
-
-      background: #333;
        position: absolute;
        padding: 11px 13px;
        top: 5px;
        right: 20px;
-       font-size: 30px;
+       font-size: 35px;
        cursor: pointer;
        color: white;
        z-index: 2;
@@ -958,9 +956,10 @@
    }
    
    .menu ul li a {
+      background: none;
       text-decoration: none;
       color: white;
-      font-size: 24px;
+      font-size: var(--fs-mobile-menu);
    }
    
    .menu-toggle:checked + .hamburger {
@@ -983,12 +982,12 @@
    }
    
    .close-menu {
-      background: #333;
       position: absolute;
       padding: 11px 16px;
       top: 10px;
       right: 20px;
-      font-size: 30px;
+      font-size: 35px;
+      font-weight: bold;
       cursor: pointer;
       color: white;
       z-index: 2;

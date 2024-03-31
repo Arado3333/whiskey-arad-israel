@@ -17,11 +17,13 @@
     --font-weight-bold: 700;
     --font-weight-heavy-bold: 900;
     --font-weight-paragraph: 200;
+    --fs-mobile-menu: 1.5em;
     --fs-paragraph: 0.8em;
     --fs-paragraph-home: 1em;
     --fs-buttons: 1rem;
     --fs-heading: 2em;
     --fs-heading-shop: 1em;
+    --fs-heading-tablet: 1.8em;
     --letter-spacing-home: 2px;
 
 /*----------- Color Properties --------*/

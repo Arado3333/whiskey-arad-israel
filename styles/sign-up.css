@@ -19,6 +19,24 @@
    }
 }
 
+h1 {
+   font-family: var(--font-navbar);
+   font-size: var(--fs-heading);
+   font-weight: var(--font-weight-normal);
+   letter-spacing: var(--letter-spacing-home);
+}
+
+ p, label, span {
+   font-family: var(--font-main);
+   font-weight: var(--font-weight-normal);
+   font-size: var( --fs-paragraph-home);
+   margin-left: 2em;
+}
+
+.alter-signup {
+   margin-left: 8.5em;
+}
+
 
 .body {
    background-image: url("../images/Golani\ Spirit\ Logo\ copy.png");
@@ -36,15 +54,14 @@
 
 .container .form-1 {
    grid-area: continer1;
-
    display: flex;
    flex-direction: column;
-   position: absolute;
-   top: 50%;
+   position: relative;
+   bottom: 50%;
    left: 50%;
    transform: translate(-50%, -50%);
    background: #ffffff;
-   width: 30%;
+   width: 50%;
    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3);
 }
 
@@ -66,21 +83,24 @@ input[type="password"] {
    font-size: 1rem;
 }
 
-label {
-   margin: 0 2rem;
+label.email-label,
+label.password-label {
+   margin-left: 2em;
+   margin-right: 4em;
 }
 
-span {
+
+label.confpassword-label {
+   margin-right: 4em;
+}
+
+span.forgotpass {
    margin: 0 2rem;
    color: rgb(114, 114, 118);
    cursor: pointer;
 }
 
 /* ........///Sign-Up///......... */
-p {
-   text-align: center;
-   font-weight: bolder;
-}
 
 .icons {
    display: flex;
@@ -266,7 +286,16 @@ button:hover {
 @media (max-width: 500px) {
 
  
-   
+   label.email-label,
+   label.password-label {
+      margin-left: 0;
+      margin-right: 6em;
+}
+
+   label.email-label {
+      margin-right: calc(6em + 2em);
+}
+
    .footindex {
       grid-area: footindex;
       display: flex;
@@ -368,13 +397,6 @@ display: none;
    }
    
    
-
-   
-   
- 
-  
-  
-   
    .menu {
       display: none;
       position: fixed;
@@ -386,7 +408,7 @@ display: none;
       z-index: 1;
    }
    
-   .menu ul {
+   .menu ul.navlinks-burger {
       list-style-type: none;
       padding: 0;
       margin: 0;
@@ -396,12 +418,12 @@ display: none;
       transform: translate(-50%, -50%);
    }
    
-   .menu ul li {
+   .menu ul.navlinks-burger li {
       text-align: center;
       margin-bottom: 20px;
    }
    
-   .menu ul li a {
+   .menu ul.navlinks-burger li a {
       text-decoration: none;
       color: white;
       font-size: 24px;
@@ -439,9 +461,9 @@ display: none;
    
    
    
-   .menu ul::before {
-      display: none; /* ערך הגנרי להסתרת התפריט */
-      visibility: hidden; /* כדי שלא יתפרטס התפריט */
+   .menu ul.navlinks-burger::before {
+      display: none; /* ערך גנרי להסתרת התפריט */
+      visibility: hidden; /* כדי שלא יופיע התפריט */
       
    }
    
@@ -460,7 +482,8 @@ display: none;
       display: none;
       color: white;
    }
-   
+
+
    .menu ul {
       list-style-type: none;
       padding: 0;
@@ -489,6 +512,7 @@ display: none;
    .container .form-1 {
        width: 300px;
    }
+
    .logo {
       top: 0.2vh;
       left: 3px;
@@ -496,8 +520,7 @@ display: none;
       z-index: 110;
       opacity: 100%;
       height: 10vh;
-      width: 15%;
-      height: auto;
+      width: 19%;
       margin-left: 6%;
    }
    
@@ -509,7 +532,7 @@ display: none;
    cursor: pointer;
    color: white;
    z-index: 2;
-   margin-left: 85%;
+   margin-left: 77%;
 }
 
 .menu {
@@ -541,7 +564,8 @@ display: none;
 .menu ul li a {
   text-decoration: none;
   color: white;
-  font-size: 24px;
+  font-size: var(--fs-mobile-menu);
+   padding: 0.5em;
 }
 
 .menu-toggle:checked + .hamburger {
@@ -653,8 +677,6 @@ display: none;
        width: 540px;
        height: 550px;
    }
-
-
    
 }
 

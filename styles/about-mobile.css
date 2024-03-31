@@ -85,10 +85,9 @@ button {
 }
 
 .logo {
-   height: auto;
- width: 18%;
- margin-left: 10%;
- margin-top: -4%;
+   height: 10vh;
+   margin-left: 7%;
+   margin-top: -9px;
 }
 
 .br
@@ -192,16 +191,15 @@ button {
 }
 
 .hamburger {
-
     position: absolute;
     padding: 11px 13px;
     top: 5px;
-    right: 20px;
-    font-size: 30px;
+    right: 2em;
+    font-size: 35px;
     cursor: pointer;
     color: white;
     z-index: 2;
-    margin-right: 5%;
+    margin-right: 0;
 }
 
 .menu {
@@ -226,6 +224,7 @@ button {
 }
 
 .menu ul li {
+   padding: 1em;
    text-align: center;
    margin-bottom: 20px;
 }
@@ -233,7 +232,7 @@ button {
 .menu ul li a {
    text-decoration: none;
    color: white;
-   font-size: 24px;
+   font-size: var(--fs-mobile-menu);
 }
 
 .menu-toggle:checked + .hamburger {
@@ -259,13 +258,12 @@ button {
    position: absolute;
    padding: 11px 16px;
    top: 10px;
-   right: 20px;
+   right: 1em;
    font-size: 30px;
    cursor: pointer;
    color: white;
    z-index: 2;
 }
-
 
 .close-menu:hover {
    color: red; /* צבע כאשר מרחיקים מהכפתור */
@@ -302,7 +300,8 @@ button {
 }
 
 .menu-toggle:checked + .hamburger + .menu ul {
-   display: block; /* הצגת רשימת הקישורים כאשר ההמבורגר פתוח */
+   display: flex; /* הצגת רשימת הקישורים כאשר ההמבורגר פתוח */
+   flex-direction: column;
 }
 
 .menu-toggle::after + .hamburger + .menu ul 

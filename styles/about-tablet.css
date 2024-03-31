@@ -9,7 +9,7 @@
 
    h1 {
       font-family: var(--font-navbar);
-      font-size: var(--fs-heading);
+      font-size: var( --fs-heading-tablet);
       font-weight: var(--font-weight-normal);
       letter-spacing: var(--letter-spacing-home);
    }
@@ -17,7 +17,7 @@
     p {
       font-family: var(--font-main);
       font-weight: var(--font-weight-normal);
-      font-size: var( --fs-paragraph-home);
+      font-size: var( --fs-paragraph);
       letter-spacing: var(--letter-spacing-home);
    }
 

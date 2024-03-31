@@ -5,7 +5,6 @@
    padding: 0;
    box-sizing: border-box;
 }
-
 @media (min-width: 500px) 
 {
    .menu {
@@ -19,6 +18,23 @@
    }
 }
 
+h1 {
+   font-family: var(--font-navbar);
+   font-size: var(--fs-heading);
+   font-weight: var(--font-weight-normal);
+   letter-spacing: var(--letter-spacing-home);
+}
+
+ p, label, span {
+   font-family: var(--font-main);
+   font-weight: var(--font-weight-normal);
+   font-size: var( --fs-paragraph-home);
+   margin-left: 2em;
+}
+
+.alter-login {
+   margin-left: 0;
+}
 
 .body {
    background-image: url("../images/Golani\ Spirit\ Logo\ copy.png");
@@ -66,9 +82,6 @@ input[type="password"] {
    font-size: 1rem;
 }
 
-label {
-   margin: 0 2rem;
-}
 
 span {
    margin: 0 2rem;
@@ -76,7 +89,7 @@ span {
    cursor: pointer;
 }
 
-/* ........///Sign-Up///......... */
+/* ........///Sign-In///......... */
 p {
    text-align: center;
    font-weight: bolder;
@@ -117,7 +130,6 @@ button:hover {
    color: white;
    background-color: black;
 }
-
 
 .icons .fa-facebook-f {
    border-radius: 50%;
@@ -278,9 +290,17 @@ button:hover {
 
 /* ....///Media query///..... */
 @media (max-width: 500px) {
-
  
-   
+label.email-label,
+label.password-label {
+   margin-left: 0;
+   margin-right: 6em;
+}
+
+label.email-label {
+   margin-right: calc(6em + 2em);
+}
+
    .footindex {
       grid-area: footindex;
       display: flex;
@@ -290,8 +310,8 @@ button:hover {
       flex-wrap: wrap;
       background-color: #000;
       height: 30vh;
-padding: 0;
-margin: 0;
+   padding: 0;
+   margin: 0;
    }
    
    
@@ -304,13 +324,7 @@ margin: 0;
       color: #fff;
       margin-right: 10px;
    }
-   
-   
-   
-   
-  
-   
-   
+
    .footindex div {
       flex: 1;
       margin: 10px;
@@ -382,21 +396,22 @@ margin: 0;
    }
    
    .menu {
-      display:list-item;
       text-align: center;
       z-index: 100;
    }
 
    .menu ul li {
+      
       text-align: center;
       margin-bottom: 20px;
    }
    
    .menu ul li a {
+      font-size: var(--fs-mobile-menu);
       text-decoration: none;
       color: white;
       text-align: center;
-
+      margin: 0;
    }
    
    .menu-toggle:checked + .hamburger {
@@ -410,10 +425,6 @@ margin: 0;
       appearance: none;
    }
    
-   .menu-toggle:checked + .hamburger + .menu {
-      display: block;
-   }
-   
    #menu-close:checked{
       display: none;
    }
@@ -422,7 +433,7 @@ margin: 0;
       position: absolute;
       padding: 11px 16px;
       top: 10px;
-      right: 20px;
+      right: 0;
       font-size: 30px;
       cursor: pointer;
       color: white;
@@ -438,7 +449,7 @@ margin: 0;
    }
    
    .menu-toggle:checked + .hamburger + .menu ul {
-      display: block; /* הצגת התפריט כאשר ההמבורגר פתוח */
+      display: flex; /* הצגת התפריט כאשר ההמבורגר פתוח */
       visibility: visible;
    
    }
@@ -464,10 +475,6 @@ margin: 0;
       display: none; /* הסתרת רשימת הקישורים */
    }
    
-   .menu-toggle:checked + .hamburger + .menu ul {
-      display: block; /* הצגת רשימת הקישורים כאשר ההמבורגר פתוח */
-   }
-   
    .menu-toggle::after + .hamburger + .menu ul 
    {
    display: none;
@@ -478,12 +485,10 @@ margin: 0;
       display: none;
    }
 
-   html {
-       font-size: 15px;
-   }
    .container .form-1 {
        width: 300px;
    }
+
    .logo {
       top: 0.2vh;
       left: 3px;
@@ -491,8 +496,8 @@ margin: 0;
       z-index: 110;
       opacity: 100%;
       height: 10vh;
-      width: 15%;
-      height: auto;
+      width: 17%;
+      height: 10vh;
       margin-left: 6%;
    }
    
@@ -504,7 +509,7 @@ margin: 0;
    cursor: pointer;
    color: white;
    z-index: 2;
-   margin-left: 85%;
+   margin-left: 77%;
 }
 
 .menu {
@@ -531,12 +536,6 @@ margin: 0;
 .menu ul li {
   text-align: center;
   margin-bottom: 20px;
-}
-
-.menu ul li a {
-  text-decoration: none;
-  color: white;
-  font-size: 24px;
 }
 
 .menu-toggle:checked + .hamburger {
@@ -577,16 +576,11 @@ margin: 0;
   
 }
 
-.menu-toggle:checked + .hamburger + .menu ul {
-  display: block; /* הצגת התפריט כאשר ההמבורגר פתוח */
-  visibility: visible;
-
-}
-
 .navlinks
 {
   display: none;
 }
+
 .nonmobile
 {
   display: none;
@@ -605,7 +599,8 @@ margin: 0;
 }
 
 .menu-toggle:checked + .hamburger + .menu ul {
-  display: block; /* הצגת רשימת הקישורים כאשר ההמבורגר פתוח */
+  display: flex; /* הצגת רשימת הקישורים כאשר ההמבורגר פתוח */
+  flex-direction: column;
 }
 
 .menu-toggle::after + .hamburger + .menu ul 
@@ -656,7 +651,6 @@ display: none;
       width: 8%;
       margin-left: 6%;
    }
-   
 
 }
 
