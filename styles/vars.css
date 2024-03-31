@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap');
+
+
 :root {
    
 /*----------- Reset Properties --------*/
@@ -14,7 +18,10 @@
     --font-weight-heavy-bold: 900;
     --font-weight-paragraph: 200;
     --fs-paragraph: 0.8em;
-    --fs-heading: 0.9em;
+    --fs-paragraph-home: 1em;
+    --fs-buttons: 1rem;
+    --fs-heading: 2em;
+    --letter-spacing-home: 2px;
 
 /*----------- Color Properties --------*/
     --bg-main: black;
