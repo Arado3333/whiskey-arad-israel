@@ -41,16 +41,21 @@ h1 {
 }
 
 
-.footer-links, #foot2, .a, .b
+.footer-links, #foot2, .aaa, .bbb
 {
    display: none;
 }
 
-
+.aaa, .bbbb
+{
+   display: none;
+   color: #000;
+}
 .box1 {
    grid-area: box1;
 width: 100%;
 z-index: 100;
+color: #000;
    
 }
 
@@ -102,7 +107,6 @@ button {
    width: 100%;
    background-color: #000000;
    z-index: 1000; /* כדי שהתפריט יהיה מעל לתוכן */
-   display: flex;
    justify-content: space-between;
    align-items: center;
    padding: 10px 20px;
