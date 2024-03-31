@@ -680,6 +680,7 @@ display: none;
 }
 
 @media (min-width: 768px) {
+
    .container .form-1 {
        width: 50%;
        height: auto;
@@ -691,6 +692,11 @@ display: none;
       margin: 0;
    }
    
+   @media (min-width: 800px) and (max-width: 1023px) {
+      .container .form-1 {
+         bottom: 50%;
+      }
+   }
 }
 
 @media (orientation: landscape) and (max-height: 500px) {
@@ -728,6 +734,7 @@ display: none;
 @media (min-width: 1024px) {
    .container .form-1 {
       bottom: 80%;
+      width: 30%;
    }
 
    .logo {
@@ -745,5 +752,19 @@ display: none;
    }
 }
 
+@media (min-width: 1440px) {
+.logo {
+      position: fixed;
+      z-index: 110;
+      opacity: 100%;
+      height: auto;
+      width: 6%;
+      margin-left: 6%;
+}
+
+   .container .form-1 {
+      width: 30%;
+   }
+}
 
 
