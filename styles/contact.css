@@ -1,3 +1,20 @@
+@import url("./vars.css");
+
+
+
+h1 {
+  font-family: var(--font-navbar);
+  font-size: var(--fs-heading);
+  font-weight: var(--font-weight-normal);
+  letter-spacing: var(--letter-spacing-home);
+}
+
+span {
+  font-family: var(--font-main);
+  font-weight: var(--font-weight-normal);
+  font-size: var( --fs-paragraph-home);
+  letter-spacing: var(--letter-spacing-home);
+}
 
 body {
    margin: 0;
@@ -15,26 +32,33 @@ body {
    'contact contact contact contact';
  }
 
+ button {
+  font-size: var(--fs-buttons);
+  transition: 0.6s;
+}
+
+button:hover {
+color: black;
+background-color: white;
+font-weight: var(--font-weight-bold);
+transition: 0.6s;
+}
+
  .buttonvideo {
     background-color: transparent;
     color: rgb(255, 255, 255);
     border: 1px solid rgb(255, 255, 255);
     cursor: pointer;
-    font-size: 1rem;
     height: 5vh;
     width: 30%;
     border-radius: 50px;
 }
+
 .form-control
 {
    width: 500px;
 }
 
-.buttonvideo:hover {
-    color: #000000;
-    background-color: rgb(255, 255, 255);
-    border-color: black;
-}
  .menu
  {
    display: none;
@@ -52,8 +76,6 @@ body {
    height: 100%;
    overflow: hidden;
 }
-
-
 
 .logo {
    top: 0.2vh;
@@ -248,9 +270,6 @@ margin-left: 6%;
    background-color: #fff;
  }
  
- .social-media-list li:hover img {
-   filter: brightness(100%); /* התמונה תשוב לכהות כאשר מעבר עכבר */
- }
  
  .social-media-list li:hover:after {
    opacity: 1;
@@ -332,15 +351,23 @@ margin-left: 6%;
    gap: 10%;
   }
 
+  button {
+    font-size: var(--fs-buttons);
+    transition: 0.6s;
+ }
 
+ button:hover {
+  font-weight: var(--font-weight-bold);
+  transition: 0.6s;
+ }
+ 
  
 .buttonvideo {
     background-color: transparent;
-    color: rgb(255, 255, 255);
-    border: 1px solid rgb(255, 255, 255);
+    color: white;
+    border: 1px solid white;
     cursor: pointer;
-    font-size: 1rem;
-    height: 5vh;
+    height: 4vh;
     width: 30%;
     border-radius: 50px;
 }
@@ -348,7 +375,7 @@ margin-left: 6%;
 
 .buttonvideo:hover {
     color: #000000;
-    background-color: rgb(255, 255, 255);
+    background-color: white;
     border-color: black;
 }
 
@@ -457,11 +484,6 @@ margin-left: 6%;
 
 }
  
-
- 
- 
- 
-
 .menu-toggle:checked + .hamburger {
   background-color: transparent;
   display: none;
