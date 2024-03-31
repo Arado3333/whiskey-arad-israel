@@ -7,10 +7,6 @@
 
 
 @media (max-width: 2560px) {
-
-   h3 {
-      font-size: 1em;
-   }
       
    p {
       font-family: var(--font-main);
@@ -22,10 +18,12 @@
    {
      display: none;
    }
+
    .checkbox, .menu-toggle, .menu-toggle
    {
      display: none;
    } 
+
    body {
       margin: var(--zero-margin);
       background-color: var(--bg-shop);
@@ -71,14 +69,18 @@
          
       }
 
+      button {
+         font-size: var(--fs-buttons);
+         transition: 0.6s;
+      }
+
       .buttonvideo {
-         font-weight: var(--font-weight-bold);
+         font-weight: var(--font-weight-normal);
          transition: 0.6s;
          background-color: transparent;
          color: black;
          border: 1px solid black;
          cursor: pointer;
-         font-size: 1rem;
          height: 5vh;
          margin-left: 40%;
          width: 20%;
@@ -349,7 +351,6 @@
       }
    
       #shop-navbar > .navlinks a {
-         font-size: 1em;
          padding: 25px;
       }
    
@@ -532,6 +533,11 @@
          width: 100%;
       }
 
+      button {
+         font-size: var(--fs-buttons);
+         transition: 0.6s;
+      }
+
       .buttonvideo {
          font-weight: var(--font-weight-bold);
          transition: 0.6s;
@@ -539,7 +545,6 @@
          color: black;
          border: 1px solid black;
          cursor: pointer;
-         font-size: 1rem;
          height: 7vh;
          margin-left: 25%;
          width: 53%;
@@ -591,7 +596,6 @@
       text-align: center;
       padding: 2vh 2vw;
       text-decoration: none;
-      /* margin-top: 2vh; */
       background-color: #000000;
    }
    
@@ -720,7 +724,7 @@
       .product-info > h3 {
          font-family: var(--font-main);
          font-weight: var(--font-weight-normal);
-         font-size: var(--fs-heading);
+         font-size: var(--fs-heading-shop);
       }
    
       .product-info > p {
@@ -772,7 +776,6 @@
       }
    
       #shop-navbar > .navlinks a {
-         font-size: 1em;
          margin: 0;
          padding: 25px;
       }
@@ -823,13 +826,7 @@
       text-align: center;
       padding: 2vh 2vw;
       text-decoration: none;
-      /* margin-top: 2vh; */
       background-color: #000000;
-   }
-   
-   .navlinks li a:hover {
-      color: rgb(148, 145, 145);
-   
    }
    
    .navlinks img {
@@ -1218,7 +1215,7 @@
      display: none;
    }
    #shop-navbar > .navlinks a {
-      font-size: 1em;
+      /* font-size: 1em; */
       text-align: center;
       margin: 0;
       padding: 25px;
@@ -1231,7 +1228,6 @@
       text-align: center;
       padding: 2vh 2vw;
       text-decoration: none;
-      /* margin-top: 2vh; */
       background-color: #000000;
    }
    
@@ -1276,7 +1272,6 @@
    }
 
    #shop-navbar > .navlinks a {
-      font-size: 1.2em;
       padding: 35px;
    }
 

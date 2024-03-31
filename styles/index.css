@@ -49,19 +49,23 @@ h1 {
 .p5{
    color: white;
 }
+
 .p5h
 {
    margin-left: 0;
    margin-top: 0;
    color: white;
 }
+
 .br {
    display: none;
 }
+
 .menu
  {
    display: none;
  }
+
  .checkbox, .menu-toggle, .menu-toggle
  {
    display: none;
@@ -111,7 +115,6 @@ margin-left: 6%;
 
 .navlinks li {
    float: right;
-
 }
 
 .navlinks {
@@ -260,10 +263,7 @@ margin-left: -100%;
    color: #ffffff;
 
 }
-
   
-
-
 .text
 {
    font-size: 4rem;
@@ -279,7 +279,6 @@ p{
    padding: 1rem; 
   
 }
-
 
 
 .box6 {
@@ -302,11 +301,6 @@ p{
 
 
 .box10 {
-   /* display: flex;
-   flex-wrap: wrap;
-   flex-direction: row; */
-   /* gap: 15%; */
-   /* justify-content: center; */
    grid-area: box10;
 }
 
