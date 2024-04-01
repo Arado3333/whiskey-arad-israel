@@ -14,11 +14,17 @@
       margin-left: 0;
       margin-right: 6em;
    }
-   
+  .container .form-1
+   {
+display: none;
+  }
+
    label.email-label {
       margin-right: calc(6em + 2em);
    }
-   
+   .container .form-1 {
+      width: 300px;
+  }
       .footindex {
          grid-area: footindex;
          display: flex;
@@ -375,8 +381,16 @@
        font-size: 18px;
    }
    .container .form-1 {
-       width: 540px;
-       height: 550px;
+      grid-area: continer1;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      bottom: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: #ffffff;
+      width: 50vw;
+      box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3);
    }
 }
 
@@ -650,4 +664,15 @@ button:hover {
 
 .footer-links a:hover {
    text-decoration: underline;
+}
+
+.container .form-1 {
+   grid-area: continer1;
+   display: flex;
+   flex-direction: column;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   background: #ffffff;
+   width: 50vw;
+   box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3);
 }

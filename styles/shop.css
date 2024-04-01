@@ -98,8 +98,8 @@
       position: fixed;
       z-index: 110;
       opacity: 100%;
-      height: 10vh;
-      width: 6%;
+      height: auto;
+      width: auto;
    }
 
    #shop-navbar a {
