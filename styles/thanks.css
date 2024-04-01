@@ -61,25 +61,18 @@
       }
  
       .menu ul::before {
-         display: none; /* ערך הגנרי להסתרת התפריט */
-         visibility: hidden; /* כדי שלא יתפרטס התפריט */
-         
+         display: none; /* Hides the hamburger menu */
+         visibility: hidden;
       }
       
       .menu-toggle:checked + .hamburger + .menu ul {
-         display: flex; /* הצגת התפריט כאשר ההמבורגר פתוח */
+         display: flex; /* Displays the hamburger menu */
          visibility: visible;
-      
       }
       
       .navlinks
       {
          display: none;
-      }
-      .nonmobile
-      {
-         display: none;
-         color: white;
       }
       
       .menu ul {
@@ -90,7 +83,7 @@
          top: 50%;
          left: 50%;
          transform: translate(-50%, -50%);
-         display: none; /* הסתרת רשימת הקישורים */
+         display: none;
       }
       
       .menu-toggle::after + .hamburger + .menu ul 
@@ -184,20 +177,13 @@
    }
 
    .menu ul::before {
-     display: none; /* ערך הגנרי להסתרת התפריט */
-     visibility: hidden; /* כדי שלא יתפרטס התפריט */
-     
+     display: none;
+     visibility: hidden;
    }
    
    .navlinks
    {
      display: none;
-   }
-   
-   .nonmobile
-   {
-     display: none;
-     color: white;
    }
    
    .menu ul {
@@ -208,11 +194,11 @@
      top: 50%;
      left: 50%;
      transform: translate(-50%, -50%);
-     display: none; /* הסתרת רשימת הקישורים */
+     display: none;
    }
    
    .menu-toggle:checked + .hamburger + .menu ul {
-     display: flex; /* הצגת רשימת הקישורים כאשר ההמבורגר פתוח */
+     display: flex;
      flex-direction: column;
    }
    
@@ -225,7 +211,7 @@
    {
      display: none;
    }
-   }
+}
 
 @media (min-width: 500px) 
 {
@@ -254,9 +240,7 @@
       display: flex;
       justify-content: center; 
    }
-   html {
-       font-size: 14px;
-   }
+
    .container .form-1 {
        width: 450px;
    }
@@ -274,9 +258,6 @@
 }
 
 @media (min-width: 600px) and (max-width: 1200px) {
-   html {
-       font-size: 18px;
-   }
    .container .form-1 {
       grid-area: continer1;
       display: flex;
@@ -311,6 +292,7 @@ h1 {
    font-size: var( --fs-paragraph-home);
    margin-left: 2em;
 }
+
 .navbar {
 	position: fixed;
 	top: 0;
@@ -319,9 +301,11 @@ h1 {
 	background-color: #000000;
 	z-index: 100;
 }
+
 .alter-login {
    margin-left: 0;
 }
+
 .buttonvideo {
 	background-color: transparent;
 	color: rgb(0, 0, 0);
@@ -337,8 +321,6 @@ h1 {
 	color: #ffffff;
 	background-color: rgb(0, 0, 0);
 	border-color: black;
-}
-.body {
 }
 
 .container {
@@ -363,14 +345,11 @@ h1 {
    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3);
 }
 
-
-
 .form-1 h1 {
    text-align: center;
    margin-top: 0.7rem;
    margin-bottom: 1.5rem;
 }
-
 
 .logo {
    top: 0vh;
@@ -409,7 +388,6 @@ h1 {
  .navbar a:hover::after {
    width: 100%;
  }
-
 
 .navlinks li {
    float: right;
@@ -455,6 +433,7 @@ h1 {
       background-color: #000000;
       z-index: 100;
    }
+
 	.buttonvideo {
 		background-color: transparent;
 		color: rgb(0, 0, 0);
@@ -471,8 +450,4 @@ h1 {
 		background-color: rgb(0, 0, 0);
 		border-color: black;
 	}
-}
-#fineprint
-{
-	margin-top: 20%;
 }

@@ -404,8 +404,8 @@
     .footer-item {
        flex: 1;
        margin: 10% 0;
-       
     }
+    
     .footer-item form {
        margin-top: 10px;
     }
@@ -598,7 +598,7 @@
       border-radius: 10vh;
       height: 1vh;
    }
-   
+
       .product-box {
          display: flex;
          flex-direction: column;
@@ -1040,6 +1040,7 @@
          margin: 10%;
          
       }
+
       .footer-item form {
          margin-top: 10px;
       }
@@ -1155,6 +1156,7 @@
          text-decoration: underline;
       }
 }
+
 @media (min-width: 1024px) and (max-width: 1439px){
    .logo {
       top: 0.2vh;
@@ -1257,10 +1259,12 @@
       height: 4.5vh;
       margin-left: 42%;
    }
+
    .menu
  {
    display: none;
  }
+
  .checkbox, .menu-toggle, .menu-toggle
  {
    display: none;
