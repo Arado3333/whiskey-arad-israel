@@ -573,6 +573,10 @@ button:hover {
    background: white;
    transition: width ease 0.5s;
  }
+
+.navbar a.link-signup::after {
+   width: 100%;
+ }
  
  .navbar a:hover::after {
    width: 100%;

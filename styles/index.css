@@ -648,6 +648,10 @@ display: none;
       float: right;
    }
    
+   .navbar a.link-home::after {
+      width: 100%;
+    }
+    
    .navlinks {
       list-style-type: none;
       margin: 0;
@@ -1212,6 +1216,9 @@ margin-left: 6%;
    text-decoration: none;
 }
 
+.navbar a.link-home::after {
+   width: 100%;
+ }
 
 .navlinks img {
    border-radius: 10vh;
