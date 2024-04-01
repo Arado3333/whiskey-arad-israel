@@ -492,7 +492,7 @@ display: none;
 }
 
 /*------------- DESKTOP ----------*/
-@media (max-width: 2560px) {
+@media  (max-width: 2560px) {
 
    .menu {
       display: none;
@@ -546,7 +546,7 @@ display: none;
       left: 50%;
       transform: translate(-50%, -50%);
       background: #ffffff;
-      width: 30%;
+      width: 50vw;
       box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3);
    }
    
