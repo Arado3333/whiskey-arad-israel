@@ -81,7 +81,6 @@
          margin-left: 40%;
          width: 20%;
          border-radius: 50px;
-         
      }
    
      .buttonvideo:hover {
@@ -367,7 +366,6 @@
       padding: 2% 0;
       width: 100%;
       height: 70vh;
-      /* object-fit: cover; */
       opacity: 100%;
    }
    
@@ -652,11 +650,6 @@
    
       .box14 {grid-area: box14;}
    
-   
-      .product-image {
-         
-      }
-      
       .product-img
       {
          transition: 0.7s;
@@ -678,7 +671,6 @@
       
        .product-info button img {
          width: 100%; /*Set the size of the icon */
-         /* height: 10vh; */
          vertical-align: middle; /* Align the icon vertically */
       }
       
@@ -788,7 +780,6 @@
       padding: 2% 0;
       width: 100%;
       height: 70vh;
-      /* object-fit: cover; */
       opacity: 100%;
    }
    
@@ -977,19 +968,13 @@
       z-index: 2;
    }
    
-   .close-menu:hover {
-      color: red; /* צבע כאשר מרחיקים מהכפתור */
-   }
-   /* עיצוב למסכי מובייל עם רוחב עד 600 פיקסלים */
-   
-   
    .menu ul::before {
-      display: none; /* ערך הגנרי להסתרת התפריט */
-      visibility: hidden; /* כדי שלא יתפרטס התפריט */
+      display: none; /* Hides the hamburger menu*/
+      visibility: hidden;
    }
    
    .menu-toggle:checked + .hamburger + .menu ul {
-      display: block; /* הצגת התפריט כאשר ההמבורגר פתוח */
+      display: block; /* Displays the hamburger menu*/
       visibility: visible;
    }
    
@@ -1006,11 +991,11 @@
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      display: none; /* הסתרת רשימת הקישורים */
+      display: none;
    }
    
    .menu-toggle:checked + .hamburger + .menu ul {
-      display: block; /* הצגת רשימת הקישורים כאשר ההמבורגר פתוח */
+      display: block;
    }
    
    .menu-toggle::after + .hamburger + .menu ul 
@@ -1180,16 +1165,18 @@
       height: 10vh;
       width: auto;
    }
+
    .menu
    {
      display: none;
    }
+
    .checkbox, .menu-toggle, .menu-toggle
    {
      display: none;
    }
+
    #shop-navbar > .navlinks-shop a {
-      /* font-size: 1em; */
       text-align: center;
       margin: 0;
       padding: 25px;
@@ -1207,8 +1194,6 @@
    
    .navlinks-shop li a:hover {
       transition: 0.5s;
-      color: #515050;
-   
    }
 
    .video-box
@@ -1224,7 +1209,6 @@
          width: 100%;
          height: 50vh;
          object-fit: cover; 
-         /* margin-top: 5%; */
    }
 
    .buttonvideo {
@@ -1236,7 +1220,6 @@
    #favorite-item > img {
       width: 60%;
    }
-
 }
 
 @media (min-width: 1440px) {
