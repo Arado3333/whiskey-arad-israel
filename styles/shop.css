@@ -1,11 +1,7 @@
-/* @import url("reset.css"); */
 @import url("vars.css");
-/* @import url("mobile.css");
-@import url("tablet.css");
-@import url("laptop.css");
-@import url("laptop_L.css"); */
 
 
+/*--------------- DESKTOP -----------*/
 @media (max-width: 2560px) {
       
    p {
@@ -223,11 +219,6 @@
       .box12 {grid-area: box12;}
    
       .box14 {grid-area: box14;}
-   
-   
-      .product-image {
-         
-      }
       
       .imgbox1
       {
@@ -301,8 +292,6 @@
          justify-content: center;
       }
       
-      
-      
       .buybutton {
          order: 2; /* Keep the button below the product info */
          width: 5%;
@@ -313,7 +302,7 @@
          margin: 0;
          width: 50%;
          font-size: 0.8em;
-          }
+         }
    
       #favorite-item {
          order: 1;
@@ -471,7 +460,7 @@
     }
 }
 
-
+/*--------------- MOBILE -----------*/
 @media (max-width: 450px) {
 
    #shop-container {
@@ -511,7 +500,6 @@
          left: 80%;
          overflow: hidden;
        }
-  
 
     .box0
    { 
@@ -736,9 +724,7 @@
       #buy-buttons {
          justify-content: center;
       }
-      
-      
-      
+
       .buybutton {
          order: 2; /* Keep the button below the product info */
          width: 5%;
@@ -749,10 +735,8 @@
          margin: 0;
          width: 50%;
          font-size: 0.8em;
-          }
+         }
 
-   
-   
     #favorite-item > img:hover {
       transition: 0.3s;
       transform: scale(1.2);
@@ -916,8 +900,6 @@
       background-color: #333;
    }
 
-
-
    .hamburger {
        position: absolute;
        padding: 11px 13px;
@@ -966,9 +948,7 @@
       background-color: transparent;
       display: none;
    }
-   
-   
-   
+
    #shop-navbar input {
       appearance: none;
    }
@@ -993,7 +973,6 @@
       z-index: 2;
    }
    
-   
    .close-menu:hover {
       color: red; /* צבע כאשר מרחיקים מהכפתור */
    }
@@ -1003,13 +982,11 @@
    .menu ul::before {
       display: none; /* ערך הגנרי להסתרת התפריט */
       visibility: hidden; /* כדי שלא יתפרטס התפריט */
-      
    }
    
    .menu-toggle:checked + .hamburger + .menu ul {
       display: block; /* הצגת התפריט כאשר ההמבורגר פתוח */
       visibility: visible;
-   
    }
    
    .navlinks
@@ -1040,14 +1017,10 @@
    .menu-toggle
    {
       display: none;
-   }
-
-
-
-
-   
+   } 
 }
- 
+
+/*------------- TABLET ----------*/ 
 @media (min-width: 451px) {
    .logo {
       top: 0.2vh;
@@ -1058,8 +1031,6 @@
       height: 10vh;
       width: 8%;
    }
-
-
 
    #favorite-item > img {
       width: 70%;
