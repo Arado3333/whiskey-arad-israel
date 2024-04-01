@@ -588,7 +588,7 @@ display: none;
       margin: 0;
       padding: 0;
       grid-template-columns: 1fr 1fr 1fr;
-      row-gap: 20vh;
+      row-gap: 0vh;
    }
    
    .menu-toggle
@@ -648,6 +648,10 @@ display: none;
       float: right;
    }
    
+   .navbar a.link-home::after {
+      width: 100%;
+    }
+    
    .navlinks {
       list-style-type: none;
       margin: 0;
@@ -1122,7 +1126,7 @@ h1 {
    margin: 0;
    padding: 0;
    grid-template-columns: 1fr 1fr 1fr;
-   row-gap: 40vh;
+   row-gap: 10vh;
 }
 
 .section-paragraph{
@@ -1212,6 +1216,9 @@ margin-left: 6%;
    text-decoration: none;
 }
 
+.navbar a.link-home::after {
+   width: 100%;
+ }
 
 .navlinks img {
    border-radius: 10vh;

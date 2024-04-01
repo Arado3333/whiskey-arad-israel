@@ -119,6 +119,10 @@
       transition: width ease 0.5s;
     }
     
+    #shop-navbar a.link-shop::after {
+      width: 100%;
+    }
+
     #shop-navbar a:hover::after {
       width: 100%;
     }

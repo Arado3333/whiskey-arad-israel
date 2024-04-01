@@ -92,7 +92,6 @@ button {
    font-size: 1.3em;
    height: auto;
    width: 100%;
-   margin-top: 20%;
  
 }
 
@@ -406,8 +405,6 @@ input[type="submit"]:hover {
 
 /*-------------------- TABLET -------------------*/
 @media (min-width: 701px) and (max-width: 1100px) {
-   .navbar {
-   }
 
    .menu, input.menu-toggle {
       display: none;
@@ -518,6 +515,12 @@ button {
    float: right;
 }
 
+.navbar a.link-about::after {
+   content: '';
+   background: white;
+   width: 100%;
+ }
+
 .navlinks {
    display: flex;
    flex-direction: row-reverse;
@@ -528,7 +531,6 @@ button {
 }
 
 .navlinks li a {
-
    color: white;
    display: block;
    text-align: center;
@@ -537,19 +539,10 @@ button {
    margin-top: 0;
 }
 
-.navlinks li a:hover {
-   color: rgb(255, 255, 255);
-   border-radius: 0%;
-   margin-top:1vh ;
-   height: 1.5vh;
-
-}
-
 .navlinks img {
    border-radius: 10vh;
    height: 1vh;
 }
-
 
 .box2 {
    grid-area: box2;
@@ -596,8 +589,6 @@ width: 80%;
 
 }
 
-
-
 .box5 {
    grid-area: box5;
 width: 100%;
@@ -617,42 +608,10 @@ width: 100%;
 
 }
 
-.navlinks li a {
-   position: relative;
-}
 
-.navlinks li a::after {
-   content: "";
-   position: absolute;
-   bottom: -1px;
-   left: 0;
-   width: 100%;
-   height: 1px;
-   visibility: hidden;
-   transform: scaleX(0);
-   transition: all 0.3s ease-in-out 0s;
-}
-
-.navlinks li a:hover::after {
-   visibility: visible;
-   transform: scaleX(1);
-}
-
-.navlinks li a {
-   transition: all 0.3s;
-}
-
-.navlinks li a:hover {
-   color: rgb(45, 45, 45);
-
-}
 .text {
    position: relative;
 }
-
-
-
-
 
 .img2:hover {
    transform: scale(1.1);
@@ -741,7 +700,7 @@ width: 100%;
    height: 1px;
    margin-top: 1px;
    background: rgb(255, 255, 255);
-   transition: width 0.1s;
+   transition: width 0.5s;
  }
  
  .navbar a:hover::after {
@@ -807,8 +766,12 @@ width: 100%;
    font-size: 1em;
    width: 100%;
    height: 80vh;
+<<<<<<< HEAD
    object-fit:fill;
+=======
+   object-fit: cover;
    margin-top: -8%;
+>>>>>>> 72d8c3f29f96ed25c455c74f49457ac4f67d82b9
 }
 
 .logo {
@@ -842,6 +805,10 @@ margin-left: 6%;
    margin-top: 5px;
    background: white;
    transition: width ease 0.5s;
+ }
+
+ .navbar a.link-about::after {
+   width: 100%;
  }
 
 .navlinks li {
@@ -993,10 +960,6 @@ margin-left: 25%;
 
 .navlinks li a {
    transition: all 0.3s;
-}
-
-.navlinks li a:hover {
-
 }
 
 .text {

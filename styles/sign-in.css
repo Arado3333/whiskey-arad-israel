@@ -16,8 +16,8 @@
    }
   .container .form-1
    {
-display: none;
-  }
+      display: none;
+   }
 
    label.email-label {
       margin-right: calc(6em + 2em);
@@ -572,6 +572,10 @@ button:hover {
    margin-top: 5px;
    background: white;
    transition: width ease 0.5s;
+ }
+
+.navbar a.link-signin::after {
+   width: 100%;
  }
  
  .navbar a:hover::after {
