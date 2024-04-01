@@ -505,7 +505,7 @@ form {
       margin: 0;
       padding: 0;
       grid-template-columns: 1fr 1fr 1fr;
-      row-gap: 20vh;
+      row-gap: 0vh;
    }
    
    .menu-toggle,
@@ -980,7 +980,7 @@ h1 {
    margin: 0;
    padding: 0;
    grid-template-columns: 1fr 1fr 1fr;
-   row-gap: 40vh;
+   row-gap: 10vh;
 }
 .section-heading
 {

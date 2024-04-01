@@ -92,7 +92,6 @@ button {
    font-size: 1.3em;
    height: auto;
    width: 100%;
-   margin-top: 20%;
  
 }
 
@@ -767,8 +766,15 @@ width: 100%;
    font-size: 1em;
    width: 100%;
    height: 80vh;
+<<<<<<< HEAD
+<<<<<<< HEAD
+   object-fit:fill;
+=======
+=======
+>>>>>>> 72d8c3f29f96ed25c455c74f49457ac4f67d82b9
    object-fit: cover;
    margin-top: -8%;
+>>>>>>> 72d8c3f29f96ed25c455c74f49457ac4f67d82b9
 }
 
 .logo {
