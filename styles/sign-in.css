@@ -1,5 +1,6 @@
 @import url("./vars.css");
 
+
 * {
    margin: 0;
    padding: 0;
@@ -26,60 +27,62 @@
       width: 300px;
    }
 
+   .menu-toggle::after + .hamburger + .menu ul 
+   {
+   display: none;
+   }
+   
+   .menu-toggle
+   {
+      display: none;
+   }
+   
    .footindex {
-      grid-area: footindex;
+      grid-area: footer;
       background-color: #0a0a0a;
       color: #fff;
       flex-wrap: wrap;
       justify-content: space-around;
       align-items: flex-start;
-      font-size: 1rem; 
+      margin-top: 40%;
+      row-gap: 10%;
    }
    
-   .footer-item input[type="email"] {
-      padding: 10px;
-      border: 2px solid #2f2f2f;
-      border-radius: 5px;
-      font-size: 10px;
-      width: 100px;
-      color: #fff;
-      margin-right: 10px;
-   }
+   #footer-section-2 {display: none;}
    
    .footindex div {
-      flex: 1;
+      flex: -1;
       margin: 10px;
-   }
 
+   }
+   
    .footindex .footer-logo {
       max-width: 100px;
    }
-
+   
    .footindex p {
       margin: 5px 0;
    }
-
+   
    .footindex h2 {
-      font-size: 1rem; 
+      font-size: 1.2em;
       margin-bottom: 10px;
    }
-
-   .footindex .footer-links1 {
+   
+   .footindex .footer-links {
       list-style-type: none;
       padding: 0;
    }
-
+   
    .footindex .footer-links li {
       margin-bottom: 5px;
-      display: none;
    }
-
+   
    .footindex a {
       color: #fff;
       text-decoration: none;
-      display: none;
    }
-
+   
    .footindex a:hover {
       text-decoration: underline;
    }
@@ -87,34 +90,42 @@
    #fb, #yt, #tw, #ig {
       max-width: 30px;
       margin-right: 5px;
-      filter: brightness(0) invert(1);
-      display: none;
    }
-
-   .h2f {
-      display: none; 
-   }
-
-   .footer-links, #foot2, .a, .b {
-      display: none;
-   }
-    
    form {
       display: flex;
       justify-content: center;
       align-items: center;
       margin-top: 20px;
    }
-   
+   .foot4
+   {
+      margin-top: 30%;
+   }
    input[type="email"] {
+      padding: 10px;
+      border: 2px solid #000;
+      border-radius: 5px;
+      font-size: 16px;
+   }
+.footer-links, .none, .h2f,
+.menu-toggle
+{
+   display: none;
+}
+
+   input[type="submit"] {
+      padding: 10px 20px;
       border: none;
-      outline: none;
-      border-bottom: 1px solid;
-      background: none;
-      margin: 0.9rem 2rem;
-      font-size: 1rem;
+      border-radius: 5px;
+      font-size: 16px;
+      background-color: #000;
+      color: white;
+      cursor: pointer;
    }
    
+   input[type="submit"]:hover {
+      background-color: #333;
+   }
    .menu {
       text-align: center;
       z-index: 100;
