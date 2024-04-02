@@ -11,17 +11,17 @@
 /*----------- Font Properties --------*/
     --font-main: 'Heebo', sans-serif;  
     --font-navbar: 'Times New Roman', serif;
-    --font-weight-normal: 400;
+    --font-weight-normal: 100;
     --font-weight-lightest: 200;
     --font-weight-light: 300;
-    --font-weight-bold: 700;
-    --font-weight-heavy-bold: 900;
+    --font-weight-bold: 500;
+    --font-weight-heavy-bold: 550;
     --font-weight-paragraph: 200;
-    --fs-mobile-menu: 1.5em;
-    --fs-paragraph: 0.8em;
-    --fs-paragraph-home: 1em;
+    --fs-mobile-menu: 1em;
+    --fs-paragraph: 0.7em;
+    --fs-paragraph-home: 0.8em;
     --fs-buttons: 1rem;
-    --fs-heading: 2em;
+    --fs-heading: 1.3em;
     --fs-heading-shop: 1em;
     --fs-heading-tablet: 1.8em;
     --letter-spacing-home: 2px;

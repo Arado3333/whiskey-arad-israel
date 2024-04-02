@@ -8,13 +8,12 @@
 
 /*------------ MOBILE ---------*/
 @media (max-width: 500px) {
- 
    label.email-label,
    label.password-label {
       margin-left: 0;
       margin-right: 6em;
    }
-
+   
    .container .form-1 {
       display: none;
    }
@@ -22,29 +21,21 @@
    label.email-label {
       margin-right: calc(6em + 2em);
    }
-
-   .confpassword-label {
-      margin-left: 0;
-      margin-right: 2em;
-   }
-
+   
    .container .form-1 {
       width: 300px;
    }
 
    .footindex {
       grid-area: footindex;
-      display: flex;
-      justify-content: space-around;
+      background-color: #0a0a0a;
       color: #fff;
-      padding: 10px;
       flex-wrap: wrap;
-      background-color: #000;
-      height: 30vh;
-      padding: 0;
-      margin: 0;
+      justify-content: space-around;
+      align-items: flex-start;
+      font-size: 1rem; 
    }
-      
+   
    .footer-item input[type="email"] {
       padding: 10px;
       border: 2px solid #2f2f2f;
@@ -59,40 +50,40 @@
       flex: 1;
       margin: 10px;
    }
-      
+
    .footindex .footer-logo {
       max-width: 100px;
    }
-      
+
    .footindex p {
       margin: 5px 0;
    }
-      
+
    .footindex h2 {
-      font-size: 1.2em;
+      font-size: 1rem; 
       margin-bottom: 10px;
    }
-      
+
    .footindex .footer-links1 {
       list-style-type: none;
       padding: 0;
    }
-      
+
    .footindex .footer-links li {
       margin-bottom: 5px;
       display: none;
    }
-      
+
    .footindex a {
       color: #fff;
       text-decoration: none;
       display: none;
    }
-      
+
    .footindex a:hover {
       text-decoration: underline;
    }
-      
+   
    #fb, #yt, #tw, #ig {
       max-width: 30px;
       margin-right: 5px;
@@ -102,6 +93,10 @@
 
    .h2f {
       display: none; 
+   }
+
+   .footer-links, #foot2, .a, .b {
+      display: none;
    }
     
    form {
@@ -163,13 +158,106 @@
    }
  
    .menu ul::before {
-      display: none; /* ערך הגנרי להסתרת התפריט */
-      visibility: hidden; /* כדי שלא יתפרטס התפריט */
+      display: none; /* Hides the hamburger menu */
+      visibility: hidden; 
    }
    
    .menu-toggle:checked + .hamburger + .menu ul {
-      display: flex; /* הצגת התפריט כאשר ההמבורגר פתוח */
+      display: flex; /* Displays the hamburger menu */
       visibility: visible;
+   }
+   
+   .navlinks {
+      display: none;
+   }
+
+   .menu ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      display: none;
+   }
+   
+   .menu-toggle::after + .hamburger + .menu ul {
+      display: none;
+   }
+   
+   .menu-toggle {
+      display: none;
+   }
+   
+   .container .form-1 {
+      width: 300px;
+   }
+   
+   .logo {
+      top: 0.2vh;
+      left: 3px;
+      position: fixed;
+      z-index: 110;
+      opacity: 100%;
+      height: 10vh;
+      width: 17%;
+      height: 10vh;
+      margin-left: 6%;
+   }
+   
+   .hamburger {
+      padding: 11px 13px;
+      top: 0px;
+      font-size: 35px;
+      cursor: pointer;
+      color: white;
+      z-index: 2;
+      margin-left: 77%;
+   }
+   
+   .menu {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.7);
+      z-index: 1;
+   }
+
+   .menu-toggle:checked + .hamburger {
+      background-color: transparent;
+      display: none;
+   }
+    
+   .navbar input {
+      appearance: none;
+   }
+   
+   .menu-toggle:checked + .hamburger + .menu {
+      display: block;
+   }
+   
+   #menu-close:checked {
+      display: none;
+   }
+   
+   .close-menu {
+      position: absolute;
+      padding: 11px 16px;
+      top: 10px;
+      right: 20px;
+      font-size: 30px;
+      cursor: pointer;
+      color: white;
+      z-index: 2;
+   }
+
+   .menu ul::before {
+      display: none;
+      visibility: hidden; 
    }
    
    .navlinks {
@@ -184,7 +272,14 @@
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      display: none; /* הסתרת רשימת הקישורים */
+      display
+
+: none;
+   }
+   
+   .menu-toggle:checked + .hamburger + .menu ul {
+      display: flex;
+      flex-direction: column;
    }
    
    .menu-toggle::after + .hamburger + .menu ul {
@@ -207,6 +302,7 @@
    .menu-toggle {
       display: none;
    }
+   
 }
 
 @media (min-width: 501px) and (max-width: 800px) {
@@ -252,6 +348,10 @@
       width: 50vw;
       box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3);
    }
+
+
+
+
 }
 
 @media (orientation: landscape) and (max-height: 500px) {
@@ -286,9 +386,9 @@ p, label, span {
 .container {
    display: grid;
    grid-template-areas:
-      'box1'
-      'continer1'
-      'footindex';
+       'box1'
+       'continer1'
+       'footindex';
    background-image: url("../images/Golani\ Spirit\ Logo\ copy.png");
    grid-template-rows: auto;
 }
@@ -326,11 +426,6 @@ span {
    margin: 0 2rem;
    color: rgb(114, 114, 118);
    cursor: pointer;
-}
-
-p {
-   text-align: center;
-   font-weight: bolder;
 }
 
 .icons {
@@ -372,8 +467,6 @@ button:hover {
 .icons .fa-facebook-f {
    border-radius: 50%;
    background: #000;
-   width: auto;
-   height: auto;
    color: #fff;
    padding: 1rem;
 }
@@ -431,15 +524,16 @@ button:hover {
    margin-top: 5px;
    background: white;
    transition: width ease 0.5s;
- }
+}
 
-.navbar a.link-signup::after {
+.navbar a.link-signin::after {
    width: 100%;
- }
+}
  
- .navbar a:hover::after {
+.navbar a:hover::after {
    width: 100%;
- }
+}
+
 
 .navlinks li {
    float: right;
@@ -485,7 +579,9 @@ button:hover {
    margin-top: 10px;
 }
 
-.footer-item input[type="email"] {
+.footer-item input[type
+
+="email"] {
    padding: 10px;
    border: 2px solid #3a3a3a;
    border-radius: 5px;
