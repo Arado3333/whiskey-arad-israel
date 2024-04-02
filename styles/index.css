@@ -424,10 +424,14 @@ form {
    color: white;
    z-index: 2;
 }
-
+.menu ul
+{
+   
+}
 .menu ul::before {
    display: none;
-   visibility: hidden; 
+   visibility: hidden;
+
 }
 
 .menu-toggle:checked + .hamburger + .menu ul {

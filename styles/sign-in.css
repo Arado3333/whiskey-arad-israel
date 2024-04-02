@@ -628,7 +628,10 @@ button:hover {
 .footer-links a:hover {
    text-decoration: underline;
 }
-
+.none
+{
+   display: none;
+}
 .container .form-1 {
    grid-area: continer1;
    display: flex;
